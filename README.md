@@ -1,7 +1,7 @@
 # Horizon Equilibrium Network (HEN)
 
 <!-- lang-switch -->
-<sub>Full text: **English** · [简体中文](docs/i18n/zh.md)　｜　Entry summaries (not full text): [繁體中文](docs/i18n/zh-Hant.md) · [Русский](docs/i18n/ru.md) · [Français](docs/i18n/fr.md) · [Español](docs/i18n/es.md) · [한국어](docs/i18n/ko.md) · [Bahasa Indonesia](docs/i18n/id.md) · [Deutsch](docs/i18n/de.md) · [Português](docs/i18n/pt.md) · [العربية](docs/i18n/ar.md)</sub>
+<sub>Full text: **English** · [简体中文](docs/whitepaper/zh/whitepaper.md) · [繁體中文](docs/whitepaper/zh-Hant/whitepaper.md)　｜　Entry summaries (not full text): [Русский](docs/i18n/ru.md) · [Français](docs/i18n/fr.md) · [Español](docs/i18n/es.md) · [한국어](docs/i18n/ko.md) · [Bahasa Indonesia](docs/i18n/id.md) · [Deutsch](docs/i18n/de.md) · [Português](docs/i18n/pt.md) · [العربية](docs/i18n/ar.md)</sub>
 
 **衡远网络 · 稳态点对点价值账本**
 *An open research ledger for long-run balance · Draft stage, no token, no offering, no network*
@@ -131,8 +131,10 @@ The primary content language is **English**. Coverage is declared by what can be
 
 | Tier | Locales | What exists |
 |---|---|---|
-| Full text | `en`, `zh` | README, DISCLAIMER, whitepaper (en + zh), handover and review docs (en edition) |
-| Entry summary only | `zh-Hant`, `ru`, `fr`, `es`, `ar`, `ko`, `id`, `de`, `pt` | positioning, non-goals, status, authorship, license, links — **not** a whitepaper translation |
+| Full text | `en`, `zh`, `zh-Hant` | README, DISCLAIMER, whitepaper (en + zh; zh-Hant is an auto-converted Draft), handover and review docs (en edition) |
+| Entry summary only | `ru`, `fr`, `es`, `ar`, `ko`, `id`, `de`, `pt` | positioning, non-goals, status, authorship, license, links — **not** a whitepaper translation |
+
+`zh-Hant` moved left because converting an existing full text from Simplified is a script transform, not a translation — the wording is unproven, the content is complete. It stays marked `Draft`, and the Simplified edition prevails.
 
 The switcher bar reflects exactly this: the left half is full text, the right half is summaries marked "not full text". A language moves left only when its whitepaper translation is complete — page count alone does not promote it.
 

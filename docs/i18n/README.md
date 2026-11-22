@@ -1,7 +1,7 @@
 # Languages / 语言
 
 <!-- lang-switch -->
-<sub>Full text: [English](../../README.md) · [简体中文](zh.md)　｜　Entry summaries (not full text): **语言总览** · [繁體中文](zh-Hant.md) · [Русский](ru.md) · [Français](fr.md) · [Español](es.md) · [한국어](ko.md) · [Bahasa Indonesia](id.md) · [Deutsch](de.md) · [Português](pt.md) · [العربية](ar.md)</sub>
+<sub>Full text: [English](../../README.md) · [简体中文](../whitepaper/zh/whitepaper.md) · [繁體中文](../whitepaper/zh-Hant/whitepaper.md)　｜　Entry summaries (not full text): [语言总览](README.md) · [Русский](ru.md) · [Français](fr.md) · [Español](es.md) · [한국어](ko.md) · [Bahasa Indonesia](id.md) · [Deutsch](de.md) · [Português](pt.md) · [العربية](ar.md)</sub>
 
 Each page below carries the same switcher bar at the top, so any reader can move between locales without going back to the root. GitHub has no repository-level language setting; switching is done by these links.
 
@@ -11,22 +11,22 @@ Everything normative lives in English: `README.md`, `docs/whitepaper/en/whitepap
 
 ## 1. Real coverage: two tiers
 
-Coverage is declared by what a reader can actually read end to end, not by how many pages exist. **Full text exists in two locales only.** Everything else is a summary and is labelled as such everywhere it appears.
+Coverage is declared by what a reader can actually read end to end, not by how many pages exist.
 
-### Tier A — full text (2)
+### Tier A — full text (3)
 
 | Locale | Language | Page | Status |
 |---|---|---|---|
 | `en` | English | [`README.md`](../../README.md), [`DISCLAIMER.md`](../../DISCLAIMER.md), [`whitepaper/en`](../whitepaper/en/whitepaper.md), [`docs/en/`](../en/README.md) | Published (authoritative on conflict) |
 | `zh` | 中文（简体） | [`whitepaper/zh`](../whitepaper/zh/whitepaper.md) + [`zh.md`](zh.md) | Published (authoritative for Chinese technical detail) |
+| `zh-Hant` | 中文（繁體） | [`whitepaper/zh-Hant`](../whitepaper/zh-Hant/whitepaper.md) + [`zh-Hant.md`](zh-Hant.md) | Draft — auto-converted from `zh` (OpenCC s2twp), terminology not yet localized per region |
 
-These two appear in the "Full text" half of the switcher bar.
+`zh-Hant` is the only locale promoted since v0.4.0, because Simplified→Traditional conversion is a mechanical transform of an existing full text: the quantity of content is genuinely complete, only the wording style is unproven. It is still marked `Draft` in the whitepaper header, and the Simplified edition prevails on any technical conflict.
 
-### Tier B — entry summaries (9)
+### Tier B — entry summaries (8)
 
 | Locale | Language | Page | Status |
 |---|---|---|---|
-| `zh-Hant` | 中文（繁體） | [`zh-Hant.md`](zh-Hant.md) | Draft |
 | `ru` | Русский | [`ru.md`](ru.md) | Draft |
 | `fr` | Français | [`fr.md`](fr.md) | Draft |
 | `es` | Español | [`es.md`](es.md) | Draft |
@@ -41,6 +41,10 @@ These two appear in the "Full text" half of the switcher bar.
 ### Promotion rule
 
 A locale moves from Tier B to Tier A only when a complete whitepaper translation exists at `docs/whitepaper/<locale>/whitepaper.md`, the switcher bar is updated in the same commit, and the matrix above is updated in the same commit. Until then it stays in the right-hand half of the bar, marked "not full text". Adding a page to Tier B does not promote it.
+
+### Why not simply machine-translate the rest
+
+Because a full translation of eight locales would put unreviewed compliance wording in eight languages, and the four prohibitions (no issuance, no fundraising, no operation, no endorsement) must not drift. A summary that says "not full text" is safer than a full text nobody checked. Traditional Chinese is the exception that proves the rule: it is a script conversion, not a translation, so the meaning cannot drift.
 
 ## 2. Rules for localized pages
 

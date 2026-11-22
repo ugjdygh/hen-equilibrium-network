@@ -1,7 +1,7 @@
 # Horizon Equilibrium Network（HEN）
 
 <!-- lang-switch -->
-<sub>Full text: [English](../en/whitepaper.md) · **中文**　｜　Entry summaries only (not full text): [other locales](../../i18n/README.md)</sub>
+<sub>Full text: [English](../../../README.md) · **简体中文** · [繁體中文](../zh-Hant/whitepaper.md)　｜　Entry summaries (not full text): [Русский](../../i18n/ru.md) · [Français](../../i18n/fr.md) · [Español](../../i18n/es.md) · [한국어](../../i18n/ko.md) · [Bahasa Indonesia](../../i18n/id.md) · [Deutsch](../../i18n/de.md) · [Português](../../i18n/pt.md) · [العربية](../../i18n/ar.md)</sub>
 
 
 ## 衡远网络：稳态点对点价值账本

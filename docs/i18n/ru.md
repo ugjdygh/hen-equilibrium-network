@@ -1,7 +1,7 @@
 # Horizon Equilibrium Network (HEN)
 
 <!-- lang-switch -->
-<sub>Full text: [English](../../README.md) · [简体中文](../../docs/i18n/zh.md)　｜　Entry summaries (not full text): [繁體中文](../../docs/i18n/zh-Hant.md) · [Русский](../../docs/i18n/ru.md) · [Français](../../docs/i18n/fr.md) · [Español](../../docs/i18n/es.md) · [한국어](../../docs/i18n/ko.md) · [Bahasa Indonesia](../../docs/i18n/id.md) · [Deutsch](../../docs/i18n/de.md) · [Português](../../docs/i18n/pt.md) · [العربية](../../docs/i18n/ar.md)</sub>
+<sub>Full text: [English](../../README.md) · [简体中文](../whitepaper/zh/whitepaper.md) · [繁體中文](../whitepaper/zh-Hant/whitepaper.md)　｜　Entry summaries (not full text): [Русский](ru.md) · [Français](fr.md) · [Español](es.md) · [한국어](ko.md) · [Bahasa Indonesia](id.md) · [Deutsch](de.md) · [Português](pt.md) · [العربية](ar.md)</sub>
 
 > **Локализация**: это сокращённая входная страница, а не полный перевод. Полный текст — в английском [`README.md`](../../README.md) и [`whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md).
 

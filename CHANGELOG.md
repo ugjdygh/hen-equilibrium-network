@@ -6,6 +6,8 @@
 
 ### 语言切换（本次）
 
+- **新增 `docs/whitepaper/zh-Hant/whitepaper.md`**：以 OpenCC s2twp 从简体全文本机械转换，17 章完整，标 `Draft` 并在头注写明"术语未按地区校订、技术细节以简体版为准"。这是目前唯一能在不引进翻译风险的前提下真实扩出来的语种——脚本转换不改变语义。
+- 全文覆盖从 2 个语种增至 **3 个**（en / zh / zh-Hant），切换栏左段同步扩为三段，右段缩为 8 个摘要语种。
 - 切换栏按**真实覆盖**分两段：左段 `Full text` 只列有全文的 `en`、`zh`；右段 `Entry summaries (not full text)` 列其余 9 个语种。摘要页不得进入左段。
 - 覆盖声明同步改写：`docs/i18n/README.md` 拆为 Tier A（全文 2）与 Tier B（摘要 9），并新增"晋级规则"——只有 `docs/whitepaper/<locale>/whitepaper.md` 完成全译、且切换栏与矩阵在同一提交内更新，才算晋级；仅新增摘要页不构成晋级。
 - 根 `README.md` 的语言覆盖表改为两行式（Full text / Entry summary only），不再逐语种罗列后暗示同级。
