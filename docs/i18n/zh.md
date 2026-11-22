@@ -1,5 +1,8 @@
 # Horizon Equilibrium Network (HEN)
 
+<!-- lang-switch -->
+<sub>[English](../../README.md) · **简体中文** · [繁體中文](../../docs/i18n/zh-Hant.md) · [Русский](../../docs/i18n/ru.md) · [Français](../../docs/i18n/fr.md) · [Español](../../docs/i18n/es.md) · [한국어](../../docs/i18n/ko.md) · [Bahasa Indonesia](../../docs/i18n/id.md) · [Deutsch](../../docs/i18n/de.md) · [Português](../../docs/i18n/pt.md) · [العربية](../../docs/i18n/ar.md)</sub>
+
 > **本地化说明**：本页为入口摘要页，不是全文译本。完整内容以英文 [`README.md`](../../README.md) 与 [`docs/whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md) 为准；中文技术细节以 [`docs/whitepaper/zh/whitepaper.md`](../whitepaper/zh/whitepaper.md) 为准。
 
 ## 衡远网络 · 稳态点对点价值账本

@@ -1,5 +1,8 @@
 # Horizon Equilibrium Network (HEN)
 
+<!-- lang-switch -->
+<sub>**English** · [简体中文](docs/i18n/zh.md) · [繁體中文](docs/i18n/zh-Hant.md) · [Русский](docs/i18n/ru.md) · [Français](docs/i18n/fr.md) · [Español](docs/i18n/es.md) · [한국어](docs/i18n/ko.md) · [Bahasa Indonesia](docs/i18n/id.md) · [Deutsch](docs/i18n/de.md) · [Português](docs/i18n/pt.md) · [العربية](docs/i18n/ar.md)</sub>
+
 **衡远网络 · 稳态点对点价值账本**
 *An open research ledger for long-run balance · Draft stage, no token, no offering, no network*
 
@@ -121,6 +124,8 @@ hen-equilibrium-network/
 评审入口：[Discussions #1](https://github.com/ugjdygh/hen-equilibrium-network/discussions/1) —— 说明什么算有效意见、什么会被关闭、决策如何做出。价格、代币、拉人、募资类讨论一律关闭。讨论规范见 `CODE_OF_CONDUCT.md`。
 
 ## Languages
+
+The switcher above is the only mechanism GitHub offers here: the platform has **no per-repository language setting**, and its automatic "Languages" widget is a file-type statistic, not a language choice. So switching is done by linking between localized pages, not by a site-level control.
 
 The primary content language is **English**. Localized pages are entry summaries (positioning, non-goals, status, authorship, license, links) — not full translations. The authoritative text is always the English edition; the Chinese whitepaper is the one full-text exception.
 

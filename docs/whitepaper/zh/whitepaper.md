@@ -1,5 +1,9 @@
 # Horizon Equilibrium Network（HEN）
 
+<!-- lang-switch -->
+<sub>[English full text](../en/whitepaper.md) · **中文全文** · [其他语言入口摘要](../../i18n/README.md)</sub>
+
+
 ## 衡远网络：稳态点对点价值账本
 
 ### A Steady-State Peer-to-Peer Value Ledger

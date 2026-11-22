@@ -1,5 +1,8 @@
 # Horizon Equilibrium Network (HEN)
 
+<!-- lang-switch -->
+<sub>[English](../../README.md) · [简体中文](../../docs/i18n/zh.md) · [繁體中文](../../docs/i18n/zh-Hant.md) · **Русский** · [Français](../../docs/i18n/fr.md) · [Español](../../docs/i18n/es.md) · [한국어](../../docs/i18n/ko.md) · [Bahasa Indonesia](../../docs/i18n/id.md) · [Deutsch](../../docs/i18n/de.md) · [Português](../../docs/i18n/pt.md) · [العربية](../../docs/i18n/ar.md)</sub>
+
 > **Локализация**: это сокращённая входная страница, а не полный перевод. Полный текст — в английском [`README.md`](../../README.md) и [`whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md).
 
 ## Открытый исследовательский реестр
