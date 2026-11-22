@@ -514,6 +514,6 @@ This paper outlines **Horizon Equilibrium Network (HEN)**, a framework for a dec
 | v0.1.0 | 2026-11（草稿） | 以 "Steady Ledger / 稳态点对点价值账本" 为工作名建立初稿 |
 | v0.2.0 | 2026-11-22 | 项目英文名正式改为 **Horizon Equilibrium Network（HEN）**，技术副题保留"稳态点对点价值账本"；新增设计原则、合规立场、开放问题、术语表；沉睡资产机制改为默认不回收；隐私章节增补非规避监管边界；参考文献补全；移除会话残留语句与内嵌 README 段落 |
 | v0.3.0 | 2026-11-22 | 中文名定稿为**衡远网络**（此前工作名为"地平线均衡网络"）；仓库按 `PROJECT-GUIDE` 重组为 whitepaper / protocol-draft / research / handover / review / maintenance / ecosystem / legal 结构，补接手材料与评审机制；**正文机制内容未变，仅命名、路径与状态标注调整** |
-| v0.4.0 | 2026-11-22 | §12.2 改为匿名署名（研究化名 Lee Hyun seok / 이 현석）；§12.3 由"中国大陆"改写为辖区中立的监管差异示例（中国内地 / 欧盟 MiCA / 美国证券框架）；机制内容未变 |
+| v0.4.0 | 2026-11-22 | §12.2 改为匿名署名（研究化名 Lee Hyun seok / 이 현석）；§12.3 由单一辖区的合规表述改写为辖区中立的监管差异示例（中国内地 / 欧盟 MiCA / 美国证券框架）；机制内容未变 |
 
 详细逐条修订记录见 `CHANGELOG.md`。
