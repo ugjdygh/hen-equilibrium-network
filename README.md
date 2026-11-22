@@ -1,7 +1,7 @@
 # Horizon Equilibrium Network (HEN)
 
 <!-- lang-switch -->
-<sub>**English** · [简体中文](docs/i18n/zh.md) · [繁體中文](docs/i18n/zh-Hant.md) · [Русский](docs/i18n/ru.md) · [Français](docs/i18n/fr.md) · [Español](docs/i18n/es.md) · [한국어](docs/i18n/ko.md) · [Bahasa Indonesia](docs/i18n/id.md) · [Deutsch](docs/i18n/de.md) · [Português](docs/i18n/pt.md) · [العربية](docs/i18n/ar.md)</sub>
+<sub>Full text: **English** · [简体中文](docs/i18n/zh.md)　｜　Entry summaries (not full text): [繁體中文](docs/i18n/zh-Hant.md) · [Русский](docs/i18n/ru.md) · [Français](docs/i18n/fr.md) · [Español](docs/i18n/es.md) · [한국어](docs/i18n/ko.md) · [Bahasa Indonesia](docs/i18n/id.md) · [Deutsch](docs/i18n/de.md) · [Português](docs/i18n/pt.md) · [العربية](docs/i18n/ar.md)</sub>
 
 **衡远网络 · 稳态点对点价值账本**
 *An open research ledger for long-run balance · Draft stage, no token, no offering, no network*
@@ -127,22 +127,14 @@ hen-equilibrium-network/
 
 The switcher above is the only mechanism GitHub offers here: the platform has **no per-repository language setting**, and its automatic "Languages" widget is a file-type statistic, not a language choice. So switching is done by linking between localized pages, not by a site-level control.
 
-The primary content language is **English**. Localized pages are entry summaries (positioning, non-goals, status, authorship, license, links) — not full translations. The authoritative text is always the English edition; the Chinese whitepaper is the one full-text exception.
+The primary content language is **English**. Coverage is declared by what can be read end to end, not by the number of pages:
 
-| Locale | Page | Coverage |
+| Tier | Locales | What exists |
 |---|---|---|
-| en | this file / `DISCLAIMER.md` / whitepaper | authoritative |
-| en | [`docs/en/`](docs/en/README.md) | handover + review docs (English edition) |
-| zh | [`docs/i18n/zh.md`](docs/i18n/zh.md) · [`docs/whitepaper/zh/whitepaper.md`](docs/whitepaper/zh/whitepaper.md) | full whitepaper + summary |
-| zh-Hant | [`docs/i18n/zh-Hant.md`](docs/i18n/zh-Hant.md) | summary |
-| ru | [`docs/i18n/ru.md`](docs/i18n/ru.md) | summary |
-| fr | [`docs/i18n/fr.md`](docs/i18n/fr.md) | summary |
-| es | [`docs/i18n/es.md`](docs/i18n/es.md) | summary |
-| ar | [`docs/i18n/ar.md`](docs/i18n/ar.md) | summary |
-| ko | [`docs/i18n/ko.md`](docs/i18n/ko.md) | summary |
-| id | [`docs/i18n/id.md`](docs/i18n/id.md) | summary |
-| de | [`docs/i18n/de.md`](docs/i18n/de.md) | summary |
-| pt | [`docs/i18n/pt.md`](docs/i18n/pt.md) | summary |
+| Full text | `en`, `zh` | README, DISCLAIMER, whitepaper (en + zh), handover and review docs (en edition) |
+| Entry summary only | `zh-Hant`, `ru`, `fr`, `es`, `ar`, `ko`, `id`, `de`, `pt` | positioning, non-goals, status, authorship, license, links — **not** a whitepaper translation |
+
+The switcher bar reflects exactly this: the left half is full text, the right half is summaries marked "not full text". A language moves left only when its whitepaper translation is complete — page count alone does not promote it.
 
 Coverage rules, translation constraints and known gaps: [`docs/i18n/README.md`](docs/i18n/README.md). Note that GitHub has no repository-level content-language setting — the sidebar "languages" are auto-detected by Linguist, so language coverage is declared here and in the matrix instead.
 

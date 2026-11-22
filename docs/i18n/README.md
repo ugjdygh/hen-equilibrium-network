@@ -1,7 +1,7 @@
 # Languages / 语言
 
 <!-- lang-switch -->
-<sub>[English](../../README.md) · **语言总览 / All locales** · [简体中文](zh.md) · [繁體中文](zh-Hant.md) · [Русский](ru.md) · [Français](fr.md) · [Español](es.md) · [한국어](ko.md) · [Bahasa Indonesia](id.md) · [Deutsch](de.md) · [Português](pt.md) · [العربية](ar.md)</sub>
+<sub>Full text: [English](../../README.md) · [简体中文](zh.md)　｜　Entry summaries (not full text): **语言总览** · [繁體中文](zh-Hant.md) · [Русский](ru.md) · [Français](fr.md) · [Español](es.md) · [한국어](ko.md) · [Bahasa Indonesia](id.md) · [Deutsch](de.md) · [Português](pt.md) · [العربية](ar.md)</sub>
 
 Each page below carries the same switcher bar at the top, so any reader can move between locales without going back to the root. GitHub has no repository-level language setting; switching is done by these links.
 
@@ -9,24 +9,38 @@ Each page below carries the same switcher bar at the top, so any reader can move
 
 Everything normative lives in English: `README.md`, `docs/whitepaper/en/whitepaper.md`, `DISCLAIMER.md`, `GOVERNANCE.md`, `docs/handover/`, `docs/review/`, `spec/`. Localized pages are entry summaries so that readers in other languages can understand what this repository is, what it is **not**, and where the authoritative text lives.
 
-## 1. Current coverage
+## 1. Real coverage: two tiers
 
-| Locale | Language | Page | Coverage | Status |
-|---|---|---|---|---|
-| `en` | English | `README.md`, `DISCLAIMER.md`, whitepaper | Full (authoritative) | Published |
-| `en` | English | [`docs/en/`](../en/README.md) | Handover + review docs translated | Draft (pending proofread) |
-| `zh` | 中文（简体） | [`zh.md`](zh.md) + [`docs/whitepaper/zh/whitepaper.md`](../whitepaper/zh/whitepaper.md) | Whitepaper full text + entry summary | Published |
-| `zh-Hant` | 中文（繁體） | [`zh-Hant.md`](zh-Hant.md) | Entry summary | Draft |
-| `ru` | Русский | [`ru.md`](ru.md) | Entry summary | Draft |
-| `fr` | Français | [`fr.md`](fr.md) | Entry summary | Draft |
-| `es` | Español | [`es.md`](es.md) | Entry summary | Draft |
-| `ar` | العربية | [`ar.md`](ar.md) | Entry summary | Draft |
-| `ko` | 한국어 | [`ko.md`](ko.md) | Entry summary | Draft |
-| `id` | Bahasa Indonesia | [`id.md`](id.md) | Entry summary | Draft |
-| `de` | Deutsch | [`de.md`](de.md) | Entry summary | Draft |
-| `pt` | Português | [`pt.md`](pt.md) | Entry summary | Draft |
+Coverage is declared by what a reader can actually read end to end, not by how many pages exist. **Full text exists in two locales only.** Everything else is a summary and is labelled as such everywhere it appears.
 
-"Entry summary" means: positioning, explicit non-goals, status, authorship, license, and links. It is **not** a full translation of the whitepaper.
+### Tier A — full text (2)
+
+| Locale | Language | Page | Status |
+|---|---|---|---|
+| `en` | English | [`README.md`](../../README.md), [`DISCLAIMER.md`](../../DISCLAIMER.md), [`whitepaper/en`](../whitepaper/en/whitepaper.md), [`docs/en/`](../en/README.md) | Published (authoritative on conflict) |
+| `zh` | 中文（简体） | [`whitepaper/zh`](../whitepaper/zh/whitepaper.md) + [`zh.md`](zh.md) | Published (authoritative for Chinese technical detail) |
+
+These two appear in the "Full text" half of the switcher bar.
+
+### Tier B — entry summaries (9)
+
+| Locale | Language | Page | Status |
+|---|---|---|---|
+| `zh-Hant` | 中文（繁體） | [`zh-Hant.md`](zh-Hant.md) | Draft |
+| `ru` | Русский | [`ru.md`](ru.md) | Draft |
+| `fr` | Français | [`fr.md`](fr.md) | Draft |
+| `es` | Español | [`es.md`](es.md) | Draft |
+| `ar` | العربية | [`ar.md`](ar.md) | Draft |
+| `ko` | 한국어 | [`ko.md`](ko.md) | Draft |
+| `id` | Bahasa Indonesia | [`id.md`](id.md) | Draft |
+| `de` | Deutsch | [`de.md`](de.md) | Draft |
+| `pt` | Português | [`pt.md`](pt.md) | Draft |
+
+"Entry summary" means: positioning, explicit non-goals, status, authorship, license, and links. It is **not** a full translation of the whitepaper, and it must never be presented as one.
+
+### Promotion rule
+
+A locale moves from Tier B to Tier A only when a complete whitepaper translation exists at `docs/whitepaper/<locale>/whitepaper.md`, the switcher bar is updated in the same commit, and the matrix above is updated in the same commit. Until then it stays in the right-hand half of the bar, marked "not full text". Adding a page to Tier B does not promote it.
 
 ## 2. Rules for localized pages
 

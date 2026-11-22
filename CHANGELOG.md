@@ -6,7 +6,10 @@
 
 ### 语言切换（本次）
 
-- 根 `README.md`、`docs/en/README.md`、`docs/i18n/` 11 页与中英白皮书顶部统一加入同一行切换栏（11 个语种），当前语言加粗、其余为链接；相对路径已逐条校验，0 处断链。
+- 切换栏按**真实覆盖**分两段：左段 `Full text` 只列有全文的 `en`、`zh`；右段 `Entry summaries (not full text)` 列其余 9 个语种。摘要页不得进入左段。
+- 覆盖声明同步改写：`docs/i18n/README.md` 拆为 Tier A（全文 2）与 Tier B（摘要 9），并新增"晋级规则"——只有 `docs/whitepaper/<locale>/whitepaper.md` 完成全译、且切换栏与矩阵在同一提交内更新，才算晋级；仅新增摘要页不构成晋级。
+- 根 `README.md` 的语言覆盖表改为两行式（Full text / Entry summary only），不再逐语种罗列后暗示同级。
+- 覆盖到 `docs/en/README.md`、`docs/i18n/` 10 页、中英白皮书顶部；相对路径逐条校验，0 处断链。
 - 白皮书为**双语全文切换**（中文全文 ↔ English full text）；其余 8 个语种仍为入口摘要页——这是内容覆盖的真实状态，未做全文翻译的地方不标注为全文。
 - 事实记录：GitHub 无仓库级"内容语言"设置，侧栏 Languages 是 Linguist 按文件类型统计（本仓库全为 Markdown，返回 `language: null`），因此切换只能靠页间链接实现，无法做成站点级控件。
 

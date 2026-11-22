@@ -1,7 +1,7 @@
 # English Edition / 英文版
 
 <!-- lang-switch -->
-<sub>**English** · [简体中文](../../docs/i18n/zh.md) · [繁體中文](../../docs/i18n/zh-Hant.md) · [Русский](../../docs/i18n/ru.md) · [Français](../../docs/i18n/fr.md) · [Español](../../docs/i18n/es.md) · [한국어](../../docs/i18n/ko.md) · [Bahasa Indonesia](../../docs/i18n/id.md) · [Deutsch](../../docs/i18n/de.md) · [Português](../../docs/i18n/pt.md) · [العربية](../../docs/i18n/ar.md)</sub>
+<sub>Full text: **English** · [简体中文](../../docs/i18n/zh.md)　｜　Entry summaries (not full text): [繁體中文](../../docs/i18n/zh-Hant.md) · [Русский](../../docs/i18n/ru.md) · [Français](../../docs/i18n/fr.md) · [Español](../../docs/i18n/es.md) · [한국어](../../docs/i18n/ko.md) · [Bahasa Indonesia](../../docs/i18n/id.md) · [Deutsch](../../docs/i18n/de.md) · [Português](../../docs/i18n/pt.md) · [العربية](../../docs/i18n/ar.md)</sub>
 
 **Status: `Draft` (machine-assisted translation, pending human proofread).** The Chinese text remains the source for `docs/handover/` and `docs/review/`; if the two disagree, the Chinese governs.
 

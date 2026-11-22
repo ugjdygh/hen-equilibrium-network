@@ -1,7 +1,7 @@
 # Horizon Equilibrium Network (HEN)
 
 <!-- lang-switch -->
-<sub>**English full text** · [中文全文](../zh/whitepaper.md) · [other language entry summaries](../../i18n/README.md)</sub>
+<sub>Full text: **English** · [中文](../zh/whitepaper.md)　｜　Entry summaries only (not full text): [other locales](../../i18n/README.md)</sub>
 
 
 ## A Steady-State Peer-to-Peer Value Ledger
