@@ -28,7 +28,7 @@
 ### 三、发布与协作入口
 
 - 发布 `v0.4.0`，资产含中/英文白皮书 PDF（xelatex + Noto CJK，中文 12 页 / 英文 9 页）与 Markdown 源。
-- 启用 GitHub Discussions，分类沿用平台默认（Announcements / General / Ideas / Polls / Q&A / Show and tell），并在 Q&A 置顶一条与 `docs/review/process.md` 对齐的评审入口说明。
+- 启用 GitHub Discussions，分类沿用平台默认（Announcements / General / Ideas / Polls / Q&A / Show and tell），并在 Q&A 创建与 `docs/review/process.md` 对齐的评审入口帖 [#1](https://github.com/ugjdygh/hen-equilibrium-network/discussions/1)（置顶需在网页端手动操作）。
 
 ### 四、待确认项
 
