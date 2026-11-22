@@ -7,7 +7,7 @@
 | Project | Horizon Equilibrium Network (HEN) |
 | Chinese name | 衡远网络 |
 | Document type | Open research whitepaper (research draft, non-normative) |
-| Version | v0.3.0 |
+| Version | v0.4.0 |
 | Date | 2026-11-22 |
 | Review status | `Draft` (Stage 0 — see `ROADMAP.md`) |
 | License | MIT |
@@ -187,13 +187,17 @@ Treat this as a research framework, not a product. Any claim that "HEN has launc
 
 **12.1 Nature.** Public technical documentation only. No token, no asset issuance, no public offering, sale, exchange, matching, pricing, market making, custody or asset management. No investment advice, return promise, price forecast or valuation opinion. No foundation, treasury, reserved allocation, donation address or paid membership.
 
-**12.2 Author's role.** The author is a Chinese citizen who takes no part in core development, leadership, operation, node running, exchange or intermediation, and publishes documentation for discussion and review only. The author accepts no responsibility for, and endorses no, subsequent deployments, forks or derivative projects.
+**12.2 Author's role.** The author publishes under the research pen name **Lee Hyun seok (이 현석)** and does not disclose their identity. The author takes no part in core development, leadership, operation, node running, exchange or intermediation, and publishes documentation for discussion and review only. The author accepts no responsibility for, and endorses no, subsequent deployments, forks or derivative projects. A pen name is not a claim about nationality, residence or identity, and anonymity does not remove anyone's legal obligations.
 
-**12.3 Mainland China.** Stated as public regulatory fact, not legal advice: on 4 September 2017 seven Chinese authorities issued the *Announcement on Preventing Risks from Token Offering Financing*, characterizing token offerings (ICOs) as illegal public financing without approval; in September 2021 ten authorities issued the *Notice on Further Preventing and Handling the Risks of Cryptocurrency Trading and Speculation*, stating that cryptocurrency-related business activity constitutes illegal financial activity.
+**12.3 A patchwork of regimes.** Rules differ sharply across jurisdictions. The following examples are illustrative, not an exhaustive survey:
 
-Accordingly, this project conducts no cryptocurrency-related business activity within mainland China, and this documentation offers no issuance, trading, exchange, pricing, market-making or intermediation service to users there. Publication serves academic and technical discussion only.
+- Mainland China: the seven-authority *Announcement on Preventing Risks from Token Offering Financing* (4 September 2017) treats token offerings as unapproved illegal public financing; the ten-authority *Notice on Further Preventing and Handling the Risks of Cryptocurrency Trading and Speculation* (September 2021) classifies cryptocurrency-related business activity as illegal financial activity.
+- European Union: Regulation (EU) 2023/1114 (MiCA) imposes authorisation and disclosure duties on crypto-asset issuance and service provision.
+- United States: securities analysis follows the framework of *SEC v. W.J. Howey Co.* (1946), with separate state money-transmission rules.
 
-**12.4 Other jurisdictions.** Readers must assess local law themselves (securities, AML, tax, sanctions, consumer protection). Any deployment or experiment requires the necessary permissions and is undertaken at the reader's own risk. Nothing here is a compliance opinion for any jurisdiction.
+Accordingly, this project conducts no cryptocurrency-related business activity in any jurisdiction — issuance, sale, exchange, matching, pricing, market making, custody or intermediation — offers no such service to users anywhere, and does not encourage anyone to undertake it. Publication serves academic and technical discussion only.
+
+**12.4 The reader's own obligations.** Readers must assess local law themselves (securities, AML, tax, sanctions, consumer protection). Any deployment or experiment requires the necessary permissions and is undertaken at the reader's own risk. Nothing here is a compliance opinion for any jurisdiction.
 
 **12.5 Code is not law.** A protocol can describe mechanisms; it cannot create legality. Where on-chain rules conflict with applicable law, law prevails — which is why §7.4 includes an immediate-freeze clause.
 
@@ -249,5 +253,6 @@ These entries mark the public knowledge this framework relies on; they do not im
 | v0.1.0 | 2026-11 | Initial draft under the working name "Steady Ledger" |
 | v0.2.0 | 2026-11-22 | English name fixed as Horizon Equilibrium Network (HEN); design principles, compliance stance, open questions and glossary added; dormant-asset mechanism changed to no-reclamation-by-default; non-evasion boundary added to privacy; references verified; conversational residue removed |
 | v0.3.0 | 2026-11-22 | Chinese name fixed as 衡远网络; repository restructured per `PROJECT-GUIDE`; handover and review materials added; **mechanisms unchanged**, only naming, paths and status labels |
+| v0.4.0 | 2026-11-22 | §12.2 rewritten for anonymous authorship (pen name Lee Hyun seok / 이 현석); §12.3 generalised from "mainland China" to an illustrative patchwork of regimes; mechanisms unchanged |
 
 See `CHANGELOG.md` for the itemized record.

@@ -18,14 +18,15 @@
 
 ## 作者角色
 
-作者以研究化名 **Lee Hyun seok（이 현석）** 公开发布文档（该名为化名，不代表国籍或身份声明）。作为中国公民，作者**不参与核心开发、不牵头、不运营、不运行节点、不提供兑换或中介服务**，文档仅供讨论与评审。作者不对任何后续部署、分叉、衍生项目或第三方的行为承担责任，亦不为其背书。
+作者以研究化名 **Lee Hyun seok（이 현석）** 公开发布文档，不公开真实身份（该名为化名，不代表国籍、居所或身份声明）。作者**不参与核心开发、不牵头、不运营、不运行节点、不提供兑换或中介服务**，文档仅供讨论与评审。作者不对任何后续部署、分叉、衍生项目或第三方的行为承担责任，亦不为其背书。
 
-## 中国大陆合规环境（陈述事实，非法律意见）
+## 监管环境（陈述事实，非法律意见）
 
-- 2017 年 9 月 4 日，中国人民银行等七部门发布《关于防范代币发行融资风险的公告》，将代币发行融资（ICO）定性为未经批准的非法公开融资行为。
-- 2021 年 9 月，中国人民银行等十部门发布《关于进一步防范和处置虚拟货币交易炒作风险的通知》，明确虚拟货币相关业务活动属于非法金融活动。
+- 中国内地：2017 年 9 月 4 日七部门《关于防范代币发行融资风险的公告》将代币发行融资定性为未经批准的非法公开融资；2021 年 9 月十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》将虚拟货币相关业务活动列为非法金融活动。
+- 欧盟：Regulation (EU) 2023/1114（MiCA）对加密资产发行与服务提供设定授权与披露义务。
+- 美国：证券认定沿用 *SEC v. W.J. Howey Co.*（1946）的判定框架。
 
-因此，本项目在中国大陆境内不开展任何与虚拟货币相关的业务活动；本文档不面向境内用户提供发行、交易、兑换、定价、做市或中介服务，也不引导任何人从事上述活动。
+因此，本项目**在任何辖区均不开展**与虚拟货币相关的业务活动（发行、销售、兑换、撮合、定价、做市、托管、中介），不向任何辖区的用户提供上述服务，也不引导任何人从事上述活动。
 
 ## 其他司法辖区
 
@@ -45,4 +46,4 @@
 
 ---
 
-*This repository is documentation for technical discussion only. It issues no token, raises no funds, operates no network, and makes no promises. The author, a Chinese citizen, takes no part in development, leadership, operation, exchange, or intermediation. Nothing here is investment, legal, or compliance advice.*
+*This repository is documentation for technical discussion only. It issues no token, raises no funds, operates no network, and makes no promises. The author publishes under a research pen name, does not disclose their identity, and takes no part in development, leadership, operation, exchange, or intermediation. Nothing here is investment, legal, or compliance advice.*

@@ -102,7 +102,8 @@ The primary content language is **English**. Localized pages are entry summaries
 
 | Locale | Page | Coverage |
 |---|---|---|
-| en | this file / `DISCLAIMER.md` | authoritative |
+| en | this file / `DISCLAIMER.md` / whitepaper | authoritative |
+| en | [`docs/en/`](docs/en/README.md) | handover + review docs (English edition) |
 | zh | [`docs/i18n/zh.md`](docs/i18n/zh.md) · [`docs/whitepaper/zh/whitepaper.md`](docs/whitepaper/zh/whitepaper.md) | full whitepaper + summary |
 | zh-Hant | [`docs/i18n/zh-Hant.md`](docs/i18n/zh-Hant.md) | summary |
 | ru | [`docs/i18n/ru.md`](docs/i18n/ru.md) | summary |
@@ -118,12 +119,12 @@ Coverage rules, translation constraints and known gaps: [`docs/i18n/README.md`](
 
 ## 合规与作者角色
 
-作者（研究化名 Lee Hyun seok，이 현석）为中国公民，不参与核心开发、不牵头、不运营、不运行节点、不提供兑换或中介服务，仅公开发布文档。本项目在中国大陆境内不开展任何与虚拟货币相关的业务活动；文档不面向境内用户提供发行、交易、兑换、定价、做市或中介服务。其他辖区读者须自行评估当地法律。详见 `DISCLAIMER.md` 与白皮书 §12。
+作者以研究化名 **Lee Hyun seok（이 현석）** 署名，不公开真实身份；不参与核心开发、不牵头、不运营、不运行节点、不提供兑换或中介服务，仅公开发布文档。本项目**在任何辖区均不开展**与虚拟货币相关的业务活动（发行、销售、兑换、撮合、定价、做市、托管、中介），不向任何辖区的用户提供上述服务。读者须自行评估所在地法律。详见 `DISCLAIMER.md` 与白皮书 §12。
 
-The author is a Chinese citizen and takes no part in core development, leadership, operation, node running, exchange, or intermediation. This repository is documentation for discussion only.
+The author publishes under a research pen name and does not disclose their identity, and takes no part in core development, leadership, operation, node running, exchange, or intermediation. A pen name is not a claim about nationality or identity. This repository is documentation for discussion only.
 
 ## License / Citation
 
 MIT，适用于文档与后续代码。Copyright (c) 2026 Horizon Equilibrium Network contributors.
 
-> Horizon Equilibrium Network Contributors. *Horizon Equilibrium Network (HEN): A Steady-State Peer-to-Peer Value Ledger.* Research draft v0.3.1, 2026.
+> Horizon Equilibrium Network Contributors. *Horizon Equilibrium Network (HEN): A Steady-State Peer-to-Peer Value Ledger.* Research draft v0.4.0, 2026.

@@ -8,7 +8,8 @@ Everything normative lives in English: `README.md`, `docs/whitepaper/en/whitepap
 
 | Locale | Language | Page | Coverage | Status |
 |---|---|---|---|---|
-| `en` | English | `README.md`, `DISCLAIMER.md` | Full (authoritative) | Published |
+| `en` | English | `README.md`, `DISCLAIMER.md`, whitepaper | Full (authoritative) | Published |
+| `en` | English | [`docs/en/`](../en/README.md) | Handover + review docs translated | Draft (pending proofread) |
 | `zh` | 中文（简体） | [`zh.md`](zh.md) + [`docs/whitepaper/zh/whitepaper.md`](../whitepaper/zh/whitepaper.md) | Whitepaper full text + entry summary | Published |
 | `zh-Hant` | 中文（繁體） | [`zh-Hant.md`](zh-Hant.md) | Entry summary | Draft |
 | `ru` | Русский | [`ru.md`](ru.md) | Entry summary | Draft |
@@ -28,6 +29,7 @@ Everything normative lives in English: `README.md`, `docs/whitepaper/en/whitepap
 2. Keep the warning that the English version prevails on conflict.
 3. Keep the author alias as written (`Lee Hyun seok（이 현석）`); do not localize or transliterate it into a different name.
 4. Status must be stated (`Draft` / `Published`) — a machine-translated page must not look finished.
+6. The author name is a pen name: never localise it into a different name (see `AUTHORS.md`).
 5. Do not translate code spans, file paths, or command names.
 
 ## 3. Adding or completing a translation
@@ -43,7 +45,8 @@ GitHub has no repository-level "content language" switch. The languages shown in
 
 ## 5. Known gaps
 
-- No full translations of `docs/handover/`, `docs/review/`, or `spec/` exist in any language.
+- `docs/maintenance/`, `docs/legal/`, `docs/research/` and `spec/` are Chinese-only; only `docs/handover/` and `docs/review/` have English editions (see `docs/en/README.md`).
+- `docs/handover/project-guide.md` is deliberately untranslated (internal working draft).
 - `zh-Hant` is written in Traditional characters but has not been proofread by a native editor.
 - Arabic page is not RTL-formatted beyond default bidirectional text rendering.
 

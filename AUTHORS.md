@@ -10,9 +10,9 @@
 | Scope | 只负责研究、规范与仿真类设计资产；不参与核心开发、不运营、不运行节点、不背书任何实现或分叉 |
 | Nature | **研究化名（pen name）**，用于公开署名 |
 
-**关于这个名字**：`Lee Hyun seok（이 현석）` 是作者用于公开发布研究的化名，不代表国籍、民族或身份声明，也不用于规避任何法律责任。作者为中国公民，具体合规立场见 `DISCLAIMER.md` 与白皮书 §12。
+**关于这个名字**：`Lee Hyun seok（이 현석）` 是作者用于公开发布研究的化名，不代表国籍、民族或身份声明，也不用于规避任何法律责任。作者**不公开真实身份**（匿名发表），合规立场见 `DISCLAIMER.md` 与白皮书 §12。
 
-**About this name**: it is a pen name used for publishing research. It is not a claim of nationality, ethnicity or identity, and it does not shift any legal responsibility. The author is a Chinese citizen; the compliance stance is in `DISCLAIMER.md` and whitepaper §12.
+**About this name**: it is a pen name used for publishing research. It is not a claim of nationality, ethnicity or identity, and it does not shift any legal responsibility. The author does not disclose their identity; the compliance stance is in `DISCLAIMER.md` and whitepaper §12.
 
 ## Contributors / 贡献者
 

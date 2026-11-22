@@ -7,7 +7,7 @@ authors:
     alias: "이 현석"
     affiliation: "Horizon Equilibrium Network (research pen name)"
   - name: "Horizon Equilibrium Network Contributors"
-version: "0.3.1"
+version: "0.4.0"
 date-released: "2026-11-22"
 license: MIT
 type: report
