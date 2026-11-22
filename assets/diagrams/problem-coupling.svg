@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="HEN problem coupling loop">
+  <defs>
+    <marker id="arw2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+    <style>
+      .t  { font-family: system-ui, "Helvetica Neue", Arial, sans-serif; }
+      .h1 { font-size: 22px; font-weight: 600; fill: #111827; }
+      .s  { font-size: 11px; fill: #6b7280; }
+      .n  { font-size: 13px; font-weight: 600; fill: #111827; }
+      .l  { font-size: 11px; fill: #4b5563; }
+      .e  { stroke: #6b7280; stroke-width: 1.4; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="620" fill="#f9fafb"/>
+  <text class="t h1" x="40" y="46">六个问题不是并列的，它们会互相转移压力</text>
+  <text class="t s" x="40" y="68">单项修复只把压力推到下一环；这是「稳态」命题的前提，也是它最大的风险。</text>
+
+  <!-- edges -->
+  <path class="e" d="M552,124 C620,134 640,160 660,190" marker-end="url(#arw2)"/>
+  <path class="e" d="M740,258 L740,388" marker-end="url(#arw2)"/>
+  <path class="e" d="M640,430 C600,470 560,500 552,510" marker-end="url(#arw2)"/>
+  <path class="e" d="M348,512 C300,500 260,470 240,430" marker-end="url(#arw2)"/>
+  <path class="e" d="M160,390 L160,260" marker-end="url(#arw2)"/>
+  <path class="e" d="M240,190 C260,160 300,134 348,124" marker-end="url(#arw2)"/>
+
+  <!-- node 1 -->
+  <rect x="350" y="90" width="200" height="68" rx="9" fill="#ffffff" stroke="#d1d5db"/>
+  <text class="t n" x="450" y="116" text-anchor="middle">固定总量</text>
+  <text class="t l" x="450" y="138" text-anchor="middle">资产永久灭失</text>
+
+  <!-- node 2 -->
+  <rect x="640" y="190" width="200" height="68" rx="9" fill="#ffffff" stroke="#d1d5db"/>
+  <text class="t n" x="740" y="216" text-anchor="middle">流通萎缩</text>
+  <text class="t l" x="740" y="238" text-anchor="middle">流动性紧张 / 通缩倾向</text>
+
+  <!-- node 3 -->
+  <rect x="640" y="390" width="200" height="68" rx="9" fill="#ffffff" stroke="#d1d5db"/>
+  <text class="t n" x="740" y="416" text-anchor="middle">手续费收入不足</text>
+  <text class="t l" x="740" y="438" text-anchor="middle">安全预算变薄</text>
+
+  <!-- node 4 -->
+  <rect x="350" y="480" width="200" height="68" rx="9" fill="#ffffff" stroke="#d1d5db"/>
+  <text class="t n" x="450" y="506" text-anchor="middle">算力撤离</text>
+  <text class="t l" x="450" y="528" text-anchor="middle">网络安全性下降</text>
+
+  <!-- node 5 -->
+  <rect x="60" y="390" width="200" height="68" rx="9" fill="#ffffff" stroke="#d1d5db"/>
+  <text class="t n" x="160" y="416" text-anchor="middle">提高单位奖励</text>
+  <text class="t l" x="160" y="438" text-anchor="middle">以维持激励</text>
+
+  <!-- node 6 -->
+  <rect x="60" y="190" width="200" height="68" rx="9" fill="#ffffff" stroke="#d1d5db"/>
+  <text class="t n" x="160" y="216" text-anchor="middle">通胀与能耗上升</text>
+  <text class="t l" x="160" y="238" text-anchor="middle">军备竞赛加剧</text>
+
+  <!-- center -->
+  <rect x="350" y="290" width="200" height="120" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text class="t n" x="450" y="326" text-anchor="middle">同一调节器</text>
+  <text class="t l" x="450" y="348" text-anchor="middle">同时观察六个指标</text>
+  <text class="t l" x="450" y="368" text-anchor="middle">有界 · 速率限制 · 熔断</text>
+  <text class="t l" x="450" y="388" text-anchor="middle">可回退</text>
+
+  <text class="t s" x="40" y="588">对应白皮书 §3.7；机制见 §6（难度）、§7（经济）、§10.1（有界自动调参）。本图为示意图，非规范。</text>
+</svg>

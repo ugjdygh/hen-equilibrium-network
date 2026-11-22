@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" role="img" aria-label="HEN layered network: L0/L1/L2 roles and responsibilities">
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+    <style>
+      .t  { font-family: system-ui, "Helvetica Neue", Arial, sans-serif; }
+      .h1 { font-size: 22px; font-weight: 600; fill: #111827; }
+      .h2 { font-size: 15px; font-weight: 600; fill: #111827; }
+      .b  { font-size: 12px; fill: #374151; }
+      .s  { font-size: 11px; fill: #6b7280; }
+      .box{ fill: #ffffff; stroke: #d1d5db; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="520" fill="#f9fafb"/>
+  <text class="t h1" x="40" y="46">Horizon Equilibrium Network · 分层对等网络（草案）</text>
+  <text class="t s" x="40" y="66">分层是「责任分层」，不是「信任分层」：每层输出都必须能被上层独立复算。</text>
+
+  <!-- L0 -->
+  <rect class="box" x="40" y="90" width="820" height="96" rx="8"/>
+  <rect x="40" y="90" width="6" height="96" fill="#93c5fd"/>
+  <text class="t h2" x="64" y="118">L0 · 用户轻节点</text>
+  <text class="t b" x="64" y="140">钱包、签名、广播、验证关键区块与自身交易</text>
+  <text class="t s" x="64" y="160">资源：普通手机/桌面，可间歇在线　｜　不承担全量共识压力</text>
+  <text class="t s" x="64" y="176">边界：不得因“轻”就信任他人声明，必须用包含证明自证</text>
+
+  <!-- L1 -->
+  <rect class="box" x="40" y="206" width="820" height="96" rx="8"/>
+  <rect x="40" y="206" width="6" height="96" fill="#fdba74"/>
+  <text class="t h2" x="64" y="234">L1 · 验证节点</text>
+  <text class="t b" x="64" y="256">格式与签名校验、垃圾过滤、交易池维护、候选交易转发</text>
+  <text class="t s" x="64" y="276">资源：常在线，中等存储与带宽　｜　削减无效流量</text>
+  <text class="t s" x="64" y="292">代价：天然可见「谁先广播了什么」——属元数据暴露，不得宣称已隐私化</text>
+
+  <!-- L2 -->
+  <rect class="box" x="40" y="322" width="820" height="96" rx="8"/>
+  <rect x="40" y="322" width="6" height="96" fill="#86efac"/>
+  <text class="t h2" x="64" y="350">L2 · 共识节点</text>
+  <text class="t b" x="64" y="372">区块打包、共识校验、账本写入、链选择、网络状态维护</text>
+  <text class="t s" x="64" y="392">资源：高可用、完整账本、显著带宽　｜　无任何特权字段或特殊校验路径</text>
+  <text class="t s" x="64" y="408">边界：不得以持有量决定出块权；权重不可购买、转让、继承</text>
+
+  <!-- arrows -->
+  <path d="M300,186 L300,206" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arw)"/>
+  <path d="M300,302 L300,322" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arw)"/>
+  <path d="M620,322 L620,302" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arw)"/>
+  <path d="M620,206 L620,186" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arw)"/>
+  <text class="t s" x="312" y="199">交易上行</text>
+  <text class="t s" x="632" y="199">区块/状态下行</text>
+
+  <!-- footer -->
+  <rect x="40" y="440" width="820" height="56" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
+  <text class="t b" x="60" y="462">不变量：无「快进/信任/调试」跳过校验的路径；未定义字段即无效；条件失败即锁定（fail-closed）。</text>
+  <text class="t s" x="60" y="482">图与 docs/protocol-draft/、docs/handover/module-map.md 配套使用；本图为示意图，非规范。</text>
+</svg>
