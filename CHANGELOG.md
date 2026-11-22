@@ -2,6 +2,15 @@
 
 ---
 
+## Unreleased — 发现性与首屏
+
+- README 首屏改为英文优先：新增 Abstract（English）与 "What you can actually use today"，把可运行的仿真脚本、86 条验收用例、接口草图提到第一屏；增加 status / license / no-token 三个徽章。
+- 新增 `docs/outreach/growth.md`：四个搜索入口的排序依据、关键词矩阵、渠道清单（含各渠道"不发什么"）、红线、四周节奏、度量基线与判据。
+- `description` 重写为可搜索句式（`consensus without a single operator` / `conditionable privacy` / `convergent incentives` / `parameter adaptation` / `86 acceptance cases`）；topics 增至 7 个（新增 `protocol-design`、`distributed-systems`）。
+- 事实记录：GitHub 仓库搜索对 `consensus without a single operator` 的返回结果唯一命中本仓库，说明 description 关键词已进入索引；Trending 不可达的原因（全 Markdown、`language: null`）已写入 growth.md。
+
+---
+
 ## v0.4.0 — 2026-11-22（匿名化 / 英文版 / 发布）
 
 ### 一、匿名化（本次最重要的改动）

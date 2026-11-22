@@ -1,11 +1,29 @@
 # Horizon Equilibrium Network (HEN)
 
 **衡远网络 · 稳态点对点价值账本**
-*An open research ledger for long-run balance.*
+*An open research ledger for long-run balance · Draft stage, no token, no offering, no network*
 
-状态：`Draft`　｜　阶段：0 · 收敛打磨期　｜　许可：MIT　｜　无代币 / 无发行 / 无网络
+[![Status: Draft](https://img.shields.io/badge/status-draft-lightgrey)](ROADMAP.md) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![No token](https://img.shields.io/badge/token-none-critical)](DISCLAIMER.md)
 
-作者署名 **Lee Hyun seok（이 현석）**（研究化名）　｜　主内容语言 **English (en)**　｜　[其他语言 / Other languages](#languages)
+Author: **Lee Hyun seok (이 현석)**, a research pen name · Primary language: **English (en)** · [Other languages](#languages)
+
+---
+
+## Abstract (English)
+
+HEN is a public research notebook for a **layered, steady-state peer-to-peer ledger**. It treats four problems that are usually solved in isolation as one coupled system: how value circulates without unbounded issuance, how peers stay ordered without a single operator, how privacy remains *user-controllable* rather than absolute, and how parameters adapt without quietly destroying the incentives they were meant to protect.
+
+The repository ships working material, not promises: a runnable toy simulation of the incentive curve, an 86-case acceptance test suite for any future implementation, a module map and API sketch, and a handover pack written for whoever takes over the code.
+
+`peer-to-peer ledger` · `steady-state incentives` · `layered consensus` · `accountable privacy` · `parameter adaptation` · `no token`
+
+## What you can actually use today
+
+- **`examples/sim/incentive_sim.py`** — runs offline, no dependencies. Prints the emission curve, the steady-state band, and two design defects it found (one of them is a real conflict between a circuit-breaker rule and the parameter-adjustment budget). `python3 examples/sim/incentive_sim.py`
+- **`docs/handover/test-cases.md`** — 86 acceptance cases with stable IDs, written so an implementer can adopt them before any code exists.
+- **`docs/handover/api-sketch.md`** — A1–A7, B1–B6, D1–D4, E1–E4 interfaces, enough to start a client without guessing.
+
+If you only read one file, read [`docs/whitepaper/en/whitepaper.md`](docs/whitepaper/en/whitepaper.md).
 
 ---
 
@@ -48,6 +66,10 @@
 | 是否上线 | The repository is a research foundation. Any future deployment would require simulation, security review, community consensus and compliance assessment; there is no roadmap to launch. |
 | 是否发币 | This project does not issue, sell or promote any asset. If third parties independently build assets, they are not part of this research repository. |
 | 第三方实现 | Links to third-party implementations are provided for discoverability only. They are not audited, endorsed, or maintained by this project. Use at your own risk. |
+
+## 如何被发现 / Discoverability
+
+增长路线（渠道、节奏、红线、度量）见 [`docs/outreach/growth.md`](docs/outreach/growth.md)。原则一句话：**只做能被搜索到、能被引用、能被跑起来的事；不买 star、不刷票、不用空投诱饵。**
 
 ## 仓库结构
 
