@@ -1,5 +1,10 @@
 # Languages / 语言
 
+<!-- lang-switch -->
+<sub>[English](../../README.md) · **语言总览 / All locales** · [简体中文](zh.md) · [繁體中文](zh-Hant.md) · [Русский](ru.md) · [Français](fr.md) · [Español](es.md) · [한국어](ko.md) · [Bahasa Indonesia](id.md) · [Deutsch](de.md) · [Português](pt.md) · [العربية](ar.md)</sub>
+
+Each page below carries the same switcher bar at the top, so any reader can move between locales without going back to the root. GitHub has no repository-level language setting; switching is done by these links.
+
 **Primary content language: English (en).**
 
 Everything normative lives in English: `README.md`, `docs/whitepaper/en/whitepaper.md`, `DISCLAIMER.md`, `GOVERNANCE.md`, `docs/handover/`, `docs/review/`, `spec/`. Localized pages are entry summaries so that readers in other languages can understand what this repository is, what it is **not**, and where the authoritative text lives.

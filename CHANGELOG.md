@@ -2,7 +2,15 @@
 
 ---
 
-## Unreleased — 发现性与首屏
+## Unreleased — 语言切换 / 发现性 / 首屏
+
+### 语言切换（本次）
+
+- 根 `README.md`、`docs/en/README.md`、`docs/i18n/` 11 页与中英白皮书顶部统一加入同一行切换栏（11 个语种），当前语言加粗、其余为链接；相对路径已逐条校验，0 处断链。
+- 白皮书为**双语全文切换**（中文全文 ↔ English full text）；其余 8 个语种仍为入口摘要页——这是内容覆盖的真实状态，未做全文翻译的地方不标注为全文。
+- 事实记录：GitHub 无仓库级"内容语言"设置，侧栏 Languages 是 Linguist 按文件类型统计（本仓库全为 Markdown，返回 `language: null`），因此切换只能靠页间链接实现，无法做成站点级控件。
+
+### 发现性与首屏
 
 - README 首屏改为英文优先：新增 Abstract（English）与 "What you can actually use today"，把可运行的仿真脚本、86 条验收用例、接口草图提到第一屏；增加 status / license / no-token 三个徽章。
 - 新增 `docs/outreach/growth.md`：四个搜索入口的排序依据、关键词矩阵、渠道清单（含各渠道"不发什么"）、红线、四周节奏、度量基线与判据。
