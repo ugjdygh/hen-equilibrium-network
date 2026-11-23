@@ -81,6 +81,19 @@ The author created the documents but does **not** lead, operate or take part in 
 - On the **reserved matters** of §3.1 — name and marks, licence, ownership, external voice — the author, as repository owner, has the final say, with reasons recorded publicly;
 - The author's departure does not end the repository; ownership does not transfer with maintainer changes.
 
+## 7A. No allocation, no address, no keys
+
+The author holds no genesis allocation, no founder share, no vesting position and no advisory grant in any implementation of this design, and will not accept one.
+
+- **No wallet address.** No address is published, assigned, pre-generated or "reserved" for the author. Any address circulating as "the founder's" is not the author's.
+- **No keys.** The author will not receive, custody or sign with keys or seed phrases supplied by a third party, and will not accept an "allocation claim" link, airdrop form or multisig seat offered on the basis that this repository proposed the design.
+- **No compulsion to accept.** A fork, an implementation or a community may adopt this design freely (MIT). Adoption creates no obligation toward the author, and confers no authority on the author.
+- **If something is sent anyway**, it is refused in writing, not used, not moved and not counted as endorsement; the refusal is recorded publicly with a date. Unclaimed value sent to an address the author does not control is not the author's property and creates no relationship.
+
+Reason, stated once: accepting a genesis allocation would make the author an issuer or an insider, contradict every boundary in `DISCLAIMER.md`, and convert the repository's written commitments into evidence of knowing conduct. A byline plus an on-chain allocation also ends anonymity permanently, because the two become linkable the moment the allocation moves.
+
+Reply template and handling steps: `docs/outreach/decline-allocation.md`.
+
 ## 8. Termination
 
 If maintenance goes dormant, the repository is archived and stays readable and citable. Archiving does not authorise anyone to raise funds or issue assets under its name.

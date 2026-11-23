@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 106
+# files: 107
 # algorithm: sha256(file bytes)
 #
 e2143f85fee1b2a7d76d4618b5fedaa2511553d221bab433be7b07059bafd0d8  .github/ISSUE_TEMPLATE/config.yml
@@ -21,7 +21,7 @@ b631a4d2de0b662864e25714aa2bdf2d5995723ac48f504865ce022d47160e00  CHANGELOG.md
 70f1faab44ca96681a3f5fcfe9321cbc8982594ed1f336a1d27d9f51be0e6921  CODE_OF_CONDUCT.md
 091119709bb388eb58a8dccd85c58fdc8857210441aa205efb5a882afe90e407  CONTRIBUTING.md
 38b384a29f4ba14baab81ac5f89ff8fa0e80d17a0980844bfa6476dcccc26c97  DISCLAIMER.md
-55e1873edd5e159eaa7be66bf30d811f663e9b662406c33aba85ab7a18540935  GOVERNANCE.md
+a9afb0a9908c3c0e669960a76a3f440e9a0cf0169d122cf1626bd3cbed89495b  GOVERNANCE.md
 89ae08a6ae6536470cc8dcd9f721a3885efa36f402b2ca6c58e6349d040af513  LICENSE
 bfd5d3b112db39e2c77a8f9bd40e8e06798c5affa89ba95c4e1d8205c97baacd  NOTICE.md
 1965a00dc66a9c3197d925ac4fbd76aad06901238cdcd081b888f4284e39dd90  README.md
@@ -79,6 +79,7 @@ f7d417a5c40dfdd9d477dd397f1415ccca57337cfd7a098468c7ccf33ed6370e  docs/legal/sta
 c3c0f509c65b4f9d0218d27b8d13d6f830bf700edebfae63d9c9d1b912c487b5  docs/legal/stamps/whitepaper-zh-v1.0-pdf.tsr
 f2289f47e0e2bef5693cf41117372ac0beb9eaa1d12a0a043da4ef8c01ec920d  docs/legal/trademark-search-plan.md
 2c5a5db2b0b077aceb1ba551f4bf131beb61a5581c0eff16e049ea9c326e33c5  docs/legal/web-archive-batch.csv
+7bc3096e5ce41d7925e36d76b4803edd62e80ff43a9c609a0e6b05adfb04e364  docs/legal/web-archive-batch.xlsx
 bb535c376fd53eb5721791330493b03dbf29ea8bb2adc4b2a832463a239a9a28  docs/legal/web-archive-urls.txt
 ee9753c02b879902b1cd4c11a9e1d2613ba102c4f748c185e65c01df5e93a9bc  docs/legal/web-archive.md
 c80e544655d0766eb20c40da669b9e8fc03ec281eee993b601785aa8b6ea314c  docs/maintenance/handover.md
