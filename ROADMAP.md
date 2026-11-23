@@ -78,4 +78,4 @@ Whether to pursue a testnet, a layer-2 design, an explorer or a wallet is decide
 
 ## Progress record
 
-Version history: `CHANGELOG.md` (English) and `CHANGELOG.zh.md` (完整中文记录). Decisions: `docs/en/review/decisions.md`.
+Version history: `CHANGELOG.md` (English) and `CHANGELOG.zh.md` (full Chinese record). Decisions: `docs/en/review/decisions.md`.

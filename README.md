@@ -93,8 +93,8 @@ hen-equilibrium-network/
 ├── docs/
 │   ├── whitepaper/
 │   │   ├── en/whitepaper.md       English edition (authoritative on conflict)
-│   │   ├── zh/whitepaper.md       中文版（中文技术细节以此为准）
-│   │   └── zh-Hant/whitepaper.md  Auto-converted Draft（脚本转换，未逐条校订）
+│   │   ├── zh/whitepaper.md       Chinese edition (normative for Chinese fine print)
+│   │   └── zh-Hant/whitepaper.md  Auto-converted draft (script output, not line-edited)
 │   ├── en/                        English editions of handover and review docs
 │   ├── handover/                  Onboarding, module map, API sketch, 86 test cases, working guide
 │   ├── review/                    Review process, checklist, decision records
