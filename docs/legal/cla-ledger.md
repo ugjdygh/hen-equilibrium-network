@@ -29,6 +29,17 @@ gh pr list --repo ugjdygh/hen-equilibrium-network --label "cla: pending" \
 
 需要正式名册时（例如进入原型阶段、或需要向合作方证明许可证链条完整），按上述输出生成一份带时间戳的文件，存 `docs/legal/stamps/`，方法同 `docs/legal/provenance.md` §3.2。
 
+## 启用前的实测记录
+
+用一次临时 PR 验证了两个状态（两条工作流运行均为 `success`）：
+
+| 场景 | 观察到的结果 |
+|---|---|
+| 未签署的 PR（作者未回复） | 自动打 `cla: pending`；机器人只发一次提示，不重复刷屏 |
+| 作者本人回复签署语句后 | 自动切换为 `cla: signed`，`cla: pending` 被移除 |
+
+测试 PR 已关闭且未合并，分支已删除，`main` 无残留文件。
+
 ## 已知限制
 
 | 限制 | 影响 |
