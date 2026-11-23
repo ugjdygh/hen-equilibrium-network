@@ -20,10 +20,10 @@ Nice classification matters more than the jurisdiction list. Likely classes:
 |---|---|---|
 | 9 | software, downloadable publications | documentation, client software, research publications |
 | 42 | computer services, hosting, technical research | protocol research, technical consulting, hosting |
-| 35 | advertising, business services | only if commercial services are ever intended |
+| 35 | advertising, business services | **no** — this project sells nothing, and 中船衡远 already holds class 35 |
 | 36 | financial services | **avoid** while the project does no financial business — filing here creates the appearance of financial intent |
 
-**Recommendation**: file in 9 and 42 only, in the home jurisdiction plus one major market if budget allows. Filing in 36 contradicts the compliance stance and should not be done at this stage.
+**Recommendation (revised 2026-11-23, after screening)**: classes **9 and 42 only**. Class 35 is excluded: it would declare a commercial service that does not exist and it duplicates a class already held by another 衡远 user. Class 36 stays excluded for the same reason as before. Screening results and the decision are in `docs/legal/name-clearance.md`.
 
 ## 3. Search sequence
 

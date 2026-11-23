@@ -1,0 +1,18 @@
+{
+  "title": "Horizon Equilibrium Network (HEN): a steady-state peer-to-peer ledger framework (v1.0)",
+  "description": "Research whitepaper and supporting material for a layered, steady-state peer-to-peer ledger framework. Mechanism discussion, toy-model simulation, acceptance test suite, handover pack. A research document only: no token, no issuance, no fundraising, no network, nothing tied to a tradable asset. Whitepaper text frozen at v1.0; hashes and RFC 3161 timestamp recorded in docs/legal/finalization.md.",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": ["distributed ledger", "consensus", "privacy", "steady-state economics", "protocol design", "distributed systems"],
+  "creators": [
+    {
+      "name": "Lee Hyun seok",
+      "affiliation": "Independent research",
+      "orcid": ""
+    }
+  ],
+  "notes": "Author name is a fixed research pen name, not an identity declaration (see AUTHORS.md). No ORCID is given, deliberately: an ORCID identifies a natural person. Zenodo will accept the record without one; DOI minting is unaffected."
+}

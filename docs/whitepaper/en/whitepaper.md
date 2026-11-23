@@ -11,12 +11,14 @@
 | Project | Horizon Equilibrium Network (HEN) |
 | Chinese name | 衡远网络 |
 | Document type | Open research whitepaper (research draft, non-normative) |
-| Version | v0.4.0 |
-| Date | 2026-11-22 |
-| Review status | `Draft` (Stage 0 — see `ROADMAP.md`) |
+| Version | **v1.0 — text frozen** |
+| Date | 2026-11-23 |
+| Review status | `Final draft` — text frozen at v1.0; later changes only as numbered errata |
 | License | MIT |
 | Author | Lee Hyun seok (이 현석), research pen name — see `AUTHORS.md` |
-| Nature | No fundraising, no issuance, no investment offer, no launch commitment |
+| Nature | Research document only — no fundraising, no issuance, no investment offer, no launch commitment, **not tied to any tradable asset** |
+
+> **Frozen text.** This edition is frozen at v1.0 (2026-11-23). Its SHA-256 and an RFC 3161 trusted timestamp are recorded in `docs/legal/finalization.md`; corrections after this point are published as numbered errata, never as silent edits.
 
 > **Note on editions.** The Chinese edition (`docs/whitepaper/zh/whitepaper.md`) is authoritative. This English edition follows the same structure; where wording differs, the Chinese text governs.
 

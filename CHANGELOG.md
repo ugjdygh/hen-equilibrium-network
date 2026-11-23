@@ -4,6 +4,17 @@
 
 ---
 
+## v1.0 — whitepaper text frozen, evidence chain closed
+
+1. **Whitepaper v1.0 frozen** (en + zh). Version row changed to `v1.0 — text frozen`, status `Final draft`, plus a frozen-text notice pointing at this evidence chain. Later changes only as numbered errata.
+2. **`docs/legal/finalization.md`** — four-layer record: git tag, SHA-256 manifest, RFC 3161 receipts, Zenodo DOI slot. Includes the erratum policy.
+3. **Trusted timestamps obtained** from DigiCert's public RFC 3161 responder for the en/zh markdown, both PDFs and the manifest; receipts and original requests kept in `docs/legal/stamps/`. Verification commands included.
+4. **`tools/stamp.py`** — timestamps any file in one command and prints hash, serial and time.
+5. **`docs/legal/name-clearance.md`** — screening of Chinese, English and abbreviation in classes 9/35/42. Findings: 中船衡远 holds 09/35/42; 衡远 is registered in class 09 by another holder; HEN-containing marks are numerous including one in class 09. Decision: English full name is the only brand-level designation; the Chinese name is demoted to a literal translation with no rights claim; class 35 excluded from any future filing; if a filing ever happens it is classes 9 and 42 only.
+6. **`NOTICE.md`** updated with the findings and the revised intent (no filing now, none in class 35 ever). **`docs/legal/trademark-search-plan.md`** class table rewritten accordingly.
+7. **Framing fixed repository-wide**: research document only, **not tied to any tradable asset**. Added to README first screen, `DISCLAIMER.md` §0, whitepaper "Nature" row and the repository description.
+8. **`.zenodo.json`** — deposit metadata ready; DOI deliberately not claimed until it exists (§5 of the finalization record).
+
 ## Unreleased — mechanism completion, deposit, trademark plan, X policy
 
 1. **Breaker rule replaced with simulation evidence.** `examples/sim/mechanism_sim.py` (new) computes the old rule's failure from `incentive_sim.py` rather than quoting a hard-coded number: on a 1.8x compute step the "3 consecutive moves" breaker settles at target 13.31 against 18.00 needed, interval 7.39 against 10.00 — not converged. The windowed cumulative rule with cooldown and damped resume converges (target 18.00, interval 10.00, band 5.56–10.61). Gain × delay sweep: 35 of 42 settings converge; worst pair (gain 0.2, delay 8) settles at 7.17, so stability is a region, not a point.

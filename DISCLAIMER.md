@@ -1,12 +1,16 @@
 # Boundaries
 
-**Horizon Equilibrium Network (HEN) · Research Draft**
+**Horizon Equilibrium Network (HEN) · Research Document (whitepaper frozen at v1.0)**
 
 This is not a liability waiver, and it does not attempt to disclaim any legal obligation. It states three things: **what this repository does not do**, **whom it does not serve**, and **which uses are prohibited**. Its purpose is to mark the boundary so that readers and later contributors can tell whether an action crosses it. It cannot override mandatory law; where it conflicts with the law, the law prevails.
 
 **Scope: this repository only.** Other repositories under the same account are maintained separately and are not affiliated with this project. The commitment not to operate a business here says nothing about those repositories, and their activity does not change the fact that this repository holds documents only.
 
 ---
+
+## 0. Framing in one sentence
+
+This repository is a **research document, and nothing in it is tied to a tradable asset**: no asset is issued, offered, sold, listed, priced, custodied or endorsed, and no statement here should be read as an investment, valuation or listing view.
 
 ## 1. What this is
 

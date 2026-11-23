@@ -24,6 +24,7 @@ Anyone claiming to speak for the project on these points is misrepresenting it.
 | 0.5 | Open-question list and trade-off analysis | Done (Q1–Q10, `docs/research/tradeoffs.md`) |
 | 0.6 | Review log and version record | Done (`CHANGELOG.md`, `docs/en/review/`) |
 | 0.7 | Repository skeleton and handover material | Done (`docs/en/handover/`) |
+| 1.0 | Whitepaper text frozen; hashes, RFC 3161 receipts and DOI slot recorded | Done |
 | 0.8 | Public release (repository, push, About panel) | **Done** — v0.4.0 published with release, Discussions and language matrix |
 
 **Exit condition**: items 0.1–0.7 complete, 0.8 released, and 30 days without a reported structural gap (structure and boundaries only, not whether the mechanism is right).

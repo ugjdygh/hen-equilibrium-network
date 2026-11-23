@@ -5,6 +5,8 @@
 
 *A layered, steady-state peer-to-peer value ledger — research notebook*
 
+> **Framing, fixed.** This repository is a **research document**. Nothing in it is a tradable asset: no asset is issued, offered, listed, priced or endorsed, and the protocol described is not a vehicle for holding or trading value. The whitepaper text is frozen at v1.0; hashes and a trusted timestamp are in [`docs/legal/finalization.md`](docs/legal/finalization.md).
+
 [![Status: Draft](https://img.shields.io/badge/status-draft-lightgrey)](ROADMAP.md) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![No token](https://img.shields.io/badge/token-none-critical)](DISCLAIMER.md)
 
 Author: **Lee Hyun seok (이 현석)**, a research pen name · Primary content language: **English (en)**
@@ -40,13 +42,14 @@ Research directions (none finalised):
 - self-adjusting parameters and reversible upgrades
 - basic programmable conditional transactions
 
-**At this stage there are documents only.** No finalised whitepaper, no finalised protocol, no implementation, no issuance plan, no operating entity.
+**At this stage there are documents only.** The whitepaper text is finalised at v1.0 and frozen; the protocol design is not finalised, there is no implementation, no issuance plan and no operating entity.
 
 ## What this is explicitly not
 
 - **No issuance, no sale, no promotion of any asset.** "Asset", "amount" and "supply" throughout refer to an accounting unit internal to a hypothetical protocol.
 - **No fundraising.** No ICO, no presale, no donation address, no revenue share.
 - **Not a running network.** No mainnet, no testnet, no trustworthy node software, no audited cryptographic implementation.
+- **Not tied to any tradable asset.** No token exists, and nothing here should be read as a description of an investment, a listing candidate or a price thesis.
 - **No promises.** Nothing about launch, listing, valuation, performance or security.
 
 ## Boundary of the founder's role
