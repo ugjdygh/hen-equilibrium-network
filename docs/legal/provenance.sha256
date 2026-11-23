@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 109
+# files: 110
 # algorithm: sha256(file bytes)
 #
 e2143f85fee1b2a7d76d4618b5fedaa2511553d221bab433be7b07059bafd0d8  .github/ISSUE_TEMPLATE/config.yml
@@ -24,6 +24,7 @@ b631a4d2de0b662864e25714aa2bdf2d5995723ac48f504865ce022d47160e00  CHANGELOG.md
 28cd9da2698b1e4f7a78e78392afcaba41f8466de8637a0ab352bd7c65b404c5  GOVERNANCE.md
 89ae08a6ae6536470cc8dcd9f721a3885efa36f402b2ca6c58e6349d040af513  LICENSE
 bfd5d3b112db39e2c77a8f9bd40e8e06798c5affa89ba95c4e1d8205c97baacd  NOTICE.md
+fbc5f3f2c50c3c32a12391a52c99ef2b2f525356a4bc841c230f4647324d3ef3  PURPOSE.md
 0d87350410938362fab7f806f50239255f7957a1f977d0eafd615254d5c9933e  README.md
 b320f08f636bce24a9cd9f1842a5b33b89ccec95ab4880e6443f47c1b4522387  ROADMAP.md
 95f2d3490f00f6379a1ed3801787366d534da5a8b0b1f5330333a4ef58fbff08  SECURITY.md
