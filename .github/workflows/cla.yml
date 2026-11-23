@@ -67,6 +67,19 @@ jobs:
               if (!login || login.endsWith("[bot]")) continue;
               if (c.body && c.body.includes(SIGN_PHRASE) && required.has(login)) signers.add(login);
             }
+            // 3.0 读取全局台账：签过一次的人不再要求重复签署
+            try {
+              const res = await github.rest.repos.getContent({
+                owner: context.repo.owner, repo: context.repo.repo,
+                path: "CLA-SIGNATURES.md", ref: "main",
+              });
+              const ledger = Buffer.from(res.data.content, "base64").toString("utf8");
+              for (const login of required) {
+                if (new RegExp(`\\|\\s*@${login}\\s*\\|`, "i").test(ledger)) signers.add(login);
+              }
+            } catch (e) {
+              core.info("No CLA ledger found; relying on in-thread signatures only.");
+            }
             const missing = [...required].filter((login) => !signers.has(login));
 
             // 3.1 全部签署

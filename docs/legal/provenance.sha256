@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 76
+# files: 77
 # algorithm: sha256(file bytes)
 #
 3d6f628974a368d45e0b9d4caf44324ee181c4fd33c5b636339fb48e490efd08  .github/ISSUE_TEMPLATE/config.yml
@@ -8,12 +8,12 @@
 8ac76df14e05ff021a7d9559e5da5abb46a6ae4be6c05f102e525af6d797dd64  .github/ISSUE_TEMPLATE/implementation.md
 fad9145ad00079faa4f75c78114a11e73737513dd1d0b8906a3af7ba81a7fd94  .github/ISSUE_TEMPLATE/review.md
 127d4d76d051ba6ff18159ab71643f0595f2d2e18f40bd84c6ff54ac6ee92928  .github/PULL_REQUEST_TEMPLATE.md
-cbc0942b4960bd20c48d41466b5d410b5de92d9d5cd23dc8cbc1d47473264f7d  .github/workflows/cla.yml
+181fb6eeffc8ea1d28776acb2582d262fee49b0702faf33f8200dcc14619e976  .github/workflows/cla.yml
 375a714f82740da85348bcadd8596e5f57befb119db7e95ce3e4818113e8242f  .gitignore
 4b02677678f2663ad1b9df6bc42c9f3affa6507f015eef9c6037f897329b6f1b  AUTHORS.md
 4d010d1c108726f08c0fddea616d2081a7869b95e13040ba3fcfa0fedde6cc40  CHANGELOG.md
 6aaf452b452ab975e359ccf3903ca857641d197a5baa689ddf56084cc2aa4642  CITATION.cff
-bd86de86796e7a9ae3464966df428208c77303b0121b84385fdcf56b3850cf34  CLA.md
+8af357d1a70a5d3198760be056ff7b199b4c3b0189302b9a3e7e23e846749b95  CLA.md
 abfce1aa4c9847461dfae99c021d7b07cc0bbcba294b5293c804c6345a7fd5b3  CODE_OF_CONDUCT.md
 34d1ec46b17eddd09e54594a354511218da7395965c6f257e028898dad7f7a3d  CONTRIBUTING.md
 2f0674da4475a6f8b6ab45980f51416f9447606367364b239e8f86ba5923a29a  DISCLAIMER.md
@@ -52,7 +52,7 @@ f796ba47c34dd321b8a13e8832a8331d9bb5481629dcf3c936c509846efb3f14  docs/i18n/fr.m
 079e0e022b47db3d2b1b2597754e4468e994aeda70b42435847ad6d45a28f7c0  docs/i18n/ru.md
 2d7c75cceb095add92c40f5a5e95ea90796c73a397dc01ac34171b24a0380c14  docs/i18n/zh-Hant.md
 e740a6e8646a1018703f434d91d6f0dab588a1fbda9c068eb630d8a5b45cc253  docs/i18n/zh.md
-f47e64319f3dc51fedb5c3dddddd441bc7e95842a0a12a88442627eb3a2e350e  docs/legal/cla-ledger.md
+02e9fc72e6d4331813bf769ff312168a8b42a57fe73dc72e263aaa6b1b0210ca  docs/legal/cla-ledger.md
 ae9bcf17c5e889d2b13e74fc9e2e143b6a5c1cf095e6c2aef484c69df1830732  docs/legal/cla-versions/v1.0.md
 e163f4087efc318aabd768c9bddc87662a1e5681bd26ab11357dce223c10eeb8  docs/legal/disclaimer.md
 6042e17bd007d6827c36a7e2e15738812bb3ae989ec793c0f6f6b03fe02234ce  docs/legal/lead-agreement-checklist.md
@@ -78,4 +78,5 @@ fcf32867844c79fd48d12fa37fdcaa3c7599ff6da2a2885ee4a75ebd1798a11f  docs/whitepape
 6c9eec71a0b3e10bed9f22e8831af179d5fdc4d3f0f7a73911c853005d4bd1d9  examples/sim/README.md
 6cd4dc1387ab7894f0c8aa0ba57c1d038bc3d7f4f6e67e5ea87444c2f2b97c9b  examples/sim/incentive_sim.py
 2dce82fe26104966a546b658ca9bcd1f2dd73f814606a004a1bd3d1dcf810b99  spec/README.md
+5cf5291162df08242b0a25d1dd4e278490b4897ba0f36ce738cfd2641e84c3e6  tools/cla_sim.py
 65657584b8626c14ecbdad372722ab18ebf7950eef948a8bc33bf0c3d3f2c793  tools/provenance_manifest.py
