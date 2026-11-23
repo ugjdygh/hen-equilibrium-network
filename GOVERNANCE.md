@@ -4,7 +4,7 @@
 
 The repository has one governance goal: let technical disagreement be settled by a traceable process, not by volume.
 
-Principles live here; operational rules — merge thresholds, labels, PR checks, conflict handling — are in `docs/maintenance/merge-rules.md` (this file prevails on conflict).
+Principles live here; operational rules — merge thresholds, labels, PR checks, conflict handling — are in `docs/maintenance/merge-rules.md` (Chinese original; English edition pending) (this file prevails on conflict).
 
 ## 1. Three layers
 

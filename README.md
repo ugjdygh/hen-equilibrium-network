@@ -115,7 +115,7 @@ hen-equilibrium-network/
 
 1. **Judging whether this is credible** — whitepaper §2 (design principles), §11 (risks), §12 (compliance stance).
 2. **Taking over the code** — `docs/en/handover/onboarding.md` → `module-map.md` → `test-cases.md`.
-3. **Reviewing or asking questions** — `docs/en/review/process.md` + `docs/research/open-questions.md`.
+3. **Reviewing or asking questions** — `docs/en/review/process.md` + [`docs/research/open-questions.md`](docs/research/open-questions.md) (Chinese original; English edition pending).
 4. **Citing it** — `CITATION.cff`.
 
 ## Taking part
