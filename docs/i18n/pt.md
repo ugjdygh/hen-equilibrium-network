@@ -5,6 +5,8 @@
 
 > **Localização**: esta página é um resumo de entrada, não uma tradução completa. O texto de referência é o [`README.md`](../../README.md) em inglês e o [`whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md).
 
+**Limites**: apenas um documento de pesquisa — nada aqui se liga a um ativo negociável (ver [`DISCLAIMER.md`](../../DISCLAIMER.md)).
+
 ## Um registro de pesquisa aberto
 
 Repositório público de pesquisa sobre um livro-razão descentralizado hipotético: circulação estável, rede ponto a ponto em camadas, custo energético limitado, privacidade controlável e evolução reversível do protocolo.

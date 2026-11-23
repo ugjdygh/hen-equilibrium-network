@@ -5,6 +5,8 @@
 
 > **Localisation** : cette page est un résumé d'entrée, pas une traduction complète. Le texte de référence est le [`README.md`](../../README.md) anglais et le [`whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md).
 
+**Limites** : document de recherche uniquement — rien ici ne se rapporte à un actif négociable (voir [`DISCLAIMER.md`](../../DISCLAIMER.md)).
+
 ## Un registre de recherche ouvert
 
 Dépôt de recherche public consacré à un registre décentralisé hypothétique : circulation stable, réseau pair-à-pair en couches, coût énergétique borné, confidentialité contrôlable et évolution réversible du protocole.

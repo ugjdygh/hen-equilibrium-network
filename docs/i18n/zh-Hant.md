@@ -5,6 +5,8 @@
 
 > **本地化說明**：本頁為入口摘要頁，不是全文譯本。完整內容以英文 [`README.md`](../../README.md) 與 [`docs/whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md) 為準。
 
+**邊界**：純研究文件——本文不含任何與可交易資產綁定的內容（見 [`DISCLAIMER.md`](../../DISCLAIMER.md)）。
+
 ## 衡遠網絡 · 穩態點對點價值帳本
 
 一個面向區塊鏈底層帳本的**開放研究倉庫**：只沉澱問題陳述、協議草稿、研究問題與可接手的協作框架。

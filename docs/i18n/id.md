@@ -5,6 +5,8 @@
 
 > **Lokalisasi**: halaman ini adalah ringkasan pintu masuk, bukan terjemahan lengkap. Teks acuan adalah [`README.md`](../../README.md) berbahasa Inggris dan [`whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md).
 
+**Batasan**: hanya dokumen riset — tidak ada di sini yang terkait dengan aset yang diperdagangkan (lihat [`DISCLAIMER.md`](../../DISCLAIMER.md)).
+
 ## Ledger penelitian terbuka
 
 Repositori penelitian publik tentang buku besar terdesentralisasi hipotetis: sirkulasi stabil, jaringan peer-to-peer berlapis, biaya energi terbatas, privasi yang dapat dikendalikan, dan evolusi protokol yang dapat dibalik.

@@ -5,6 +5,8 @@
 
 > **Lokalisierung**: Diese Seite ist eine Einstiegszusammenfassung, keine vollständige Übersetzung. Maßgeblich sind das englische [`README.md`](../../README.md) und [`whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md).
 
+**Grenzen**: nur ein Forschungsdokument — nichts hieran ist an einen handelbaren Vermögenswert gebunden (siehe [`DISCLAIMER.md`](../../DISCLAIMER.md)).
+
 ## Ein offenes Forschungs-Ledger
 
 Öffentliches Forschungsrepository zu einem hypothetischen dezentralen Ledger: stabile Zirkulation, geschichtetes Peer-to-Peer-Netz, begrenzte Energiekosten, kontrollierbare Privatsphäre und umkehrbare Protokollentwicklung.

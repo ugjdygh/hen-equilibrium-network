@@ -5,6 +5,8 @@
 
 > **Localización**: esta página es un resumen de entrada, no una traducción completa. El texto de referencia es el [`README.md`](../../README.md) en inglés y el [`whitepaper/en/whitepaper.md`](../whitepaper/en/whitepaper.md).
 
+**Límites**: solo un documento de investigación — nada aquí se refiere a un activo negociable (ver [`DISCLAIMER.md`](../../DISCLAIMER.md)).
+
 ## Un registro de investigación abierto
 
 Repositorio público de investigación sobre un libro mayor descentralizado hipotético: circulación estable, red entre pares por capas, coste energético acotado, privacidad controlable y evolución reversible del protocolo.
