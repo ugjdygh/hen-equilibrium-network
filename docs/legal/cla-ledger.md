@@ -40,6 +40,23 @@ gh pr list --repo ugjdygh/hen-equilibrium-network --label "cla: pending" \
 
 测试 PR 已关闭且未合并，分支已删除，`main` 无残留文件。
 
+## 规则级模拟（8 个用例，全通过）
+
+`tools/cla_sim.py` 把工作流的判定规则抽成离线用例，`python3 tools/cla_sim.py` 可复现：
+
+| 用例 | 结果 |
+|---|---|
+| 单人 PR、作者未签 | `pending`（缺作者） |
+| 单人 PR、作者已签 | `signed` |
+| 多人 PR，作者签了但另一提交者未签 | `pending`（缺该提交者） |
+| 多人 PR，两人都签 | `signed` |
+| 机器人发签署语句 | 忽略，仍 `pending` |
+| 路人（非作者非提交者）签署 | 不计入，仍 `pending` |
+| 语句不完整（漏 "to its terms"） | 不计入，仍 `pending` |
+| 签署后把评论编辑掉 | 重新判定为 `pending` |
+
+**注意**：这是规则级验证，不是"另一个真实账号"的端到端验证。真实第三方测试需要在 GitHub 上由一个非作者账号开 PR 并评论，本仓库目前只有一个账号，未做该项测试。
+
 ## 已知限制
 
 | 限制 | 影响 |

@@ -70,7 +70,12 @@ I have read CLA.md and I agree to its terms for my contributions to this reposit
 
 可选补充（不强制）：在提交信息中加入 `Signed-off-by: Name <email>`（DCO 风格），或在 PR 描述中写明"已接受 CLA.md"。
 
-**自动检查**：`.github/workflows/cla.yml` 会在 PR 打开或更新时检查会话中是否存在由 PR 作者本人发出的上述语句，命中则打 `cla: signed`，未命中则打 `cla: pending` 并提示一次。该检查只核对"是否由作者本人发过这句话"，**不核验签署人的真实身份**（见 §9）。
+**自动检查**：`.github/workflows/cla.yml` 在 PR 打开或更新时检查会话中的签署语句，识别范围是**应当签署的人**——PR 作者，以及该 PR 全部提交的作者（机器人除外）。全部签齐则打 `cla: signed`；有人未签则打 `cla: pending`，并在提示中列出未签名单。
+
+- 一个 PR 里有多名贡献者（共同作者、多账号提交）时，**每位都要各自回复**；只签了 PR 作者不够。
+- 路人（既非作者也非提交者）的签署语句不会被计入。
+- 机器人账号（`[bot]`）的签署或评论一律忽略。
+- 该检查只核对"这个账号发过这句话"，**不核验签署人的真实身份**（见 §9）。
 
 ## 9. 签署的效力与边界（务必读完）
 

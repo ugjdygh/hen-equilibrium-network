@@ -45,17 +45,32 @@ jobs:
               return;
             }
 
-            // 2. 查找该作者本人是否在 PR 会话中签署过
+            // 2. 需要一个 PR 里"应当签署"的人：PR 作者 + 该 PR 全部提交作者
+            const commits = await github.paginate(github.rest.pulls.listCommits, {
+              owner: context.repo.owner, repo: context.repo.repo,
+              pull_number: prNumber, per_page: 100,
+            });
+            const required = new Set([prAuthor]);
+            for (const c of commits) {
+              const login = c.author && c.author.login;
+              if (login && !login.endsWith("[bot]")) required.add(login);
+            }
+            const signers = new Set();
+
+            // 3. 扫描会话中的签署语句（只认"应当签署"的人发的）
             const comments = await github.paginate(github.rest.issues.listComments, {
               owner: context.repo.owner, repo: context.repo.repo,
               issue_number: prNumber, per_page: 100,
             });
-            const signed = comments.some(
-              (c) => c.user && c.user.login === prAuthor && c.body && c.body.includes(SIGN_PHRASE)
-            );
+            for (const c of comments) {
+              const login = c.user && c.user.login;
+              if (!login || login.endsWith("[bot]")) continue;
+              if (c.body && c.body.includes(SIGN_PHRASE) && required.has(login)) signers.add(login);
+            }
+            const missing = [...required].filter((login) => !signers.has(login));
 
-            // 3. 打标签
-            if (signed) {
+            // 3.1 全部签署
+            if (missing.length === 0) {
               await github.rest.issues.addLabels({
                 owner: context.repo.owner, repo: context.repo.repo,
                 issue_number: prNumber, labels: [LABEL_SIGNED],
@@ -64,7 +79,7 @@ jobs:
                 owner: context.repo.owner, repo: context.repo.repo,
                 issue_number: prNumber, name: LABEL_PENDING,
               }).catch(() => {});
-              core.info(`CLA signed by ${prAuthor} on #${prNumber}.`);
+              core.info(`CLA signed by all contributors on #${prNumber}: ${[...signers].join(", ")}`);
               return;
             }
 
@@ -83,13 +98,16 @@ jobs:
                 owner: context.repo.owner, repo: context.repo.repo,
                 issue_number: prNumber,
                 body: [
-                  `**CLA pending — @${prAuthor}**`,
+                  `**CLA pending — ${missing.map((u) => "@" + u).join(", ")}**`,
                   "",
-                  "评审开始前需要你在这条 PR 里回一句签署声明（一次即可，覆盖此后全部贡献）：",
+                  "评审开始前，下列贡献者需要各自在这条 PR 里回一句签署声明（一次即可，覆盖此后全部贡献）：",
                   "",
                   "```",
                   "I have read CLA.md and I agree to its terms for my contributions to this repository.",
                   "```",
+                  "",
+                  "",
+                  missing.map((u) => "- @" + u).join("\n"),
                   "",
                   "这只涉及许可链条，与贡献质量无关。协议原文：[CLA.md](../blob/main/CLA.md)。若本 PR 含生成式 AI 产出内容，请在描述中声明（CLA 第 6 条）。",
                 ].join("\n"),
