@@ -124,3 +124,24 @@ Source of truth: `docs/review/decisions.md` (Chinese).
 **Cost.** A pen name invites speculation about who is behind it. Mitigation: `AUTHORS.md` states plainly that the name is a pen name and not a claim of nationality, ethnicity or identity. Anonymity does not reduce anyone's obligations.
 
 **What must not happen.** Nobody may use the pen name to imply a different nationality. If a translator localises the name, that is a violation (`docs/i18n/README.md` §2.3).
+
+## ADR-008 Permissive CLA and reserved matters
+
+**Status:** Accepted (2026-11-23)
+
+**Context.** The repository will accept outside contributions. With no contribution license at all, any future change of license, archiving or repurposing would require permission from dozens of contributors one by one. With copyright assignment, most open-source contributors walk away. Separately, the project name, the license and repository ownership had no identifiable decision-maker.
+
+**Decision.**
+
+1. Adopt a **permissive CLA** (`CLA.md`): contributors keep copyright and grant the maintainers a perpetual, worldwide, sublicensable, relicensable license. This is not an assignment.
+2. Carve out **reserved matters** in `GOVERNANCE.md` §3.1 — name and marks, license, repository ownership and hosting, external messaging — decided by the repository owner with reasons recorded publicly.
+3. Fix the boundary: reserved matters may not override technical review criteria, veto mechanisms already accepted in review, or turn the repository into fundraising or operations.
+
+**Objections and costs.**
+
+- It is in tension with §2 ("no veto") and §7 ("the author has equal weight"). The resolution separates technical decisions from asset/identity decisions instead of removing technical equality; §2 and §7 were amended in the same commit.
+- The relicensing right will worry some contributors that the repository could later go proprietary. Mitigation: `CLA.md` §9 states that rights already granted to users under MIT are unaffected, and any change is recorded in `CHANGELOG.md`.
+- Reserved matters concentrate identity-level responsibility in an owner who, under a byline, is not verifiable. That is a pre-existing cost of the byline, neither created nor removed by this decision.
+
+---
+

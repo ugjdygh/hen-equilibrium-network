@@ -119,7 +119,7 @@ hen-equilibrium-network/
 
 ## 参与
 
-改文档 → 直接提 PR。改机制 → 先开 RFC issue（模板见 `CONTRIBUTING.md`）。
+改文档 → 直接提 PR。改机制 → 先开 RFC issue（模板见 `CONTRIBUTING.md`）。首个 PR 需接受许可型 [`CLA.md`](CLA.md)（保留你的著作权，仅授予维护者可再许可的使用权）。
 
 评审入口：[Discussions #1](https://github.com/ugjdygh/hen-equilibrium-network/discussions/1) —— 说明什么算有效意见、什么会被关闭、决策如何做出。价格、代币、拉人、募资类讨论一律关闭。讨论规范见 `CODE_OF_CONDUCT.md`。
 
