@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 102
+# files: 106
 # algorithm: sha256(file bytes)
 #
 e2143f85fee1b2a7d76d4618b5fedaa2511553d221bab433be7b07059bafd0d8  .github/ISSUE_TEMPLATE/config.yml
@@ -78,6 +78,9 @@ f7d417a5c40dfdd9d477dd397f1415ccca57337cfd7a098468c7ccf33ed6370e  docs/legal/sta
 91dbe57353f07b2d5c6ece86bc99f25ac1fa67b674377c2be4861e2b5353dec1  docs/legal/stamps/whitepaper-zh-v1.0-pdf.tsq
 c3c0f509c65b4f9d0218d27b8d13d6f830bf700edebfae63d9c9d1b912c487b5  docs/legal/stamps/whitepaper-zh-v1.0-pdf.tsr
 f2289f47e0e2bef5693cf41117372ac0beb9eaa1d12a0a043da4ef8c01ec920d  docs/legal/trademark-search-plan.md
+2c5a5db2b0b077aceb1ba551f4bf131beb61a5581c0eff16e049ea9c326e33c5  docs/legal/web-archive-batch.csv
+bb535c376fd53eb5721791330493b03dbf29ea8bb2adc4b2a832463a239a9a28  docs/legal/web-archive-urls.txt
+ee9753c02b879902b1cd4c11a9e1d2613ba102c4f748c185e65c01df5e93a9bc  docs/legal/web-archive.md
 c80e544655d0766eb20c40da669b9e8fc03ec281eee993b601785aa8b6ea314c  docs/maintenance/handover.md
 2cd0ce54184b7305e92010bd9e7d6135268f875de6d405a551db0d38042911b9  docs/maintenance/merge-rules.md
 d03818e265747468b31250941ed65a7c8a06a63a7f0f5d5ac2291db9a75f2fae  docs/outreach/growth.md
@@ -101,6 +104,7 @@ a5cf7e357f3aee5f82ceb49d5e3494f99a3fa2fb0de81a088096f9a0f327d79f  docs/whitepape
 6cd4dc1387ab7894f0c8aa0ba57c1d038bc3d7f4f6e67e5ea87444c2f2b97c9b  examples/sim/incentive_sim.py
 d7a5573727a6a50538f18b1230139d76970bebd5bcbbb6042ba5556abed28c97  examples/sim/mechanism_sim.py
 2dce82fe26104966a546b658ca9bcd1f2dd73f814606a004a1bd3d1dcf810b99  spec/README.md
+51ffbe2843aa250d79015fe75f065b4b8990b45ee09c4768c0cc5674dec03fc2  tools/archive_batch.py
 5cf5291162df08242b0a25d1dd4e278490b4897ba0f36ce738cfd2641e84c3e6  tools/cla_sim.py
 d1bde8f99ec331c577e1381cd7fd51c129bcf5d49dc522d53a0e8af937d360a1  tools/make_deposit.py
 65657584b8626c14ecbdad372722ab18ebf7950eef948a8bc33bf0c3d3f2c793  tools/provenance_manifest.py
