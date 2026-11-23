@@ -31,6 +31,10 @@ If you read only one file, read [`docs/whitepaper/en/whitepaper.md`](docs/whitep
 
 **To check that the text is the one that was frozen:** [`VERIFY.md`](VERIFY.md) — hashes, RFC 3161 receipts, and the commands to verify both yourself.
 
+## Purpose
+
+To make one design for a decentralised ledger **reviewable and refutable by strangers, in public, before anyone builds it** — not to launch it, not to fund it, not to own it. Full statement, success criteria and a drift test: [`PURPOSE.md`](PURPOSE.md).
+
 ## What this is
 
 An open research repository about the base layer of a ledger. It accumulates four kinds of material: problem statements, protocol drafts, open research questions, and a handover framework a successor can pick up.
