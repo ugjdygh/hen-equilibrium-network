@@ -18,3 +18,4 @@ I have read CLA.md and I agree to its terms for my contributions to this reposit
 
 | GitHub 账号 | 签署时间（UTC） | 协议版本指纹 | 记录链接 |
 |---|---|---|---|
+| @ugjdygh | 2026-11-23 02:46:45Z | 8af357d1a70a5d31 | [#4 comment 7090203155](https://github.com/ugjdygh/hen-equilibrium-network/issues/4#issuecomment-7090203155) |
