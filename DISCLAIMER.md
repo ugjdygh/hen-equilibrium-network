@@ -1,80 +1,82 @@
-# Boundaries / 边界声明
+# Boundaries
 
-**Horizon Equilibrium Network（HEN，衡远网络）· Research Draft**
+**Horizon Equilibrium Network (HEN) · Research Draft**
 
-本文件不是免责文本，也不试图用声明免除任何法律责任。它做三件事：说明本项目**不做什么**、**不向谁提供服务**、**禁止什么行为**。声明的作用是划定行为范围，使读者与后续贡献者能判断某件事是否越过边界；它不能对抗法律强制性规定，与法律规定冲突时以法律为准。
+This is not a liability waiver, and it does not attempt to disclaim any legal obligation. It states three things: **what this repository does not do**, **whom it does not serve**, and **which uses are prohibited**. Its purpose is to mark the boundary so that readers and later contributors can tell whether an action crosses it. It cannot override mandatory law; where it conflicts with the law, the law prevails.
 
-**效力范围：仅限本仓库。** 同一 GitHub 账号下的其他仓库由各自维护，与本项目无隶属关系；本项目的"不做业务"承诺不构成对其他仓库的陈述，其他仓库的运营也不改变本仓库"只有文档"这一事实。
+**Scope: this repository only.** Other repositories under the same account are maintained separately and are not affiliated with this project. The commitment not to operate a business here says nothing about those repositories, and their activity does not change the fact that this repository holds documents only.
 
 ---
 
-## 1. 本项目是什么
+## 1. What this is
 
-一份公开可评审的技术研究草稿：假设性去中心化账本协议的机制讨论。内容为白皮书、协议草稿、研究问题、仿真脚本、交接与评审文档。无实现、无部署、无运营。
+A publicly reviewable technical research draft: mechanism discussion for a hypothetical decentralised ledger protocol. It contains a whitepaper, protocol drafts, open research questions, a simulation script, and handover and review material. No implementation, no deployment, no operation.
 
-## 2. 本项目不做什么（行为边界）
+## 2. What this does not do (behavioural boundary)
 
-1. **不发行。** 不发行任何代币或数字资产；无预留份额、无私募、无公募、无空投、无分配安排。文中"资产""金额""供应量"均指假设协议内部的记账单位。
-2. **不募资。** 无 ICO、无预售、无捐赠地址、无赞助入口、无收益分配、无投资邀约。
-3. **不运营网络。** 无主网、无测试网、无可信赖的节点软件、无经审计的密码学实现。
-4. **不提供兑换、撮合、定价、做市、托管、中介或任何支付结算服务。**
-5. **不作承诺。** 不含上线、上币、估值、性能或安全性的承诺，也不含合作、背书或"官方"授权。
+1. **No issuance.** No tokens or digital assets; no reserved allocation, no private sale, no public sale, no airdrop, no distribution schedule. "Asset", "amount" and "supply" refer only to an accounting unit internal to a hypothetical protocol.
+2. **No fundraising.** No ICO, presale, donation address, sponsorship intake, revenue share or investment solicitation.
+3. **No network operation.** No mainnet, no testnet, no trustworthy node software, no audited cryptographic implementation.
+4. **No exchange, matching, pricing, market making, custody, intermediation or any payment or settlement service.**
+5. **No promises.** Nothing about launch, listing, valuation, performance or security; nothing about partnership, endorsement or "official" authorisation.
 
-## 2.1 状态变更条款（本声明的失效条件）
+### 2.1 Validity clause (when this statement stops applying)
 
-本声明之所以成立，靠的是一个可核查的事实：**无实现、无发行、无运营**。因此它不是永久有效的模板。出现下列任一情况时，本文件**立即失效**，必须重写并重新评审，不得继续沿用：
+This boundary holds because of one checkable fact: **no implementation, no issuance, no operation**. It is therefore not a template that stays valid forever. If any of the following occurs, this file **ceases to apply immediately**, and must be rewritten and re-reviewed rather than reused:
 
-1. 出现可部署的合约或可运行的原型（即进入阶段 2 及以后）；
-2. 出现任何代币、积分、凭证、份额的发行或分配方案；
-3. 出现资金入口（捐赠、赞助、预售、付费会员）；
-4. 出现任何形式的运营主体、服务提供或客户支持。
+1. a deployable contract or runnable prototype appears (i.e. stage 2 or later);
+2. any token, point, voucher or unit distribution scheme appears;
+3. any funding intake appears (donation, sponsorship, presale, paid membership);
+4. any operating entity, service provider or customer support appears.
 
-在此之前，把本文档读作"以后要发币"是误读；在此之后，继续引用旧声明作为合规依据，是无效的。
+Before that point, reading this document as "a token later on" is a misreading. After that point, continuing to cite this old statement as a compliance basis is invalid.
 
-## 3. 本项目不向谁提供服务（对象边界）
+## 3. Whom this does not serve (object boundary)
 
-以下主体**不在本项目的服务或交流对象范围内**，相关请求一律不予回应或直接关闭：
+The following are **outside** this project's service and discussion scope; such requests are declined or closed:
 
-| 对象 / 请求 | 处理 |
+| Requesting party or request | Handling |
 |---|---|
-| 寻求代币发行、预售、空投、上所、做市、募资方案的个人或机构 | 不提供，不转介 |
-| 寻求支付、收款、结算、兑换、托管、钱包运营方案的个人或机构 | 不提供，不转介 |
-| 以求"合规包装"——即以研究文档为壳掩盖商业发行的请求 | 不提供 |
-| 寻求投资建议、收益预测、价格判断的读者 | 不提供；本项目不具备该能力 |
-| 寻求以本项目名义作背书、合作、赞助、招聘的请求 | 不提供 |
-| 要求作者承担开发、部署、运营、法律或财务责任的请求 | 不提供；作者角色见 §5 |
+| Seeking issuance, presale, airdrop, listing, market making or fundraising plans | Not provided, not referred |
+| Seeking payment, collection, settlement, exchange, custody or wallet operation plans | Not provided, not referred |
+| Seeking "compliance packaging" — using research documents as a shell for a commercial offering | Not provided |
+| Seeking investment advice, return forecasts or price calls | Not provided; out of scope |
+| Seeking endorsement, partnership, sponsorship or recruitment under this name | Not provided |
+| Asking the author to assume development, deployment, operational, legal or financial responsibility | Not provided; see §5 |
 
-## 4. 禁止行为（对第三方）
+Declining is not the same as disclaiming: these requests are refused because they fall outside the project's scope, not because an obligation has been pre-waived.
 
-- 以"HEN""衡远网络""Horizon Equilibrium Network"或本项目文档名义进行募资、发售、空投、推广、招商或承诺收益；
-- 声称"经 HEN 审计""HEN 官方""HEN 团队"，或暗示本项目为任何实现、代币、交易所背书；
-- 将本项目文档（含译文、图表、仿真代码）用于代币推广、投资招揽或任何金融营销；
-- 利用本项目的名称、缩写或标识制造来源混淆。
+## 4. Prohibited uses (third parties)
 
-上述行为与本项目无关，属冒用。发现冒用时的处理方式见 `docs/legal/disclaimer.md` §4。
+- Using the names "HEN", "Horizon Equilibrium Network", or this repository's documents to raise funds, sell, airdrop, promote, solicit partnerships or promise returns;
+- Claiming "audited by HEN", "HEN official" or "HEN team", or implying that this project endorses any implementation, token or exchange;
+- Using the documents (including translations, diagrams and simulation code) for token promotion, investment solicitation or any financial marketing;
+- Using the name, abbreviation or marks to create confusion about origin.
 
-## 5. 作者角色
+Such acts are unrelated to this project and constitute misappropriation. Handling is described in `docs/legal/disclaimer.md` §4.
 
-作者以固定研究署名 **Lee Hyun seok（이 현석）** 发布文档。该名是用于公开署名的固定笔名：它**不构成国籍、居所或身份声明**，也**不产生匿名保护**——署名不改变责任归属，本项目不以笔名主张任何责任限制或隔离。
+## 5. The author's role
 
-作者只做研究文档工作，**不参与核心开发、不牵头、不运营、不运行节点、不提供兑换或中介服务**，也不对任何后续部署、分叉或第三方行为承担连带责任。
+The author publishes under a fixed research byline, **Lee Hyun seok (이 현석)**. The byline is a fixed pen name for public attribution: it **is not a statement of nationality, residence or identity**, and it **confers no anonymity** — a byline does not change where responsibility lies, and this project asserts no liability limit or isolation on the strength of a pen name.
 
-## 6. 监管环境（陈述事实，非法律意见）
+The author does research documentation only: **no core development, no leadership, no operation, no node running, no exchange or intermediation**, and accepts no joint liability for later deployments, forks or third-party conduct.
 
-- 中国内地：2017 年 9 月 4 日七部门《关于防范代币发行融资风险的公告》将代币发行融资定性为未经批准的非法公开融资；2021 年 9 月十部门《关于进一步防范和处置虚拟货币交易炒作风险的通知》将虚拟货币相关业务活动列为非法金融活动。
-- 欧盟：Regulation (EU) 2023/1114（MiCA）对加密资产发行与服务提供设定授权与披露义务。
-- 美国：证券认定沿用 *SEC v. W.J. Howey Co.*（1946）的判定框架。
+## 6. Regulatory context (facts, not legal advice)
 
-正因上述差异，本项目**在任何辖区均不开展**发行、销售、兑换、撮合、定价、做市、托管、中介活动，不向任何辖区的用户提供上述服务，也不引导任何人从事上述活动。这不是为了在某一辖区"规避"，而是这些行为本身不在本项目的范围内。
+- Mainland China: the 4 September 2017 joint announcement by seven ministries treats token issuance financing as unauthorised public fundraising; the September 2021 joint notice by ten departments treats virtual-currency business activity as illegal financial activity.
+- European Union: Regulation (EU) 2023/1114 (MiCA) imposes authorisation and disclosure duties on crypto-asset issuance and service provision.
+- United States: securities analysis follows the framework in *SEC v. W.J. Howey Co.* (1946).
 
-## 7. 使用风险（简短，不堆叠）
+Because of these differences, this project conducts, **in any jurisdiction**, no issuance, sale, exchange, matching, pricing, market making, custody or intermediation, offers no such service to users anywhere, and does not encourage anyone to do so. This is not evasion of one regime: those activities are outside this project's scope by design.
 
-密码学可能失效，共识可能被攻击，参数可能漂移，实现可能崩溃，法律环境可能变化。文档未经独立审计。依 MIT 许可使用，风险由使用者承担；本项目不提供任何担保。
+## 7. Risk of use (brief, not stacked)
 
-## 8. 许可
+Cryptography can fail, consensus can be attacked, parameters can drift, implementations can crash, and the legal environment can change. Nothing here has been independently audited. Used under the MIT licence; risk lies with the user. No warranty is given.
 
-文档采用 MIT 许可。Copyright (c) 2026 Horizon Equilibrium Network contributors.
+## 8. Licence
+
+Documentation is MIT licensed. Copyright (c) 2026 Horizon Equilibrium Network contributors.
 
 ---
 
-*This file states what this repository does not do, whom it does not serve, and which uses are prohibited. It is not a liability waiver and does not limit any legal obligation. Its scope is this repository only. The author publishes under a fixed research byline that is not a claim of nationality or identity and does not confer anonymity. Nothing here is investment, legal, or compliance advice.*
+*This file states what this repository does not do, whom it does not serve, and which uses are prohibited. It is not a liability waiver and does not limit any legal obligation. Its scope is this repository only. The author publishes under a fixed research byline that is not a claim of nationality or identity and does not confer anonymity. Nothing here is investment, legal or compliance advice.*

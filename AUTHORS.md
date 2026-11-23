@@ -1,34 +1,32 @@
-# Authors / 作者与署名
+# Authors
 
-## Research alias / 研究化名
+## Research byline
 
 | Item | Value |
 |---|---|
-| Name | **Lee Hyun seok（이 현석）** |
+| Name | **Lee Hyun seok (이 현석)** |
 | GitHub | [@ugjdygh](https://github.com/ugjdygh) |
-| Role | 仓库搭建、研究文档撰写与维护（Repository setup, research documentation） |
-| Scope | 只负责研究、规范与仿真类设计资产；不参与核心开发、不运营、不运行节点、不背书任何实现或分叉 |
-| Nature | **固定研究笔名（pen name）**，用于公开署名；不产生匿名保护 |
+| Role | Repository setup, research documentation, review and release notes |
+| Scope | Research, specification and simulation material only; no core development, no operation, no node running, no endorsement of any implementation or fork |
+| Nature | A **fixed research byline** for public attribution; confers no anonymity |
 
-**关于这个名字**：`Lee Hyun seok（이 현석）` 是作者用于公开发布研究的固定笔名。它**不构成国籍、民族、居所或身份声明**；也**不产生匿名保护**——署名不改变责任归属，本项目不以笔名主张任何责任限制或隔离。作者不在仓库内披露身份信息，但这不等于身份无法被核验；本项目的立场不依赖"匿名"成立。
+**About this name.** `Lee Hyun seok (이 현석)` is a fixed pen name used to publish this research. It is **not a claim about nationality, ethnicity, residence or identity**, and it **confers no anonymity** — a byline does not change where responsibility lies, and the project asserts no liability limit or isolation on the strength of a pen name. The author discloses no identity information in this repository, but that is not the same as being unverifiable; the project's stance does not depend on "anonymity" holding.
 
-**生成方式**：文档与仿真脚本由作者构思、AI 辅助起草、作者审阅定稿；分层的具体说明与可主张范围见 [`docs/legal/provenance.md`](docs/legal/provenance.md)。作者不编写实现代码，也不声称独立撰写全部文本。
+**Provenance.** The documents and the simulation script were conceived by the author, drafted with AI assistance, and reviewed and finalised by the author. The layer-by-layer account, and what can and cannot be claimed, is in [`docs/legal/provenance.md`](docs/legal/provenance.md). The author does not write implementation code and does not claim sole authorship of every sentence.
 
-**范围**：本仓库的署名与声明**只覆盖本仓库**。同一 GitHub 账号下的其他仓库由各自维护，与本项目无隶属关系；本项目不做业务的承诺不构成对其他仓库的陈述。
+**Scope.** The byline and the statements in this repository **apply to this repository only**. Other repositories under the same GitHub account are maintained separately and are not affiliated with this project; the commitment not to operate a business here says nothing about them.
 
-**About this name**: it is a pen name used for publishing research. It is not a claim of nationality, ethnicity or identity, and it does not shift any legal responsibility. The author does not disclose their identity; the compliance stance is in `DISCLAIMER.md` and whitepaper §12.
-
-## Contributors / 贡献者
+## Contributors
 
 | Name | Scope | Since |
 |---|---|---|
-| Horizon Equilibrium Network contributors | 文档修订、术语、翻译、评审 | 2026-11 |
+| Horizon Equilibrium Network contributors | document revisions, terminology, translations, review | 2026-11 |
 
-贡献者名单按实际贡献记录，不设"官方团队"。任何人以本项目名义宣称代表项目，均属冒用（见 `docs/legal/disclaimer.md` §4）。
+Contributors are recorded by actual contribution; there is no "official team". Anyone claiming to represent the project is misappropriating the name (see `docs/legal/disclaimer.md` §4).
 
-## Attribution rules / 署名规则
+## Attribution rules
 
-1. 引用本文档时，作者写作 `Lee Hyun seok（이 현석）` 或 `Horizon Equilibrium Network contributors`，二者择一即可。
-2. `LICENSE` 的版权主体为 "Horizon Equilibrium Network contributors"，不使用个人真实姓名。
-3. 第三方实现或分叉**不得**署名为本项目作者，也不得暗示作者为其背书。
-4. 翻译者可要求在自己的译文中署名，但须保留原文作者与英文版为准的说明。
+1. Cite the author as `Lee Hyun seok (이 현석)` or `Horizon Equilibrium Network contributors`; either is acceptable.
+2. The `LICENSE` copyright holder is "Horizon Equilibrium Network contributors", not a personal name.
+3. Third-party implementations or forks **must not** attribute themselves to the author, nor imply endorsement.
+4. Translators may request attribution in their own translation, but must retain the original byline and the note that the English edition prevails.

@@ -1,127 +1,115 @@
-# 自然流量路线 / Organic Discoverability
+# Organic discoverability
 
-本文件说明这个仓库如何被真实的人找到、被什么人 star、以及哪些做法我们明确不做。它不是营销方案，是一条**可复盘的渠道与度量清单**。
-
----
-
-## 0. 合规前置（本文件的适用边界）
-
-**本文件只适用于"研究文档与技术教程"的传播，不适用于任何金融产品营销。**
-
-- 允许传播的内容：协议机制讨论、仿真方法与结论、文档组织与交接经验、设计缺陷的复现。
-- 不允许传播的内容：价格、估值、总量、分配、上所、预售、空投、收益、合作招商、"早期机会"。这类内容一律不发，也不得以"研究"为名变相发布。
-- 不进入的渠道：币圈喊单群、交易所社群、项目方 TG/DC、付费 KOL 推广、空投任务平台。
-- 不做付费推广、不买量、不投广告，不参与以曝光换"白名单/额度"的互换。
-- 对外描述必须同时出现三项：**Draft 阶段 / 无代币无募资无网络 / 只有文档**。缺任何一项即视为描述失真，不得发布。
-- 若某渠道的规则要求以"项目方/代币项目"身份出现，则不进入该渠道，不为进入而改写项目定位。
-
-理由：本仓库的全部合规立场建立在"只有文档、不做业务"之上。一旦传播话术滑向"项目"或"机会"，这层立场在传播层面即失效，无需等到有人真的发币。`DISCLAIMER.md` §2–§4 是行为与对象边界，同样约束本文件的执行。
-
-## 0.1 天花板在哪
-
-- **GitHub Trending 对这个仓库基本不可达。** Trending 按短期 star 速度排序，且高度依赖语言/话题分类；本仓库 66 个文件全是 Markdown 与文本，GitHub 的语言统计返回 `language: null`（Linguist 无法归类），因此进不了任何语言榜。把目标定成"上 trending"会逼着人去刷 star，那是红线。
-- **可达的目标是三个，按性价比排序：**
-  1. 被 GitHub 站内搜索与 topic 页命中（长尾，稳定）；
-  2. 被外部搜索引擎命中（靠 README 的英文摘要与固定术语）；
-  3. 被少数开发者真正引用——引用一次（博客、awesome-list、实现仓库的 README 链接）比 100 个 star 有用。
-- **star 的真实来源只有一个：仓库里有能跑、能抄、能省时间的东西。** 本站目前有三件：`examples/sim/incentive_sim.py`（零依赖可运行）、86 条验收用例、A1–A7/B1–B6/D1–D4/E1–E4 接口草图。文档型仓库若没有这三件，star 转化率通常在千次访问个位数。
+This file explains how real people find the repository, who stars it, and what we will not do. It is not a marketing plan; it is a **reviewable channel-and-metrics checklist**.
 
 ---
 
-## 1. 搜索面：四个入口，各自怎么打分
+## 0. Compliance preamble (scope of this file)
 
-| 入口 | 排序依据 | 我们能控制的 | 现状 |
+**This file covers the dissemination of research documentation and technical tutorials only. It does not cover marketing of any financial product.**
+
+- Permitted content: protocol mechanism discussion, simulation methods and conclusions, document organisation and handover practice, reproduction of design defects.
+- Not permitted: price, valuation, supply, allocation, listing, presale, airdrop, returns, partnership solicitation, "early opportunity". None of these are posted, and none are posted "as research".
+- Channels excluded: price-calling groups, exchange communities, project Telegram/Discord, paid KOL promotion, airdrop task platforms.
+- No paid promotion, no bought traffic, no advertising; no exchange of exposure for "whitelist" or "allocation".
+- Every external description must carry three items: **Draft stage / no token, no fundraising, no network / documents only**. Missing any one is a misdescription and must not be published.
+- If a venue's rules require appearing as a "project" or "token issuer", the venue is skipped; the positioning is not rewritten to enter it.
+
+Rationale: the entire compliance stance rests on "documents only, no business". Once the framing slides towards "project" or "opportunity", that stance fails at the level of communication, before anyone issues anything. `DISCLAIMER.md` §2–§4 govern behaviour and audience, and bind this file too.
+
+## 0.1 The ceiling
+
+- **GitHub Trending is out of reach for this repository.** Trending ranks by short-term star velocity and is heavily segmented by language and topic; all 66 files here are Markdown and text, GitHub's language statistic returns `language: null` (Linguist cannot classify it), so it enters no language board. Targeting trending forces star-buying, which is a red line.
+- **Three reachable goals, in order of cost-effectiveness:**
+  1. being found by GitHub search and topic pages (long tail, stable);
+  2. being found by external search engines, via the English abstract and fixed terminology;
+  3. being genuinely cited by a few developers — one citation (a blog post, an awesome-list entry, a link from an implementation's README) is worth more than 100 stars.
+- **There is one real source of stars: something that runs, that can be copied, that saves time.** Three such things exist here: `examples/sim/incentive_sim.py` (zero dependencies), the 86 acceptance cases, and the A1–A7 / B1–B6 / D1–D4 / E1–E4 interface sketch. Without those, a documents-only repository converts single-digit stars per thousand visits.
+
+## 1. Search surfaces: four, each scored differently
+
+| Surface | Ranking signal | What we control | Status |
 |---|---|---|---|
-| GitHub 仓库搜索 `github.com/search?q=` | 名称 > description > topics > README 正文 | 仓库名、description、topics、README 首段 | description 已含 `distributed ledger / consensus / privacy / research`；topics 5 个 |
-| GitHub Topics 页 `github.com/topics/<topic>` | 该 topic 下的 star 数排序 | 选对 topic、攒真实 star | 0 star 时不曝光，是**长期**资产 |
-| 外部搜索引擎（Google/Bing） | 标题、首段、被引用次数 | README 英文摘要、被外链 | 刚建库，尚未被索引 |
-| 学术/技术检索（Google Scholar 不收仓库） | 不适用 | — | 若日后成文，投 arXiv 需 endorsement，不列为近期动作 |
+| GitHub repository search | name > description > topics > README text | name, description, topics, README opening | description carries `distributed ledger / consensus / privacy / research`; 7 topics |
+| GitHub topic pages | star count within that topic | right topics, real stars | invisible at 0 stars; a **long-term** asset |
+| External search engines | title, opening paragraph, inbound links | English abstract, citations | newly created, not yet indexed |
+| Academic search (repositories are not indexed) | not applicable | — | an arXiv paper needs endorsement; not a near-term action |
 
-**仓库名不要再改。** `hen-equilibrium-network` 已经把 "equilibrium" 这个词占住了，改名的搜索收益远小于链接失效的代价。
+**Do not rename the repository.** `hen-equilibrium-network` already holds the word "equilibrium"; the search gain from renaming is far smaller than the cost of breaking links.
 
-### 1.1 关键词矩阵（目标查询 → 命中位置）
+### 1.1 Keyword matrix (target query → where it hits)
 
-| 目标查询（研究者会输入） | 命中位置 | 当前状态 |
+| Query a researcher would type | Where it hits | Status |
 |---|---|---|
 | `distributed ledger research` | description + topics | ✅ |
-| `layered consensus protocol` | README 摘要 + 白皮书标题层 | ✅ |
-| `steady state incentive design` | README 摘要 + `docs/research/tradeoffs.md` | ✅ |
-| `privacy accountable ledger` | README 摘要 + 术语表 | ✅ |
-| `consensus without single operator` | README 摘要 | ✅ |
-| `no token distributed ledger` | description 末句 + DISCLAIMER | ✅ |
-| `ledger handover documentation` | `docs/handover/` 标题 | ⚠️ 只在文件内，未进 README |
+| `layered consensus protocol` | README abstract + whitepaper title layer | ✅ |
+| `steady state incentive design` | README abstract + `docs/research/tradeoffs.md` | ✅ |
+| `privacy accountable ledger` | README abstract + glossary | ✅ |
+| `consensus without single operator` | description + README | ✅ |
+| `no token distributed ledger` | description closing sentence + DISCLAIMER | ✅ |
+| `ledger handover documentation` | `docs/en/handover/` | ⚠️ inside files only, not in README |
 
-**注意一个反向筛选**：我们要的是"读协议设计的人"，不是"等空投的人"。因此 description 与 README 首屏刻意保留 `no token / no offering / no network`——它降低点击率，但提高 star 质量，也降低后续被仿冒诈骗的风险。这个取舍不要为了数字好看而取消。
+**A deliberate filter**: the audience wanted is people who read protocol design, not people waiting for an airdrop. The closing `no token / no offering / no network` in the description lowers click-through and raises star quality, and reduces the risk of impersonation later. Do not remove it to make numbers look better.
 
----
+## 2. Conversion: from landing to starring
 
-## 2. 转化面：从"点进来"到"按下 star"
+The order is fixed: **understand it in 30 seconds → see something that runs → decide**.
 
-顺序是固定的：**30 秒内看懂这是什么 → 看到能跑的东西 → 决定 star 或离开**。
+1. First screen (first 20 lines of README): English abstract + three usable assets + status badges. Done.
+2. First executable action: `python3 examples/sim/incentive_sim.py` — zero dependencies, results in five seconds.
+3. First doubt: no "will", "soon" or "expected launch" anywhere in the whitepaper. Currently zero; keep it.
+4. First way to participate: Discussions #1 and the issue templates. Done.
 
-1. 首屏（README 前 20 行）：英文摘要 + 三条可用资产 + 一行状态徽章。已就位。
-2. 第一个可执行动作：`python3 examples/sim/incentive_sim.py`。必须零依赖、5 秒内出结果。
-3. 第一个可怀疑点：白皮书里不要有"将会""即将""预计上线"。当前为 0，保持。
-4. 第一个可参与点：Discussions #1 与 issue 模板。已就位。
+**Recommended, not required**: add a screenshot of the simulation output (PNG, <200 KB) under `examples/sim/`. A text-only repository has no visual anchor, and dwell time is short.
 
-**建议但不强求**：在 `examples/sim/` 里放一张仿真输出的截图（PNG，<200KB）。纯文本仓库首屏没有图，视觉停留时间短。
+## 3. Channels
 
----
-
-## 3. 渠道清单
-
-| 渠道 | 发什么 | 不发什么 | 预期 |
+| Channel | Post | Do not post | Expectation |
 |---|---|---|---|
-| GitHub 站内 | topics 维护、Discussions 回帖、给真实反馈开 issue | 给自己的仓库刷 issue/star | 低量、高质量 |
-| awesome-list PR（如 `awesome-blockchain`、`awesome-distributed-systems` 一类仓库） | 一次 PR，一段符合对方模板的描述，诚实标注 Draft | 一次 PR 塞多个仓库；改别人条目 | 一个高权重外链，长期有效 |
-| dev.to / Medium / 个人博客 | 教程体：*"我用 40 行代码验证一条激励曲线，发现熔断规则和调参预算互相打架"* | 项目宣传稿、白皮书摘要转载 | 教程是唯一在开发者社区被容忍的自我提及形式 |
-| Hacker News（Show HN） | 不建议现在发。需有可用产物，否则会被判定为 self-promo | — | 现阶段负期望 |
-| Reddit（r/ethereum、r/consensus 等） | 先读各版 self-promotion 规则，多数限制频次 | 跨版复制粘贴 | 高风险，非必要不发 |
-| V2EX / 掘金 / 少数派（中文） | 一篇"文档型协议仓库怎么组织的"经验贴，附仓库链接 | 空投、项目前景 | 中文侧主要价值在**方法论**而非项目本身 |
-| X / 微博 | 只发版本更新与具体结论 | 蹭币圈话题标签 | 低 |
+| GitHub itself | topic maintenance, discussion replies, issues from real feedback | self-generated issues or stars | low volume, high quality |
+| Awesome-list PRs | one PR, one description matching their template, honestly marked Draft | several repositories in one PR; editing others' entries | one high-authority backlink, durable |
+| dev.to / Medium / personal blog | tutorial: *"I verified an incentive curve with 40 lines of code and found the circuit breaker fighting the adjustment budget"* | project announcements, whitepaper reprints | tutorials are the only tolerated self-mention in developer communities |
+| Hacker News (Show HN) | not yet. Needs a usable artefact, or it reads as self-promo | — | negative expected value now |
+| Reddit | read each community's self-promotion rules first; most limit frequency | cross-posting the same text | high risk, not necessary |
+| Chinese tech communities | one experience post on "how a documents-only protocol repo is organised", linking the repo | airdrops, project prospects | value lies in the **method**, not the project |
+| X / Weibo | release notes and concrete conclusions only | riding crypto hashtags | low |
 
-**优先级**：教程（外部）> awesome-list PR（外部）> GitHub 站内维护 > 中文技术社区经验贴。前两者各做一次就够，不要重复投递。
+**Priority**: tutorial (external) > awesome-list PR (external) > GitHub upkeep > Chinese-community experience post. The first two are one-off; do not repeat submissions.
 
----
+## 4. Hard limits (break one and the route is void)
 
-## 4. 红线（任何一条破了，整个路线作废）
+- No buying stars, forks or watchers; no sock-puppet starring; no star-for-star schemes.
+- No "follow the repo to get an airdrop / whitelist" bait — it attracts the wrong audience and hands impersonators an opening.
+- No posting in communities that prohibit self-promotion; no cross-posting identical text; no multi-account posting.
+- No fictional "already live", "already audited", "already funded".
+- Do not use `token sale`, `presale`, `airdrop` or `listing` in titles or descriptions — even in negation, recommendation systems misread them.
 
-- 不购买 star / fork / watcher，不用小号互相点星，不组织"star 换 star"。
-- 不做"关注仓库领空投 / 领白名单"类诱饵——这会立即吸引错误受众，并让仿冒者有了可乘之机。
-- 不在禁止自我推广的社区发帖，不跨版复制粘贴，不用多个账号发同一内容。
-- 不虚构"已上线""已审计""已获投资"。
-- 不在标题或描述里使用 `token sale`、`presale`、`airdrop`、`listing` 这类词——即使是否定句，也会被搜索与推荐系统误判。
+## 5. Four-week cadence (executable without contacts)
 
----
-
-## 5. 四周节奏（可执行，不依赖任何人脉）
-
-| 周 | 动作 | 产出 |
+| Week | Action | Output |
 |---|---|---|
-| W1 | 首屏与 description 定稿；把 `examples/sim` 的输出截图存入 `assets/`；确认 `docs/handover` 三件在主 README 里被链接 | README 改动 1 次提交 |
-| W2 | 写一篇仿真教程（1000–1500 字，含代码片段与结论），发到 dev.to 或自己的博客 | 1 个外链；被引用起点 |
-| W3 | 向 1–2 个 awesome-list 提 PR；在仓库内开 1 个"待决问题"discussion（从 `docs/research/open-questions.md` 的 Q1–Q10 取一个） | 1 个 PR；1 条讨论 |
-| W4 | 复盘：看 GitHub Traffic（Insights）的 views / clones / referrers；按实际进来的搜索词改 description | 1 次 description 调整 |
+| 1 | finalise first screen and description; add the simulation screenshot under `assets/`; ensure the three handover documents are linked from the main README | one README commit |
+| 2 | write a simulation tutorial (1,000–1,500 words with code and conclusions), publish on dev.to or a blog | one backlink; the starting point for citations |
+| 3 | submit one or two awesome-list PRs; open one "open question" discussion drawn from Q1–Q10 in `docs/research/open-questions.md` | one PR; one thread |
+| 4 | review GitHub Traffic (views, clones, referrers); adjust the description to the queries people actually used | one description change |
 
-四周之后停手。**重复投递同一内容是最常见的失败原因**，不是渠道不够多。
+Then stop. **Re-posting the same content is the most common failure**, not a shortage of channels.
 
----
+## 6. Metrics
 
-## 6. 度量与判据
+GitHub repository Insights (Traffic) reports 14-day views, unique visitors, clones and referring sites; it requires push rights.
 
-GitHub 仓库 Insights（Traffic）提供 14 天窗口的 views、unique visitors、clones、referring sites，需要仓库 push 权限，admin 可见。
+Reasonable baselines for a new repository (reference ranges, not promises):
 
-新仓库的合理基线（参考区间，非承诺）：
-
-| 指标 | 头 30 天合理区间 | 说明 |
+| Metric | First 30 days | Note |
 |---|---|---|
-| unique visitors / 14 天 | 30–300 | 低于 30 说明没有外部入口；高于 300 通常来自单次社区曝光 |
-| star / 千次访问 | 5–30 | 文档型仓库偏低；靠可运行资产拉高 |
-| clone / 千次访问 | 3–15 | 我们的目标是 clone 高于 star——clone 的人才可能真用 |
-| 外链 referrers | ≥ 1 | 没有外链，说明流量只来自站内搜索 |
+| unique visitors / 14 days | 30–300 | below 30 means no external entry; above 300 usually one community mention |
+| stars per 1,000 visits | 5–30 | lower for documents-only repos; raised by runnable assets |
+| clones per 1,000 visits | 3–15 | the goal is clones above stars — clones may actually use it |
+| referring sites | ≥ 1 | without backlinks, traffic comes only from internal search |
 
-**判据**：连续两周 referrers 为 0，且 clones 为 0，说明"可运行资产"没有起到作用，优先改首屏与 `examples/sim` 的说明，而不是加渠道。
+**Test**: two consecutive weeks with zero referrers and zero clones means the runnable assets are not doing their job. Fix the first screen and the `examples/sim` notes before adding channels.
 
 ---
 
-相关文件：[`README.md`](../../README.md) · [`docs/research/open-questions.md`](../research/open-questions.md) · [`docs/review/process.md`](../review/process.md)
+Related: [`README.md`](../../README.md) · [`docs/research/open-questions.md`](../research/open-questions.md) · [`docs/en/review/process.md`](../en/review/process.md)

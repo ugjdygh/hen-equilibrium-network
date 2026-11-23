@@ -1,39 +1,39 @@
-# Security Policy / 安全策略
+# Security Policy
 
-## 范围
+## Scope
 
-本仓库**没有**可运行网络、没有节点软件、没有钱包、没有链上资产。因此不存在"漏洞赏金""资产损失赔付"或"应急响应团队"。任何声称能追回损失、提供官方赔付的说法都是诈骗。
+This repository has **no** running network, no node software, no wallet, and no on-chain assets. There is therefore no bug bounty, no loss reimbursement, no incident response team. Anyone claiming to recover losses or offer official compensation is running a scam.
 
-本仓库的安全相关范围仅限**设计层**：
+Security here is limited to the **design layer**:
 
-- 共识与难度调节机制的博弈缺陷
-- 隐私方案的可验证性与失效模式
-- 经济机制的套利与治理俘获路径
-- 升级与参数调节的失控场景
-- 文档中可能导致误实现或误部署的表述
+- game-theoretic defects in consensus and difficulty adjustment
+- verifiability and failure modes of the privacy scheme
+- arbitrage and governance-capture paths in the economic design
+- runaway scenarios in upgrades and parameter adjustment
+- wording that could lead to misimplementation or misdeployment
 
-## 如何报告
+## How to report
 
-请通过本仓库的 Issue 提交，标题以 `SECURITY:` 开头，正文包含：
+Open an issue titled `SECURITY:` containing:
 
-1. 受影响章节或文件；
-2. 攻击场景（谁、在什么条件下、付出什么成本、得到什么）；
-3. 后果（安全性、隐私、经济或一致性）；
-4. 可能的缓解方向；
-5. 是否已公开讨论过（避免重复）。
+1. the affected section or file;
+2. the attack scenario (who, under what conditions, at what cost, gaining what);
+3. the consequence (security, privacy, economics or consistency);
+4. a possible mitigation direction;
+5. whether it has been discussed publicly before (to avoid duplicates).
 
-若涉及可能被立即滥用、且不宜公开细节的问题，请在 issue 中**只描述影响范围**，说明"细节希望私下沟通"，由维护者约定后续渠道。本仓库无专职安全团队，响应时间不设承诺。
+Where a defect could be abused immediately and should not be detailed publicly, **describe only the impact** in the issue, state that details are offered privately, and let the maintainers agree a channel. There is no dedicated security team; no response time is promised.
 
-## 不接受的报告
+## Not accepted
 
-- 针对第三方钱包、交易所、矿池的漏洞（请报给对应方）。
-- 要求提供"测试资产""验证地址""赏金"的请求。
-- 以安全报告为名的推广、拉人、募资。
+- Vulnerabilities in third-party wallets, exchanges or mining pools (report to them).
+- Requests for "test assets", "verification addresses" or bounties.
+- Promotion, recruitment or fundraising dressed as a security report.
 
-## 披露原则
+## Disclosure
 
-设计缺陷一经确认，将以文档修订形式公开记录（含修订理由与受影响章节），记入 `CHANGELOG.md`；形成决策的另记 `docs/review/decisions.md`。不做"先修后藏"。
+Once a design defect is confirmed it is recorded publicly as a documentation revision (with reasons and affected sections) in `CHANGELOG.md`; decisions also go into `docs/review/decisions.md`. No fix-then-hide.
 
-## 提醒
+## A reminder
 
-本文档不含任何实现。若有人基于本文档发布软件，请独立审计，不要因为"文档看起来完整"就信任其代码。
+This document contains no implementation. If someone ships software based on it, audit that software independently; do not trust code because the documentation looks complete.

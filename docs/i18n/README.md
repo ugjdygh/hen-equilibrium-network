@@ -46,6 +46,24 @@ A locale moves from Tier B to Tier A only when a complete whitepaper translation
 
 Because a full translation of eight locales would put unreviewed compliance wording in eight languages, and the four prohibitions (no issuance, no fundraising, no operation, no endorsement) must not drift. A summary that says "not full text" is safer than a full text nobody checked. Traditional Chinese is the exception that proves the rule: it is a script conversion, not a translation, so the meaning cannot drift.
 
+
+## 1.1 Repository surface language (2026-11 state)
+
+The repository's **entry surface is English only**: `README.md`, `DISCLAIMER.md`, `NOTICE.md`, `AUTHORS.md`, `CLA.md`, `CLA-SIGNATURES.md`, `GOVERNANCE.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `ROADMAP.md`, `CHANGELOG.md` and all `.github` templates. No bilingual mixing remains at the surface a first-time visitor sees.
+
+Deeper documents are in transition, stated file by file rather than implied:
+
+| Area | Status |
+|---|---|
+| `docs/whitepaper/en`, `docs/whitepaper/zh`, `docs/whitepaper/zh-Hant` | full text, per locale |
+| `docs/en/handover`, `docs/en/review` | English editions complete |
+| `docs/legal/*` (boundaries, provenance, CLA ledger, hard-copy, lead checklist) | English |
+| `docs/outreach/growth.md` | English |
+| `docs/handover/*`, `docs/review/*` (Chinese originals) | Chinese only — the English editions above are canonical for English readers |
+| `docs/research/*`, `docs/protocol-draft/*`, `docs/maintenance/*`, `docs/ecosystem/*`, `spec/`, `contrib/`, `examples/sim/README.md`, `assets/diagrams/README.md` | Chinese only; English editions not yet written |
+
+A file that is Chinese-only is never presented as English. Where an English reader follows a link from English content they land on an English page; the Chinese-only files are reachable only from Chinese pages and the file tree.
+
 ## 2. Rules for localized pages
 
 1. Never weaken these four statements when translating: **no issuance, no fundraising, no operation, no endorsement** (see `DISCLAIMER.md`).

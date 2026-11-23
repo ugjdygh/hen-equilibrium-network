@@ -1,94 +1,72 @@
-# Roadmap / 研究路线
+# Roadmap
 
-阶段 0–4。每个阶段有产出与退出条件。**任何阶段都不承诺进入下一阶段。**
+Stages 0–4. Each stage has outputs and exit conditions. **No stage promises entry into the next one.**
 
-铺垫的目标不是宣称未来成功，而是把项目做成"别人可以顺着接下去"的研究底座：问题清楚、术语清楚、待验证项清楚、交接清楚、边界清楚。
+The point of the groundwork is not to claim future success, but to leave a research base others can continue: clear problems, clear terminology, clear open questions, clear handover, clear boundaries.
 
----
+## Stage 0 — convergence and drafting (current)
 
-## 阶段 0 · 收敛打磨期（当前）
-
-| # | 事项 | 状态 |
+| # | Item | Status |
 |---|---|---|
-| 0.1 | 确定英文名、缩写与 slug（Horizon Equilibrium Network / HEN / `hen-equilibrium-network`） | 已完成 |
-| 0.2 | 确定中文名（衡远网络） | 已完成（ADR-001） |
-| 0.3 | 白皮书问题陈述、术语表、免责声明 | 已完成（v0.3.0） |
-| 0.4 | 核心概念定义统一（遮蔽/匿名、记账单位/货币、贡献者/团队） | 已完成（`docs/research/glossary.md`） |
-| 0.5 | 待研究清单与取舍分析 | 已完成（Q1–Q10、`docs/research/tradeoffs.md`） |
-| 0.6 | 审核日志与版本记录机制 | 已完成（`CHANGELOG.md`、`docs/review/`） |
-| 0.7 | 仓库骨架与接手材料 | 已完成（`docs/handover/`） |
-| 0.8 | 公开发布（建仓库、推送、About 栏填写） | **未完成**——发布前须执行 `docs/review/checklist.md` A 部分 |
+| 0.1 | English name, abbreviation and slug (Horizon Equilibrium Network / HEN / `hen-equilibrium-network`) | Done |
+| 0.2 | Chinese name (衡远网络) | Done (ADR-001) |
+| 0.3 | Whitepaper problem statement, glossary, boundary statement | Done (v0.3.0) |
+| 0.4 | Terminology fixed (shading/ anonymity, accounting unit/ currency, contributor/ team) | Done (`docs/research/glossary.md`) |
+| 0.5 | Open-question list and trade-off analysis | Done (Q1–Q10, `docs/research/tradeoffs.md`) |
+| 0.6 | Review log and version record | Done (`CHANGELOG.md`, `docs/en/review/`) |
+| 0.7 | Repository skeleton and handover material | Done (`docs/en/handover/`) |
+| 0.8 | Public release (repository, push, About panel) | **Done** — v0.4.0 published with release, Discussions and language matrix |
 
-**退出条件**：清单 0.1–0.7 全部完成，0.8 发布且 30 天内无人指出"结构性缺失"（只针对结构与边界，不针对机制对错）。
+**Exit condition**: items 0.1–0.7 complete, 0.8 released, and 30 days without a reported structural gap (structure and boundaries only, not whether the mechanism is right).
 
----
+## Stage 1 — research and simulation
 
-## 阶段 1 · 研究与仿真期
+- [ ] Literature and comparison review (first cut in place; formal sources for Q2/Q4/Q6 still pending)
+- [ ] Economic simulation: circulation, dormancy rate, floor reward, fee routing (`examples/sim/incentive_sim.py` is a starting point only)
+- [ ] Difficulty-adjustment simulation: gain × latency grid sweep, producing a stability domain
+- [ ] Sybil-resistance cost model (Q2)
+- [ ] History-weight gaming simulation (Q3)
+- [ ] Privacy feasibility and boundary analysis (Q5)
+- [ ] Protocol field drafts: block header, transaction, validation flow, message flow (drafted; to be revised against simulation results)
 
-- [ ] 梳理参考文献与同类方案对比（初版已就位，待补 Q2/Q4/Q6 的正式文献）
-- [ ] 经济模型仿真：流通量、沉睡率、保底奖励、手续费分流（`examples/sim/incentive_sim.py` 只是起点）
-- [ ] 难度调节仿真：增益 × 延迟网格扫描，输出稳定域
-- [ ] 女巫抵抗成本模型（Q2）
-- [ ] 履历权重刷分仿真（Q3）
-- [ ] 隐私方案可行性与边界分析（Q5）
-- [ ] 协议字段草稿：区块头、交易、验证流、消息流（已有草案，待按仿真结论修订）
+**Exit condition**: key parameters stable in simulation, every claim backed by a reproducible script (script in repo, parameters in repo, third party can rerun). While a question is open, the mechanism may not be described as "established".
 
-**退出条件**：关键参数在仿真中稳定，且每个主张都有可复现脚本（脚本入库、参数入库、第三方可重跑）。任何一个 Q 无结论时，不得宣称该机制"成立"。
+## Stage 2 — prototype validation
 
----
+- [ ] Transaction parsing and basic signature verification
+- [ ] Merkle tree and block header validation
+- [ ] Transaction pool and filtering rules
+- [ ] Single-node block production and multi-node sync prototype
+- [ ] Test-case backfill (`docs/en/handover/test-cases.md`, by ID)
+- [ ] Independent security review (including choice of cryptographic primitives)
 
-## 阶段 2 · 原型验证期
+**Exit condition**: the prototype shows no **design-level failure** under adversarial testing — not "no bugs", but "no failure that overturns a design assumption".
 
-- [ ] 交易解析与基础验签模拟
-- [ ] 默克尔树与区块头校验
-- [ ] 交易池与过滤规则
-- [ ] 单节点出块模拟与多节点同步原型
-- [ ] 测试用例回填（`docs/handover/test-cases.md`，按编号逐条）
-- [ ] 独立安全评审（含密码学原语选型）
+**Explicitly not done at this stage**: no issuance of any asset, no off-exchange trading of any "test coin", no reward pool.
 
-**退出条件**：原型在对抗性测试中不出现**设计级失败**（不是"没有 bug"，而是"没有推翻设计假设的失败"）。
+## Stage 3 — community co-creation
 
-**此阶段明确不做**：不发行任何资产，不开放任何"测试币"的场外交易，不设奖励池。
+- [ ] Open discussion and work claiming
+- [ ] Active contributors and maintainer roles (at least two unconnected to the author)
+- [ ] Mature proposal and review process
+- [ ] At least one independently reproduced simulation report
+- [ ] If a testnet is wanted: separate security-audit and compliance assessment first
 
----
+**Exit condition**: the process runs for three months without the author's involvement.
 
-## 阶段 3 · 社区共创期
+## Stage 4 — long-term exploration (unspecified)
 
-- [ ] 开放讨论与贡献认领
-- [ ] 形成活跃贡献者与维护角色（至少两名与作者无关）
-- [ ] 完善协议提案与评审流程
-- [ ] 至少一篇独立复现的仿真报告
-- [ ] 如需测试网，另行讨论安全审计与合规评估
+Whether to pursue a testnet, a layer-2 design, an explorer or a wallet is decided by the community after simulation, audit and compliance assessment.
 
-**退出条件**：流程能在作者完全不参与的情况下独立运转三个月。
+**This repository presumes no launch path**, and gives no timeline.
 
----
+## Four things explicitly not done
 
-## 阶段 4 · 长期探索（不预设）
+1. No fundraising (no ICO, no presale, no donation address, no sponsorship).
+2. No token issuance (no reserve, no airdrop, no allocation table).
+3. No lobbying or endorsement for any exchange listing.
+4. No foundation, treasury, or paid membership of any kind.
 
-是否继续推进测试网、二层方案、浏览器或钱包，由社区在仿真、审计与合规评估后自行决定。
+## Progress record
 
-**本仓库不预设上线路径**，也不作时间表。
-
----
-
-## 明确不做的四件事
-
-1. 不发起募资（无 ICO、无预售、无捐赠地址、无赞助）。
-2. 不发行代币（无预留、无空投、无分配表）。
-3. 不为任何交易所上币做游说或背书。
-4. 不设立任何形式的基金会、金库或付费社群。
-
-## 进度记录
-
-每次阶段推进或停滞，都记入 `CHANGELOG.md`，并注明依据（哪份仿真、哪次评审）。**停滞也是有效结论，应记录而不隐藏。**
-
-## 失败信号（诚实退出条件）
-
-出现下列任一情况，应记录"该路径在现有约束下不成立"，而不是继续堆叠新机制：
-
-- 两年内无法给出 Q6 的稳定性论证；
-- Q2 的成本模型显示成本锚在能耗上限下不成立；
-- Q3 显示履历权重必然排斥新节点且无法修补；
-- 阶段 2 出现推翻设计假设的对抗性失败；
-- 连续 12 个月无实质贡献。
+Version history: `CHANGELOG.md` (English) and `CHANGELOG.zh.md` (完整中文记录). Decisions: `docs/en/review/decisions.md`.

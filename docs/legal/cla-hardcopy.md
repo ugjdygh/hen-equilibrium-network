@@ -1,54 +1,54 @@
-# 书面签署模板 / Hard-copy sign-off
+# Hard-copy sign-off template
 
-**用途**：当你需要一份可举证、可执行的书面许可（而不是一句 PR 评论）时使用。适用于：企业内部合规要求、需要确定权利主体、或日后可能发生争议的场合。
+**Use when** you need a written licence that can be produced in evidence and enforced, rather than a sentence in a thread. Typical cases: internal compliance requirements, a defined rights holder, or genuine litigation risk.
 
-**代价必须先讲清**：这份文件要求签署人写明**真实姓名、主体类型、联系地址**——它与匿名互斥。你若选择匿名，就只能用电子记录（`CLA-SIGNATURES.md`），其可执行性弱于书面签署。
-
----
-
-## 使用步骤
-
-1. 复制下面的模板到文档（Word / 纯文本均可），填写空白处；
-2. 打印、手写签名（法人加盖公章并由授权代表签字）；
-3. 扫描为 PDF（建议同时保留可复制的文字版）；
-4. 在本仓库签署 issue 下开一个带 `cla-hardcopy` 标签的新 issue，上传 PDF，并在正文写明"已提交书面签署，版本 v1.0"；
-5. 维护者核对后在 `CLA-SIGNATURES.md` 追加一行并标注 `hardcopy`。
+**The cost, stated first**: this document requires the signatory's **real name, entity type and contact address** — it is incompatible with anonymity. If you choose anonymity, the electronic record in `CLA-SIGNATURES.md` is your only option, and it is weaker than a written instrument.
 
 ---
 
-## 模板
+## Steps
 
-> **贡献者许可协议签署确认函**
->
-> 致：Horizon Equilibrium Network（HEN，衡远网络）维护者
->
-> 本人/本单位：________________________________（姓名或单位全称）
-> 主体类型：□ 自然人　□ 法人/其他组织
-> 证件或统一社会信用代码：____________________
-> GitHub 账号：____________
-> 联系地址：________________________________
-> 电子邮箱：________________________________
->
-> 兹确认：
->
-> 1. 本人/本单位已完整阅读仓库根目录 `CLA.md`（版本号：______；内容哈希 SHA-256：____________），理解其性质为**许可授予**而非著作权转让；
-> 2. 本人/本单位同意 `CLA.md` 全部条款，并对其向该仓库提交的全部贡献适用该协议；
-> 3. 本人/本单位保证对所提交内容拥有提交与授权所需的权利，并已按 `CLA.md` §6 声明含生成式 AI 产出的部分；
-> 4. 本人/本单位理解：本协议不产生劳动关系、合伙关系、代理关系或报酬请求权；
-> 5. 本确认函适用 ____________ 法律，争议由 ____________ 管辖。
->
-> 签署人（签字）：____________
-> 签署日期：______年____月____日
-> （法人另需：单位盖章、授权代表签字、授权文件附后）
+1. Copy the template below into a document (Word or plain text), fill the blanks.
+2. Print, sign by hand (companies: company seal plus an authorised representative's signature).
+3. Scan to PDF (keep a text copy too).
+4. Open a new issue in the sign-off thread labelled `cla-hardcopy`, attach the PDF, and state in the body: "written signature submitted, version v1.0".
+5. The maintainer checks it, appends a row to `CLA-SIGNATURES.md` marked `hardcopy`.
 
 ---
 
-## 维护者核对清单
+## Template
 
-- [ ] 版本号与哈希与当时 `CLA.md` 一致（`sha256sum CLA.md`）
-- [ ] 签署人身份信息与 GitHub 账号的关联有书面说明
-- [ ] 法人签署附授权文件
-- [ ] 台账追加行标注 `hardcopy` 并附 issue 链接
-- [ ] 原件存档位置记录在 `docs/legal/provenance.md` 的存证清单里
+> **Contributor License Agreement — signed confirmation**
+>
+> To: the maintainers of Horizon Equilibrium Network (HEN)
+>
+> Name / entity: ________________________________
+> Entity type: ☐ natural person　☐ company or other organisation
+> Registration or identification number: ____________________
+> GitHub account: ____________
+> Address: ________________________________
+> Email: ________________________________
+>
+> I confirm that:
+>
+> 1. I have read `CLA.md` in the repository root in full (version: ______; SHA-256: ____________), and understand that it is a **licence grant**, not a copyright assignment;
+> 2. I agree to all its terms, and they apply to every contribution I make to this repository;
+> 3. I hold the rights needed to submit and license my contributions, and have declared any generative-AI output under `CLA.md` §6;
+> 4. I understand that the agreement creates no employment, partnership, agency or payment relationship;
+> 5. This confirmation is governed by the law of ____________, with disputes in ____________.
+>
+> Signed: ____________
+> Date: ____________
+> (Companies additionally: company seal, authorised representative, authority documents attached.)
 
-**说明**：本模板不是法律文书范本，正式使用前应由律师按适用法律审阅。
+---
+
+## Maintainer checklist
+
+- [ ] Version and hash match `CLA.md` at the time (`sha256sum CLA.md`)
+- [ ] The signatory's identity is linked to the GitHub account in writing
+- [ ] Company signatures have authority documents attached
+- [ ] Ledger row marked `hardcopy` with the issue link
+- [ ] Original stored at a location recorded in the deposit list in `docs/legal/provenance.md`
+
+**Note**: this template is not a legal instrument; have counsel review it under the applicable law before use.

@@ -1,21 +1,21 @@
-# CLA signatures / 签署台账
+# CLA signatures
 
-**唯一权威记录。** 本文件由 `.github/workflows/cla-sign.yml` 自动追加，人工不得编辑——若需更正，开 issue 说明并保留原行。
+**Authoritative record.** This file is appended to automatically by `.github/workflows/cla-sign.yml`. Do not edit it by hand; to correct an entry, open an issue and leave the original line in place.
 
-## 怎么签（一次即可，全仓库有效）
+## How to sign (once, valid across the whole repository)
 
-在签署 issue（标题含 `CLA sign-off`，标签 `cla-signoff`）下回复**完整**一句：
+Reply in the sign-off issue (title contains `CLA sign-off`, label `cla-signoff`) with the **complete** sentence:
 
 ```
 I have read CLA.md and I agree to its terms for my contributions to this repository.
 ```
 
-机器人会核对该句是否完整、是否由你本人发出、是否已在台账中，然后追加一行，并回到 issue 里确认。签署后你在本仓库的任何 PR 都会被自动识别为已签署，无需重复。
+The automation checks that the sentence is complete, that the commenter is the account holder, and that the account is not already listed; it then appends one row here and confirms in the issue. After that, any pull request you open is recognised as signed — no need to sign again.
 
-在 PR 里回复同一句也有效，但只有在你确实为贡献者时才计入；长期贡献请到签署 issue 签一次。
+Signing inside a pull request thread is also valid, but counts only when you are a contributor to that PR. Regular contributors should sign once here.
 
-## 台账
+## Ledger
 
-| GitHub 账号 | 签署时间（UTC） | 协议版本指纹 | 记录链接 |
+| GitHub account | Signed at (UTC) | CLA.md fingerprint | Record |
 |---|---|---|---|
 | @ugjdygh | 2026-11-23 02:46:45Z | 8af357d1a70a5d31 | [#4 comment 7090203155](https://github.com/ugjdygh/hen-equilibrium-network/issues/4#issuecomment-7090203155) |

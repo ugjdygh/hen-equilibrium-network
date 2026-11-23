@@ -1,87 +1,87 @@
-# 法务边界说明 / Legal Boundaries
+# Legal boundaries
 
-**本文件不是法律意见。** 它解释"为什么仓库里有那些声明"，以及边界被越过时会发生什么。
+**Not legal advice.** This file explains why the repository carries the statements it carries, and what happens when a boundary is crossed.
 
-完整声明见根目录 `DISCLAIMER.md`（权威版本）。本文件补充的是**操作层面**的判断口径。
+The authoritative statement is `DISCLAIMER.md` at the repository root. This file adds the **operational** reading.
 
 ---
 
-## 1. 三句话概括
+## 1. In three sentences
 
-1. 这里只有文档，没有资产、没有发行、没有交易、没有服务。
-2. 作者不牵头、不开发、不运营、不背书。
-3. 任何人以本项目名义募资、发币、承诺收益，都与本项目无关，且属于冒用。
+1. There are documents here, and nothing else: no asset, no issuance, no trading, no service.
+2. The author does not lead, develop, operate or endorse.
+3. Anyone raising funds, issuing assets or promising returns under this name is unrelated to the project and is misappropriating it.
 
-## 2. 为什么写得具体，而不是写得长
+## 2. Why the wording is specific rather than long
 
-声明越长越像免责模板，也越容易被读作"事先已知风险"的证据。本文件的做法是**写清禁止什么、不服务谁**，而不是反复写"后果自负"。三个现实原因：
+A long disclaimer reads like a boilerplate waiver, and the longer it gets the more it looks like *prior knowledge of risk*. This file therefore states **what is prohibited and whom we do not serve**, rather than repeating "at your own risk". Three practical reasons:
 
-**声誉风险。** 研究仓库最常见的连带伤害是"别人拿你的设计去发币，出事后追溯到原始仓库"。声明是为了在事发前把责任线画清楚。
+**Reputational.** The usual collateral damage to a research repository is that someone takes the design and issues a token, and the fallout is traced back to the original repository. Stating the boundary in advance draws the line before anything happens.
 
-**合规风险。** 多个辖区对代币发行与虚拟货币相关业务活动设有明确限制（例如中国内地、欧盟 MiCA 与美国证券框架，详见 `DISCLAIMER.md`）。文档若被读作"发行方案"，性质就变了。因此边界用"不做什么 + 不服务谁"来写：这两项是可判定的事实；而"责任豁免"不是事实，也不产生法律效果。
+**Regulatory.** Several jurisdictions restrict token issuance and virtual-currency business activity (mainland China, MiCA, US securities analysis — see `DISCLAIMER.md`). If the document is read as an issuance plan, its nature changes. The boundary is therefore written as "what is not done + whom we do not serve", because those are checkable facts; "liability exemption" is not a fact and has no legal effect.
 
-**误解成本。** 不写清楚"不发行"，读者会用代币白皮书的框架来读这份文档，然后问"总量多少、怎么分配、什么时候上所"——这些问题在这份文档里没有答案，也不该有。
+**Cost of misunderstanding.** Without a clear "no issuance", readers apply a token-whitepaper frame and ask how large the supply is, how it is allocated, when it lists. Those questions have no answer here, and should not.
 
-## 3. 判定口径：什么算越过边界
+## 3. Operational test: what crosses the line
 
-| 行为 | 是否越过 | 说明 |
+| Action | Crosses? | Note |
 |---|---|---|
-| 引用本仓库设计写论文 | 否 | 欢迎，注明出处即可 |
-| 参考本仓库做课程作业 | 否 | 欢迎 |
-| 自己实现原型并公开代码 | 否 | 但不得称"官方"，且须自标"未审计" |
-| 在实现中加入代币发行 | 是 | 与本项目无关，不得使用本项目名义 |
-| 以"HEN 官方"募资、预售、空投 | 是 | 冒用，应立即切割并公示 |
-| 声称"经 HEN 审计" | 是 | 本项目无审计能力，无此授权 |
-| 把本仓库文档翻译后用于推广代币 | 是 | 翻译可以，用途不可以 |
+| Citing the design in a paper | No | Welcome, with attribution |
+| Using it for coursework | No | Welcome |
+| Building a prototype and publishing the code | No | Must not call itself "official"; must label itself unaudited |
+| Adding token issuance to an implementation | Yes | Unrelated to this project; may not use the name |
+| Raising funds, preselling or airdropping as "official HEN" | Yes | Misappropriation; disavow and publicise |
+| Claiming "audited by HEN" | Yes | No audit capability, no such authorisation |
+| Translating the documents to promote a token | Yes | Translation is fine; that use is not |
 
-## 3.1 不服务的对象
+## 3.1 Whom we do not serve
 
-| 请求方 | 处理 |
+| Requesting party | Handling |
 |---|---|
-| 寻求代币发行、预售、空投、上所、做市、募资方案 | 不提供，不转介 |
-| 寻求支付、收款、结算、兑换、托管、钱包运营方案 | 不提供，不转介 |
-| 以求"合规包装"（用研究文档作壳掩盖商业发行） | 不提供 |
-| 寻求投资建议、收益预测、价格判断 | 不提供 |
-| 寻求背书、合作、赞助、招聘 | 不提供 |
-| 要求作者承担开发、部署、运营、法律或财务责任 | 不提供 |
+| Seeking issuance, presale, airdrop, listing, market-making or fundraising plans | Not provided, not referred |
+| Seeking payment, collection, settlement, exchange, custody or wallet operation plans | Not provided, not referred |
+| Seeking "compliance packaging" (using research docs as a shell for a commercial offering) | Not provided |
+| Seeking investment advice, return forecasts or price calls | Not provided |
+| Seeking endorsement, partnership, sponsorship or recruitment | Not provided |
+| Asking the author to take on development, deployment, operational, legal or financial responsibility | Not provided |
 
-不服务不等于"免责"：这些请求被拒绝，是因为超出本项目范围，而不是因为本项目预先免除了某项义务。
+Declining is not disclaiming: these requests are refused because they fall outside the project's scope, not because some obligation was pre-waived.
 
-## 4. 若发生冒用，仓库可做什么
+## 4. If misappropriation occurs
 
-1. 在 README 顶部与 `docs/ecosystem/implementations.md` 明确声明"与该主体无关"；
-2. 移除其在本页的链接；
-3. 若对方使用本项目名称或标识，公开说明未授权；
-4. 不代替执法机关，也不对第三方行为承担连带责任。
+1. State in the README and in `docs/ecosystem/implementations.md` that the party is unrelated;
+2. remove any link to it from this repository;
+3. where the project name or marks are used, state publicly that no authorisation exists;
+4. do not act as law enforcement and accept no joint liability for third-party conduct.
 
-**做不到的事**：无法阻止他人复制 MIT 许可下的文档去另作他用。这是开放许可的代价，也是它必须配合明确声明的原因。
+**What cannot be done**: preventing others from reusing MIT-licensed documents for another purpose. That is the price of an open licence, and the reason it must be paired with explicit statements.
 
-## 5. 作者角色（重复一次，因为最容易被忽略）
+## 5. The author's role (repeated because it is most often skipped)
 
-作者以固定研究署名发布文档，不在仓库内披露身份信息，不参与核心开发、不牵头、不运营、不运行节点、不提供兑换或中介。
+The author publishes under a fixed research byline, discloses no identity information in the repository, and takes no part in core development, leadership, operation, node running, exchange or intermediation.
 
-说清两点，避免误读：**笔名不产生匿名保护，也不隔离责任**——署名只是署名，本项目不以笔名主张责任限制；**声明只覆盖本仓库**——同一账号下的其他仓库由各自维护，本项目的承诺不延伸至它们。
+Two points, to avoid misreading: **a byline confers no anonymity and isolates no liability** — it is only an attribution, and the project asserts no liability limit on its strength; **the statements cover this repository only** — other repositories under the same account are maintained separately and the commitments here do not extend to them.
 
-作者不对任何后续部署、分叉、衍生项目承担连带责任，也不为其背书。
+The author accepts no joint liability for later deployments, forks or derivative projects, and endorses none.
 
-## 6. 辖区差异（提示，非结论）
+## 6. Jurisdictional differences (a pointer, not a conclusion)
 
-- 中国内地：代币发行与虚拟货币相关业务活动受明确限制（详见 `DISCLAIMER.md`）。
-- 欧盟 / 美国：分别适用 MiCA 授权披露要求与证券判定框架（示例，非完整归纳）。
-- 其他辖区：证券法、反洗钱、税务、制裁、消费者保护的适用差异很大。**读者须自行取得当地法律意见。**
-- 跨境：同一行为在不同辖区可能合法与非法并存，不因"技术上是开源的"而免责。
+- Mainland China: token issuance and virtual-currency business activity are restricted (see `DISCLAIMER.md`).
+- EU / US: MiCA authorisation and disclosure duties; the securities framework (illustrative, not exhaustive).
+- Other jurisdictions: securities, anti-money-laundering, tax, sanctions and consumer-protection rules diverge widely. **Readers must obtain local advice.**
+- Cross-border: the same act may be lawful in one place and unlawful in another; being technically open source is not a defence.
 
-## 7. 文档翻译的注意
+## 7. Translating the statements
 
-翻译 `DISCLAIMER.md` 与白皮书 §12 时，**不得弱化**"不发行、不募资、不运营、不背书"四句。若译文与中文版冲突，以中文版为准（见 `docs/whitepaper/en/whitepaper.md` 顶部说明）。
+When translating `DISCLAIMER.md` and whitepaper §12, the four prohibitions — **no issuance, no fundraising, no operation, no endorsement** — must not be weakened. Where a translation conflicts with the English text, the English text prevails.
 
-## 8. 需要重新评估的触发点
+## 8. Triggers for re-assessment
 
-出现下列任一情况时，本文件与 `DISCLAIMER.md` 应重新审阅：
+Re-read this file and `DISCLAIMER.md` if any of the following occurs:
 
-- 仓库开始接收资金（含捐赠、赞助）——**本仓库不建议这么做**；
-- 有人在本仓库提出正式上币、融资或商业合作；
-- 相关辖区监管规则发生变化；
-- 项目进入阶段 2（原型验证）之后。
+- the repository begins receiving funds (donations, sponsorship) — **not recommended**;
+- a formal listing, financing or commercial partnership proposal arrives;
+- the regulatory position in a relevant jurisdiction changes;
+- the project enters stage 2 (prototype validation) or later.
 
-**再次声明：本文件不是法律意见，也不替代律师。**
+**Again: this is not legal advice and does not replace counsel.**

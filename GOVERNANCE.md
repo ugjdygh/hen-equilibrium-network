@@ -1,86 +1,86 @@
-# Governance / 治理与变更流程
+# Governance
 
-**Horizon Equilibrium Network（HEN，衡远网络）**
+**Horizon Equilibrium Network (HEN)**
 
-本仓库的治理目标只有一个：让技术分歧通过可追溯的流程解决，而不是靠谁嗓门大。
+The repository has one governance goal: let technical disagreement be settled by a traceable process, not by volume.
 
-原则层在本文件；合并门槛、标签、PR 检查、冲突处理等操作规则见 `docs/maintenance/merge-rules.md`（冲突时以本文件为准）。
+Principles live here; operational rules — merge thresholds, labels, PR checks, conflict handling — are in `docs/maintenance/merge-rules.md` (this file prevails on conflict).
 
-## 1. 三层结构
+## 1. Three layers
 
-| 层 | 内容 | 决策方式 |
+| Layer | Content | How it is decided |
 |---|---|---|
-| 参数层 | 难度、手续费区间、流通调节等 | 协议内自动调节，受上下限、速率限制与熔断约束（`docs/whitepaper/zh/whitepaper.md` §10.1） |
-| 机制层 | 共识、隐私、激励、脚本的语义变更 | RFC issue + 公开评审 + 向后兼容升级 |
-| 方向层 | 是否进入下一研究阶段 | 由活跃贡献者公开讨论，无强制结论（见 `ROADMAP.md`） |
+| Parameter | difficulty, fee bands, circulation adjustment | automatic within the protocol, bounded by limits, rate limits and circuit breakers (whitepaper §10.1) |
+| Mechanism | semantics of consensus, privacy, incentives, scripting | RFC issue + public review + backward-compatible upgrade |
+| Direction | whether to enter the next research stage | public discussion among active contributors, no forced conclusion (see `ROADMAP.md`) |
 
-## 2. 明令不设的东西
+## 2. What is deliberately absent
 
-- **无基金会、无金库、无预留份额。**
-- **无代币治理。** 不存在"持币投票"。
-- **无付费席位。** 影响力不能购买、转让或继承。
-- **技术提案无一票否决。** 任何人对技术提案都不享有否决权（保留事项见 §3.1，仅限项目身份与资产，不涉及技术判断）。
+- **No foundation, no treasury, no reserved allocation.**
+- **No token governance.** There is no "one token one vote".
+- **No paid seats.** Influence cannot be bought, transferred or inherited.
+- **No technical veto.** Nobody — maintainer or author — holds a veto over a technical proposal. Reserved matters exist (§3.1) and are limited to project identity and assets, never technical judgement.
 
-## 3. 维护者的权限与边界
+## 3. Maintainer powers and limits
 
-维护者由长期活跃贡献者自然形成，职责限于：
+Maintainers emerge from sustained contribution. Their duties are limited to:
 
-- 合并通过评审的变更（门槛见 `docs/maintenance/merge-rules.md`）；
-- 维护发布与文档一致性；
-- 执行讨论规范（见 `CODE_OF_CONDUCT.md`）；
-- 归档决策记录（`docs/review/decisions.md`）与修订记录（`CHANGELOG.md`）。
+- merging changes that passed review (thresholds in `docs/maintenance/merge-rules.md`);
+- keeping releases and documents consistent;
+- enforcing discussion rules (`CODE_OF_CONDUCT.md`);
+- recording decisions (`docs/en/review/decisions.md`) and changes (`CHANGELOG.md`).
 
-维护者**不能**：宣称代表社区、改变协议以服务某一方利益、把仓库用于募资或推广、以项目名义背书任何商业实体。
+Maintainers **may not**: claim to speak for the community, change the protocol to serve a particular party, use the repository for fundraising or promotion, or endorse any commercial entity under the project's name.
 
-### 3.1 保留事项（仅限项目身份与资产）
+### 3.1 Reserved matters (identity and assets only)
 
-以下事项不由技术评审决定，也不适用"活跃贡献者多数"规则，由仓库所有者决定，并须在 `docs/review/decisions.md` 公开记录理由：
+The following are not decided by technical review and are not subject to "majority of active contributors". They are decided by the repository owner, with reasons recorded publicly in `docs/en/review/decisions.md`:
 
-1. **项目名称与商标**：名称、缩写、标识、域名，以及是否申请注册；
-2. **许可证**：`LICENSE` 的变更（含改为更严格的许可证）；
-3. **仓库所有权与托管**：仓库归属账号、是否迁移、是否归档或删除；
-4. **对外代表口径**：谁能以项目名义对外发言（当前仅限文档维护者发布版本说明）。
+1. **Name and marks** — name, abbreviation, logo, domain, and whether to register;
+2. **Licence** — any change to `LICENSE`, including to stricter terms;
+3. **Ownership and hosting** — which account holds the repository, migration, archiving or deletion;
+4. **External voice** — who may speak for the project (currently: documentation maintainers issuing release notes only).
 
-**边界（写死）**：保留事项**不得**用于：
-- 推翻 §4 的技术评审判据；
-- 否决已通过评审的机制变更；
-- 把仓库转为募资、发行或商业运营；
-- 更改 §12 合规边界或 §2 原则优先级。
+**Hard boundary.** Reserved matters **may not** be used to:
+- override the review criteria in §4;
+- veto a mechanism change already accepted in review;
+- turn the repository into fundraising, issuance or commercial operation;
+- alter the compliance boundary in whitepaper §12 or the principle order in §2.
 
-换言之：项目"叫什么、归谁、用什么许可证"由所有者定；"技术上怎么改"仍由评审决定。这条分界的目的是让身份与资产有明确责任主体，而不是把技术决策权集中。
+In short: the owner decides what the project is *called*, *who holds it* and *under which licence*; review decides *how the technology changes*. The split exists so identity and assets have an accountable owner, not so that technical authority is centralised.
 
-## 4. 评审判据
+## 4. Review criteria
 
-一项变更被接受的条件（按顺序）：
+A change is accepted only if, in order:
 
-1. 不违反 `docs/whitepaper/zh/whitepaper.md` §2 的原则优先级；
-2. 不触碰 §12 的合规边界（任何触及募资、发行、交易服务的提案一律不接收）；
-3. 论证可被独立复算（引用、仿真、反例）；
-4. 有回滚路径或兼容方案；
-5. 至少一名与提案人无关的贡献者复核过论证。
+1. it does not violate the principle priority in whitepaper §2;
+2. it does not touch the compliance boundary in §12 (proposals involving fundraising, issuance or trading services are not accepted at all);
+3. its argument can be independently recomputed (citation, simulation, counterexample);
+4. it has a rollback path or a compatibility plan;
+5. at least one contributor unconnected to the proposer has reviewed the argument.
 
-## 5. 决策记录
+## 5. Decision records
 
-所有实质决策（接受、拒绝、搁置）记入 `CHANGELOG.md`，包含：日期、变更、理由、反对意见摘要。反对意见不被删除——保留分歧是这份文档可信度的一部分。
+Every substantive decision — accepted, rejected, deferred — is recorded in `CHANGELOG.md` with date, change, reasons and a summary of dissent. Dissent is not deleted: keeping disagreement is part of what makes these documents trustworthy.
 
-## 6. 分叉
+## 6. Forks
 
-若分歧无法收敛，允许分叉。分叉方须：
+Where disagreement cannot converge, forking is allowed. A fork must:
 
-- 使用不同名称与仓库，避免混淆；
-- 独立承担安全、经济与法律责任；
-- 不得以"HEN 官方"名义募资、发行或推广。
+- use a different name and repository, avoiding confusion;
+- carry its own security, economic and legal responsibility;
+- not raise funds, issue assets or promote itself as "official HEN".
 
-原仓库不对分叉作任何背书。
+The original repository endorses no fork.
 
-## 7. 作者的角色
+## 7. The author's role
 
-作者创建了文档，但**不牵头、不运营、不参与核心开发**。
+The author created the documents but does **not** lead, operate or take part in core development.
 
-- 在**技术议题**上，作者的意见与其他贡献者同权，不具特殊效力（`docs/whitepaper/zh/whitepaper.md` P7）；
-- 在 §3.1 的**保留事项**（名称与商标、许可证、仓库归属、对外口径）上，作者作为仓库所有者有最终决定权，须公开记录理由；
-- 作者退出不影响仓库存续；仓库所有权不随维护者变动而转移。
+- On **technical** matters the author's opinion carries the same weight as any contributor's, no more (whitepaper P7);
+- On the **reserved matters** of §3.1 — name and marks, licence, ownership, external voice — the author, as repository owner, has the final say, with reasons recorded publicly;
+- The author's departure does not end the repository; ownership does not transfer with maintainer changes.
 
-## 8. 终止
+## 8. Termination
 
-若长期无活跃维护者，仓库进入归档状态，文档保持可读与可引用。归档不等于授权任何人以其名义继续募资或发行。
+If maintenance goes dormant, the repository is archived and stays readable and citable. Archiving does not authorise anyone to raise funds or issue assets under its name.

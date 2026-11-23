@@ -1,133 +1,133 @@
-# Contributor License Agreement (CLA) / 贡献者许可协议
+# Contributor License Agreement
 
-**Horizon Equilibrium Network（HEN，衡远网络）· CLA v1.0 · 2026-11**
+**Horizon Equilibrium Network (HEN) · CLA v1.0 · 2026-11**
 
-本协议是**许可型 CLA**，不是版权转让。你在提交贡献时保留自己作品的著作权，同时授予本项目维护者一组足够宽的使用权。签一次，覆盖你此后对本仓库的全部贡献，直到你书面撤回（撤回不影响已发生的授权）。
+This is a **permissive CLA**, not a copyright assignment. You keep the copyright in what you contribute, and grant the maintainers a licence broad enough to keep the repository workable. One signature covers all your future contributions to this repository until withdrawn in writing, and withdrawal does not affect licences already granted.
 
-**为什么要签**：如果每个贡献者都只保留完整权利、不给任何许可，将来调整许可证、归档或变更用途时，维护者需要逐个找几十上百人授权。对一个人数会增长的开放仓库，这条路走不通。CLA 解决的是这个问题，而不是拿走你的版权。
+**Why it exists.** If every contributor kept all rights with no licence, any future change of licence, archiving or repurposing would require individual permission from dozens or hundreds of people. For an open repository whose contributor count is expected to grow, that path does not work. The CLA solves that. It does not take your copyright.
 
 ---
 
-## 1. 定义
+## 1. Definitions
 
-- **"你"**：提交贡献的自然人或法人。
-- **"贡献"**：你通过 Pull Request、补丁、issue 中的代码片段、文档、图表、测试用例、翻译等形式提交给本仓库的任何内容。
-- **"本项目"**：本仓库及其文档、规范、仿真与后续衍生作品。
-- **"维护者"**：对本仓库拥有合并权限的主体（见 `GOVERNANCE.md`）。
+- **"You"** — the natural or legal person submitting a contribution.
+- **"Contribution"** — anything you submit to this repository: code, documentation, diagrams, test cases, translations, patches, or code fragments in issues.
+- **"Project"** — this repository, its documents, specifications, simulations and later derivative works.
+- **"Maintainer"** — a party holding merge rights on this repository (see `GOVERNANCE.md`).
 
-## 2. 著作权归属
+## 2. Copyright
 
-你**保留**你对贡献的著作权。本协议不转让、不转移著作权所有权。
+You **retain** copyright in your contribution. This agreement assigns and transfers no ownership.
 
-## 3. 你授予的权利
+## 3. Licence you grant
 
-就你的贡献，你授予本项目维护者一项**永久、全球范围、非排他、免版税、不可撤销**的许可，允许其：
+For your contribution you grant the maintainers a **perpetual, worldwide, non-exclusive, royalty-free, irrevocable** licence to:
 
-1. 复制、修改、改编、翻译、汇编、公开展示与分发你的贡献；
-2. **再许可**（sublicense）上述权利，包括向后续使用者按本仓库当时的许可证再许可；
-3. **变更许可证**：将本仓库整体或部分改为其他开源许可证，或在必要时改为更严格的使用条件；
-4. 将贡献用于商业用途（包括付费分发、托管服务、商业集成）；
-5. 在保留署名惯例的前提下行使上述权利（署名方式见 `AUTHORS.md`）。
+1. reproduce, modify, adapt, translate, compile, publicly display and distribute your contribution;
+2. **sublicense** the above, including to later users under the repository's licence at that time;
+3. **change the licence** — relicensing the repository in whole or in part, including to stricter terms where necessary;
+4. use the contribution commercially (paid distribution, hosted services, commercial integration);
+5. exercise these rights while keeping the attribution convention described in `AUTHORS.md`.
 
-上述许可**不要求**维护者支付费用，也不因贡献被合并而产生报酬请求权（另行签署的书面协议除外）。
+No fee is payable, and no claim for payment arises from a contribution being merged, except under a separate written agreement.
 
-## 4. 专利许可（有限）
+## 4. Patent licence (limited)
 
-你授予本项目维护者及本仓库使用者一项非排他、全球、免版税的专利许可，仅覆盖你的贡献单独或与本项目结合时必然实施的专利权利要求。
+You grant the maintainers and users of this repository a non-exclusive, worldwide, royalty-free patent licence covering only those claims necessarily practised by your contribution alone or in combination with the project.
 
-**终止条件**：若你（或你的关联方）对本项目或本仓库使用者提起专利诉讼，指控其侵犯你贡献所涉及的专利，则本 §4 授予你的许可自起诉之日起终止。
+**Termination.** If you or an affiliate bring a patent action against the project or its users alleging infringement of a patent your contribution touches, the licence granted to you under this section terminates as of the filing date.
 
-## 5. 陈述与保证
+## 5. Representations and warranties
 
-你声明并保证：
+You represent and warrant that:
 
-1. 你对贡献拥有提交与授权所需的全部权利，或已取得权利人的相应授权；
-2. 贡献不含你明知会侵犯第三方著作权、专利、商标或商业秘密的内容；
-3. 若贡献包含第三方内容，你已在提交中明确标注其来源与许可证，且该许可证允许本仓库按当时的项目许可证分发；
-4. 若你在职务范围内创作该贡献，你已获得雇主同意，或雇主已放弃相关权利主张。
+1. you hold all rights needed to submit and license the contribution, or have the rights holder's permission;
+2. the contribution contains nothing you know to infringe third-party copyright, patents, trademarks or trade secrets;
+3. where the contribution includes third-party material, you have identified its source and licence in the submission, and that licence permits distribution under the project's licence;
+4. where the contribution was made within the scope of employment, you have your employer's consent or the employer has waived its claim.
 
-## 6. AI 辅助生成的贡献
+## 6. Contributions containing generative-AI output
 
-若你的贡献包含由生成式 AI 产出的内容（代码、文句、图表、翻译），你须在 PR 描述中声明，并保证：
+If your contribution includes content produced by a generative model (code, prose, diagrams, translations), you must declare it in the pull request and warrant that:
 
-1. 该内容不含你无权授权的第三方素材；
-2. 你对最终提交的内容承担与本协议相同的保证责任；
-3. 你理解部分辖区对纯 AI 生成内容的著作权认定存在不确定性，因此不依赖该内容主张排他权利。
+1. it contains no third-party material you are not entitled to license;
+2. you accept the same warranties for the submitted result as for any other contribution;
+3. you understand that copyright in purely AI-generated material is unsettled in some jurisdictions, and therefore do not rely on it to assert exclusive rights.
 
-本项目自身文档的来源分层见 `docs/legal/provenance.md`。
+The provenance layers of this project's own documents are described in `docs/legal/provenance.md`.
 
-## 7. 无担保
+## 7. No warranty
 
-贡献按"现状"提供，不附带任何明示或默示担保，包括适销性、特定用途适用性与不侵权担保。你在法律允许的最大范围内放弃因贡献质量产生的索赔。
+Contributions are provided "as is", without any express or implied warranty, including merchantability, fitness for a particular purpose and non-infringement. You waive, to the maximum extent permitted by law, claims arising from the quality of a contribution.
 
-## 8. 如何签署（两条通道，选一条即可）
+## 8. How to sign (three routes, choose one)
 
-### 通道 A — 在签署 issue 下签一次（推荐，全仓库有效）
+### Route A — sign once in the sign-off issue (recommended; valid repository-wide)
 
-在标题含 `CLA sign-off` 的 issue 下回复**完整**一句：
+Reply in the issue whose title contains `CLA sign-off` with the **complete** sentence:
 
 ```
 I have read CLA.md and I agree to its terms for my contributions to this repository.
 ```
 
-机器人（`.github/workflows/cla-sign.yml`）会：① 核对该句是否完整；② 核对该评论是否由你本人账号发出；③ 核对台账中是否已有你；④ 追加一行到 [`CLA-SIGNATURES.md`](CLA-SIGNATURES.md)，并回帖确认。此后你在本仓库的任何 PR 都会被自动识别为已签署（`.github/workflows/cla.yml` 会读取该台账）。
+The automation (`.github/workflows/cla-sign.yml`) checks that the sentence is complete, that the comment was posted by your own account, and that you are not already listed; it then appends a row to [`CLA-SIGNATURES.md`](CLA-SIGNATURES.md) and confirms in the thread. After that, every pull request you open is recognised as signed (`.github/workflows/cla.yml` reads the ledger).
 
-### 通道 B — 在自己的 PR 里签
+### Route B — sign inside your pull request
 
-由 **PR 作者或该 PR 的提交作者本人**在 PR 会话中回复同一句。适用规则：
+The **PR author, or any commit author on that PR**, replies with the same sentence in the PR thread. Rules:
 
-- 一个 PR 有多名贡献者（共同作者、多账号提交）时，**每位都要各自回复**；
-- 路人（既非作者也非提交者）的签署语句不计入；
-- 机器人账号（`[bot]`）一律忽略；
-- 签署后把评论编辑掉，会在下次判定时重新变为未签。
+- where a PR has several contributors (co-authors, commits from multiple accounts), **each must reply separately**;
+- comments from bystanders (neither author nor commit author) are not counted;
+- bot accounts (`[bot]`) are always ignored;
+- editing the comment away afterwards makes the PR unsigned again at the next check.
 
-### 通道 C — 书面签署（需要可执行性时）
+### Route C — written signature (when enforceability matters)
 
-见 §9.3。适用于需要更强的形式要求、或需要签署人可核验的场合。
+See §9.3. Used where a stronger form is required, or where the signatory's identity must be verifiable.
 
-## 9. 生效要件（逐条说明，避免"签了但不算"）
+## 9. Requirements for validity
 
-本协议能否被认定为有效许可，取决于以下六项；本项目把能控的都控住，把控不住的写清楚。
+Whether this agreement is recognised as a valid licence depends on six elements. The project controls what it can and states plainly what it cannot.
 
-| # | 要件 | 本项目的处理 | 局限 |
+| # | Element | How it is handled here | Limit |
 |---|---|---|---|
-| 1 | **明确的意思表示** | 只认可完整句子（漏字、改写不计）；机器人回帖确认 | 无法排除被胁迫或误解 |
-| 2 | **版本绑定** | 台账记录签署时 `CLA.md` 的 SHA-256 前 16 位，可回溯到具体文本 | 若日后改版，旧签署按旧版生效（§13） |
-| 3 | **书面形式** | 以文字回复形成电子记录；部分辖区数据电文构成书面形式（如中国《民法典》第 469 条） | **不保证所有辖区都满足当地书面要求** |
-| 4 | **留存与可追溯** | 台账在 git 历史中，附带评论链接；`cla.yml` 每次判定都会重读台账 | 若台账被恶意改写，只能靠 git 历史追责 |
-| 5 | **主体可识别** | 默认以 GitHub 账号为主体标识；需要可核验主体时走通道 C（§9.3） | 匿名账号无法核验真实身份 |
-| 6 | **适用法律与争议解决** | 见 §11（刻意留白） | 留白本身就是不确定性 |
+| 1 | **Clear assent** | Only the complete sentence counts; missing words or rephrasings do not; the automation confirms in-thread | Coercion or misunderstanding cannot be excluded |
+| 2 | **Version binding** | The ledger records the first 16 hex characters of the SHA-256 of `CLA.md` at signing time | After a revision, earlier signatures bind to the earlier text (§13) |
+| 3 | **Written form** | A text record; in some jurisdictions a data message counts as writing (e.g. PRC Civil Code art. 469) | **Not guaranteed to satisfy written-form rules in every jurisdiction** |
+| 4 | **Retention and traceability** | The ledger lives in git history with comment links; every check re-reads it | If the ledger is tampered with, only git history can establish what happened |
+| 5 | **Identifiable party** | The GitHub account is the default identifier; Route C where verifiability is required | An anonymous account cannot be verified |
+| 6 | **Governing law and forum** | Deliberately left open in §11 | That openness is itself uncertainty |
 
-**必须承认的一条**：在匿名署名下，"必生效"不可能达到 100%。原因不是文本不够严谨，而是**要强制执行就必须能指认相对方**——匿名恰好放弃了这个能力。想提高确定性，唯一有效的动作是 §9.3。
+**One admission**: under a pen name, "certain to be enforceable" cannot reach 100%. The reason is not imprecise drafting but that enforcement requires identifying the counterparty, which a byline declines to do. The only action that materially improves certainty is §9.3.
 
-### 9.3 通道 C：书面签署须知
+### 9.3 Route C — written sign-off
 
-需要"签字盖章、可举证、可执行"时，按 [`docs/legal/cla-hardcopy.md`](docs/legal/cla-hardcopy.md) 的模板准备一份书面确认函，签署后扫描成 PDF，在签署 issue 下开一个带 `cla-hardcopy` 标签的 issue 并上传。该记录同时追加进台账（标注 `hardcopy`）。
+Where a signed, producible, enforceable record is needed, prepare a written confirmation using the template in [`docs/legal/cla-hardcopy.md`](docs/legal/cla-hardcopy.md), sign and scan it to PDF, then open an issue in the sign-off thread labelled `cla-hardcopy` and attach it. The ledger entry is appended and marked `hardcopy`.
 
-这条路要求签署人提供可核验的身份信息——**它与匿名互斥**，必须由签署人自行决定。
+That route requires the signatory to supply verifiable identity information, and is therefore **mutually exclusive with anonymity**. The signatory decides.
 
-## 10. 与本仓库许可证的关系
+## 10. Relationship to the repository licence
 
-本仓库对外以 **MIT** 许可发布文档（见 `LICENSE`）。CLA 授予维护者的是**额外权利**（尤其是再许可与变更许可证），不改变任何使用者依 MIT 已取得的权利。
+Documentation is released under **MIT** (see `LICENSE`). The CLA grants the maintainers **additional** rights — notably sublicensing and relicensing — and does not alter rights any user already holds under MIT.
 
-## 11. 适用法律与争议解决
+## 11. Governing law and disputes
 
-本协议适用法律与管辖法院**未在本文件内指定**。签约方可在书面补充协议中约定；未约定时，依贡献发生时维护者主要所在地法律及有管辖权的法院处理。跨境贡献时，双方应自行评估可执行性。
+The governing law and forum are **not specified in this document**. The parties may agree them in a separate written instrument; absent agreement, the law and courts of the maintainer's principal place of business at the time of contribution apply. Cross-border contributors should assess enforceability themselves.
 
-*（这一条是刻意的留白：在匿名署名下指定管辖会引出"主体是谁"的问题。正式启用前应由律师按实际主体补全。）*
+*This clause is deliberately blank: naming a forum under a byline raises the question of who the party is. It must be completed by counsel before the agreement is relied on in a commercial setting.*
 
-## 12. 一般条款
+## 12. General
 
-1. **完整协议**：本协议与 `LICENSE`、`CONTRIBUTING.md` 共同构成贡献条件的完整约定；与贡献者另行签署的书面协议冲突时，就冲突部分以书面协议为准。
-2. **可分割性**：任一 条款被认定无效或不可执行，不影响其余条款的效力。
-3. **不得转让**：贡献者不得转让本协议下的义务；维护者可因仓库所有权变更（见 `GOVERNANCE.md` §3.1）将本协议下的权利一并转移给承继者。
-4. **通知方式**：与本协议有关的通知，以仓库 issue、PR 评论或 `NOTICE.md` 所列渠道为准。
-5. **不弃权**：维护者未行使某项权利，不构成对该权利的放弃。
+1. **Entire agreement** — this agreement, together with `LICENSE` and `CONTRIBUTING.md`, forms the complete set of contribution conditions; where a separate written agreement conflicts, that written agreement prevails as to the conflict.
+2. **Severability** — if any clause is held invalid or unenforceable, the remaining clauses stand.
+3. **No assignment** — you may not assign your obligations; the maintainers may transfer the rights under this agreement to a successor if repository ownership changes (see `GOVERNANCE.md` §3.1).
+4. **Notices** — notices under this agreement may be given through repository issues, pull request comments, or the channels listed in `NOTICE.md`.
+5. **No waiver** — a failure to exercise a right is not a waiver of it.
 
-## 13. 版本与变更
+## 13. Versions and changes
 
-CLA 版本变更时在 `CHANGELOG.md` 公告。**已签署版本对你此前的贡献持续有效**；新版本只适用于变更生效后的新贡献。你可以随时停止贡献，已授予的许可不因此撤回。历史版本存档见 `docs/legal/cla-versions/`。
+Version changes are announced in `CHANGELOG.md`. **The version you signed remains effective for your earlier contributions**; a new version applies only to contributions made after it takes effect. You may stop contributing at any time; licences already granted are not revoked. Version archives are in `docs/legal/cla-versions/`.
 
 ---
 
-*This is a license grant, not a copyright assignment. You keep your copyright; the maintainers receive a broad, irrevocable license to use, relicense and sublicense your contribution. Signing is recorded in the pull-request thread; the automated check verifies only that the pull-request author posted the phrase, not who they are. Contributions containing generative-AI output must be declared. This document is not legal advice.*
+*This is a licence grant, not a copyright assignment. You keep your copyright; the maintainers receive a broad, irrevocable licence to use, relicense and sublicense your contribution. Signing is recorded in the ledger or the pull request thread; the automated check verifies only that the account posted the sentence, not who the person is. Contributions containing generative-AI output must be declared. This document is not legal advice.*

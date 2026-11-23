@@ -1,41 +1,41 @@
-# NOTICE — 名称、标识与在先检索
+# NOTICE — name, marks and prior-use search
 
-## 1. 名称
+## 1. Names
 
-- 英文：**Horizon Equilibrium Network**
-- 缩写：**HEN**
-- 中文：**衡远网络**
+- English: **Horizon Equilibrium Network**
+- Abbreviation: **HEN**
+- Chinese: **衡远网络** (a translated name, not a separate brand)
 
-## 2. 商标状态：未注册，计划申请
+## 2. Trademark status: unregistered, application planned
 
-本项目**目前未申请、未注册任何商标**。因此现阶段**不主张排他权**，只主张来源识别：读者据此判断某材料是否出自本仓库。
+No trademark has been applied for or registered. Until one is, this project **claims no exclusive rights** in the name, abbreviation or marks, and claims only source identification: readers use it to tell whether material comes from this repository.
 
-已明确的意向：在进入原型阶段之前，就上述名称与缩写在目标市场做正式商标检索并按需申请。**在此之前，任何"HEN 已注册/受商标保护"的说法都不成立**，本项目也不会这样表述。引用本名称时请保留 `Horizon Equilibrium Network (HEN)` 全称。
+Stated intent: before entering the prototype stage, run a formal trademark search in target markets and apply as needed. **Until that happens, any statement that "HEN is registered" or "trademark-protected" is false**, and this project will not make one. When citing, keep the full form `Horizon Equilibrium Network (HEN)`.
 
-商标能否注册、注册在哪些类别，取决于各辖区法律与审查结果，本项目不作任何保证。
+Whether a mark can be registered, and in which classes, depends on local law and examination. No assurance is given.
 
-## 3. 已做的检索及范围（诚实披露）
+## 3. Searches performed, and their limits (disclosed)
 
-- 在本仓库建立时（2026-11），对 GitHub 仓库名与描述做了一次精确短语检索：`"Horizon Equilibrium Network"` 命中 **0** 条；`hen ledger` 相关内容 3 条，均为不相关的同名/近名项目。
-- **未做的检索**：各辖区商标注册库、域名注册、公司名称登记。因此不能保证名称在任何辖区、任何类别上不冲突。
+- At repository creation (2026-11) an exact-phrase search of GitHub repository names and descriptions was run: `"Horizon Equilibrium Network"` returned **0** results; `hen ledger` returned 3 loosely related, unrelated projects.
+- **Not** searched: trademark registers in any jurisdiction, domain registrations, company-name registers. No guarantee of non-conflict anywhere, in any class, can be given.
 
-## 4. 冲突处理
+## 4. Conflict policy
 
-若权利人主张在本项目使用范围内存在在先权利：
+If a rights holder asserts prior rights in this project's field of use:
 
-1. 本项目不争讼、不主张在先使用，优先**改名**（保留仓库历史与引用关系，并在 `CHANGELOG.md` 记录更名与旧名）；
-2. 改名不影响既有文档的许可（MIT）与引用效力；
-3. 不以名称相似度主张任何权利，也不以缩写在其他领域（金融产品、交易所、钱包、代币）作任何暗示。
+1. the project does not litigate and does not claim prior use; it **renames** (keeping repository history and citations, recording the old name in `CHANGELOG.md`);
+2. renaming does not affect the licence (MIT) or the citation value of existing documents;
+3. no rights are claimed on the basis of name similarity, and the abbreviation is not used to suggest anything in finance, exchanges, wallets or tokens.
 
-## 5. 不得用于来源混淆
+## 5. No confusion of origin
 
-第三方不得使用本名称、缩写或标识：
-- 表示与本项目存在授权、合作、审计或背书关系；
-- 作为代币、交易平台、支付服务的名称或子品牌；
-- 制造"官方"印象。
+Third parties may not use the name, abbreviation or marks to:
+- suggest authorisation, partnership, audit or endorsement by this project;
+- name a token, trading venue, payment service or sub-brand;
+- create an "official" impression.
 
-详见 `DISCLAIMER.md` §4。
+See `DISCLAIMER.md` §4.
 
-## 6. 缩写风险提示
+## 6. Abbreviation risk
 
-`HEN` 是短缩写，在金融与加密资产语境中容易与无关项目或产品重合。因此本仓库在对外材料中始终写全称 **Horizon Equilibrium Network (HEN)**，不用 `HEN` 单独指代项目，也不把它注册为任何金融产品的代号。
+`HEN` is a short abbreviation that can easily collide with unrelated products in financial and crypto-adjacent contexts. External material therefore always writes the full name **Horizon Equilibrium Network (HEN)**, never `HEN` alone, and the abbreviation is not registered as the name of any financial product.

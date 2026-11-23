@@ -1,19 +1,22 @@
 ---
-name: 讨论 / Discussion
-about: 提出一个尚未定型的想法或问题
-title: "[DISCUSS] <主题>"
-labels: discussion
+name: Discussion — an open question
+about: Raise a design question that has no answer yet
+title: ""
+labels: docs
 ---
 
-## 想讨论什么
-<!-- 一句话说清。 -->
+## Question
 
-## 为什么值得讨论
-<!-- 它卡住了什么？会影响哪一章？ -->
+<!-- One question. If it has sub-parts, list them. -->
 
-## 已有考虑
-<!-- 你想到的选项与各自的代价。不需要完美，但要具体。 -->
+## Why it matters
 
-## 是否触及合规边界（白皮书 §12）
-- [ ] 否（不涉及发行、募资、交易、兑换、定价）
-- [ ] 是 → 请停止，此类内容不在本仓库范围
+<!-- Which design decisions depend on the answer -->
+
+## What has been considered
+
+<!-- Prior discussion, references, simulations -->
+
+## What would count as an answer
+
+<!-- e.g. a simulation showing the parameter band, or a proof that no such band exists -->

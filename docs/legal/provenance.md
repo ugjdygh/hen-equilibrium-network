@@ -1,76 +1,76 @@
-# 来源、生成方式与存证 / Provenance
+# Provenance
 
-**Horizon Equilibrium Network（HEN，衡远网络）**
+**Horizon Equilibrium Network (HEN)**
 
-本文件回答三个问题：这些文档是怎么产生的、哪些部分可主张著作权、以及如何固定"某时点已存在"的证据。
+Three questions: how these documents came to exist, what can be claimed in them, and how to fix evidence that a text existed at a point in time.
 
-**本文件不是法律意见。** 涉及登记、诉讼或商标申请时，须咨询执业律师。
+**Not legal advice.** Registration, litigation or trademark filing require counsel.
 
 ---
 
-## 1. 生成方式的分层（如实说明）
+## 1. How the text was produced (stated plainly)
 
-本仓库的文档与仿真脚本**不是纯粹由作者独立撰写的产物**，也不是纯粹由模型自动生成的产物。实际分工如下：
+The documents and the simulation script are **neither purely human-written nor purely machine-generated**. The actual split:
 
-| 层 | 由谁完成 | 具体内容 |
+| Layer | Who | What |
 |---|---|---|
-| 构思层 | 作者 | 问题设定（稳态流通、可回收资产、可控隐私、可逆演进）、结构划分、术语选择、边界立场（不发行、不募资、不运营）、对结论的取舍 |
-| 起草层 | AI 辅助 | 在作者给定的框架与要旨下生成章节草稿、表格、示例、英文改写、仿真脚本第一版 |
-| 审阅层 | 作者 | 逐章判断哪些论证成立、哪些必须删、哪些要改口径；对"能不能公开"做取舍；核对引用与合规表述 |
-| 定稿层 | 作者 | 版本号、修订记录、对外口径、边界声明、发布节奏 |
+| Conception | author | problem framing (steady-state circulation, recoverable assets, controllable privacy, reversible evolution), structure, terminology, the boundary stance (no issuance, no fundraising, no operation), which conclusions to keep |
+| Drafting | AI-assisted | chapter drafts generated from the author's framing and outline, tables, examples, English rewriting, first version of the simulation script |
+| Review | author | judging which arguments hold, what must be deleted, which wording to change; deciding what can be published; checking citations and compliance statements |
+| Finalisation | author | version numbers, change records, external wording, boundary statements, release cadence |
 
-**为什么必须写在这里**：一方面，读者有权知道自己读到的是什么；另一方面，**著作权只保护具体的文字表达，且各辖区对纯 AI 生成内容的认定不一致**——把"哪一层是人做的"记录下来，比笼统声称"原创"更可靠。仿真脚本同样适用：脚本由 AI 起草、作者审阅其结论是否成立，作者也明确表示自身不编写实现代码（见 `AUTHORS.md`）。
+**Why this is stated.** Readers deserve to know what they are reading; and because **copyright protects concrete expression, while the treatment of purely AI-generated material varies by jurisdiction** — recording which layer is human is more reliable than asserting "original". The simulation script follows the same rule: drafted with AI assistance, reviewed by the author for whether its conclusions hold, and the author does not write implementation code (see `AUTHORS.md`).
 
-## 2. 可主张与不可主张的部分
+## 2. What can and cannot be claimed
 
-| 对象 | 能否主张 | 说明 |
+| Object | Claimable? | Note |
 |---|---|---|
-| 白皮书、协议草稿的**文字表达** | 可以（以作者及贡献者名义，见 `LICENSE`） | 前提是能证明人类作者对该表达有实质贡献；本文件与 git 历史即为该证明的一部分 |
-| 图表、SVG、仿真脚本 | 可以 | 同上；脚本另受 `examples/sim/README.md` 的使用说明约束 |
-| **机制构想、参数思路、经济模型** | **不可以** | 著作权不保护思想、方法、算法与数学概念。他人读完白皮书后从零重写一套实现，不构成侵权 |
-| "HEN / Horizon Equilibrium Network" 名称 | 视商标状态而定 | 目前**未注册**，仅主张来源识别（见 `NOTICE.md`） |
-| 第三方引用内容 | 不可以 | 引用部分的权利属于原作者 |
+| The **wording** of the whitepaper and protocol drafts | Yes (author and contributors, see `LICENSE`) | Provided the human contribution is demonstrable; this file plus git history is part of that proof |
+| Diagrams, SVG, simulation script | Yes | Same; the script also carries usage notes in `examples/sim/README.md` |
+| **Mechanism ideas, parameter intentions, economic model** | **No** | Copyright protects no idea, method, algorithm or mathematical concept. Anyone rewriting an implementation from scratch after reading the whitepaper infringes nothing |
+| The name "HEN / Horizon Equilibrium Network" | Depends on trademark status | Currently unregistered; only source identification is claimed (see `NOTICE.md`) |
+| Third-party quoted material | No | Rights remain with the original authors |
 
-**这一条是关键**：本仓库能守住的只有"文字表达 + 项目名称"；守不住"构想"。任何人可以依据同一构想另建一条链。这不是缺陷，是开源公链的常态（Bitcoin 与其分叉的历史即为例证）。
+**This is the key point**: what this repository can hold is the wording and the name; it cannot hold the idea. Anyone may build another chain on the same idea. That is not a defect — it is the normal condition of open-source public chains, as the history of Bitcoin and its forks shows.
 
-## 3. 存证方法（可执行）
+## 3. Deposit methods (actionable)
 
-存证只能证明"某份文本在某个时点已经存在且此后未被篡改"，不能证明"构想在先"。三种手段按成本递增：
+A deposit proves that a text existed at a point in time and has not changed since. It does not prove who conceived it first. Three methods, increasing in cost:
 
-### 3.1 仓库内哈希清单（已完成，零成本）
+### 3.1 In-repository hash manifest (done, zero cost)
 
-本仓库每次发布版本时生成一份全文件 SHA-256 清单：
+Each release produces a SHA-256 manifest of every file:
 
 ```bash
 python3 tools/provenance_manifest.py > docs/legal/provenance.sha256
 git add docs/legal/provenance.sha256 && git commit -m "chore: refresh provenance manifest"
 ```
 
-清单与本仓库提交历史结合，可证明：某版本的每个文件在某个 commit 时点的确切内容。**局限**：无法证明早于仓库创建的时间，也不能对外部独立证明。
+Together with commit history this fixes, for a given commit, the exact contents of every file. **Limit**: it cannot prove anything earlier than repository creation, and it is not externally verifiable.
 
-### 3.2 带时间戳的第三方记录（低成本）
+### 3.2 Third-party timestamping (low cost)
 
-- 将 `docs/legal/provenance.sha256` 与版本 tag 的哈希值提交至可信时间戳服务（RFC 3161 类服务），取得时间戳凭证，存入 `docs/legal/stamps/`；
-- 或将同一哈希值发布在多个独立平台（发布页、个人站点、公开存档），形成可交叉验证的时间点。
+- Submit the manifest and the release tag hash to a trusted timestamping service (RFC 3161 class) and store the receipt in `docs/legal/stamps/`;
+- or publish the same hash on several independent platforms (release page, personal site, public archive) to allow cross-verification of the time.
 
-### 3.3 著作权自愿登记（中等成本）
+### 3.3 Voluntary copyright registration (moderate cost)
 
-在作者所在辖区或目标市场做作品自愿登记（中国内地可向中国版权保护中心申请作品登记）。登记对象是**文字作品**，须以真实身份登记——**这一步与匿名策略直接冲突**：登记需要可核验的著作权人身份。
+Register the work as a literary work with the competent authority (in mainland China, the Copyright Protection Center). Registration is in the **name of a real, verifiable person** — **this step is directly incompatible with anonymity**: registration requires an identifiable rights holder.
 
-**因此这是一个必须由作者拍板的取舍**：要更强的可执行性，就要放弃匿名；要保留匿名，就只能依赖 3.1 与 3.2 这类"可验证但非官方"的证据。两者不可兼得。
+**So this is a trade-off only the author can make**: stronger enforceability means giving up anonymity; keeping anonymity means relying on 3.1 and 3.2, which are verifiable but unofficial. Both cannot be had.
 
-## 4. 当前状态
+## 4. Current status
 
-| 项 | 状态 |
+| Item | Status |
 |---|---|
-| 哈希清单 | 已生成，见 `docs/legal/provenance.sha256` |
-| 版本 tag | `v0.4.0` 起逐版打 tag（见 Releases） |
-| 第三方时间戳 | 未做 |
-| 著作权登记 | 未做（与匿名策略冲突，待作者决定） |
-| 商标检索与申请 | 未做（见 `NOTICE.md` §3 的检索范围说明） |
+| Hash manifest | Generated, see `docs/legal/provenance.sha256` |
+| Release tags | Tagged from `v0.4.0` onward (see Releases) |
+| Third-party timestamps | Not done |
+| Copyright registration | Not done (incompatible with anonymity; author's decision) |
+| Trademark search and filing | Not done (see `NOTICE.md` §3 for the scope of searches performed) |
 
-## 5. 与技术牵头人合作时的注意
+## 5. Working with a technical lead
 
-若未来引入负责完整实现的技术负责人，著作权与分叉约束**不能靠 CLA 解决**（CLA 管得住贡献，管不住"另起一条链"），须另签书面协议。条款清单见 `docs/legal/lead-agreement-checklist.md`。
+If a technical lead is later brought in to deliver the full implementation, copyright and fork restraint **cannot be handled by the CLA** (the CLA governs contributions, not "starting another chain"). A separate written agreement is required. Clause checklist: `docs/legal/lead-agreement-checklist.md`.
 
-同一份事实也适用于反方向：**协议只约束签约的相对方，约束不了网上的任何第三方**。
+The same fact runs the other way: **an agreement binds only its counterparty, never third parties on the internet**.

@@ -1,25 +1,26 @@
 ---
-name: 评审 / Review
-about: 指出论证、字段或数值的问题（不是提新功能）
-title: "[REVIEW] <一句话主张>"
+name: Review — a specific objection
+about: One claim, one objection, with a checkable reason
+title: ""
 labels: needs-review
 ---
 
-## 位置
-<!-- 文件路径 + 章节号，例如 docs/whitepaper/zh/whitepaper.md §6.2 -->
+## Location
 
-## 问题
-<!-- 哪句话在什么条件下不成立。只写"我觉得不对"无法处理。 -->
+<!-- Section number or file path -->
 
-## 理由
-<!-- 推导 / 反例 / 仿真 / 文献。可附脚本路径。 -->
+## What fails
 
-## 建议处理
-- [ ] 改写
-- [ ] 删除
-- [ ] 标注为开放问题（对应 Q 编号：）
-- [ ] 补充约束条件
+<!-- Which sentence, under which conditions -->
 
-## 自检
-- [ ] 我没有把"价格/上币/发币"当成技术问题混进来
-- [ ] 我读过 `docs/research/tradeoffs.md`，确认这不是已登记的代价
+## Why
+
+<!-- Citation, derivation, counterexample or simulation result -->
+
+## Proposed handling
+
+<!-- Delete / rewrite / mark as open question / add conditions -->
+
+## Scope check
+
+- [ ] This is not about price, listing, fundraising or recruitment

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you cite this research draft, please use the metadata below."
-title: "Horizon Equilibrium Network (HEN): A Steady-State Peer-to-Peer Value Ledger (衡远网络)"
+title: "Horizon Equilibrium Network (HEN): A Steady-State Peer-to-Peer Value Ledger"
 abstract: "A non-normative research draft describing a hypothetical decentralized ledger framework that keeps permissionless participation, public verifiability and peer-to-peer transfer, while exploring bounded energy cost, convergent incentives, native shielding, bounded parameter auto-tuning and backwards-compatible upgrades. The project issues no token and operates no network."
 authors:
   - name: "Lee Hyun seok"
@@ -20,5 +20,5 @@ keywords:
 # repository-code: https://github.com/<your-account>/hen-equilibrium-network
 # preferred-citation:
 #   type: report
-#   title: "Horizon Equilibrium Network (HEN): A Steady-State Peer-to-Peer Value Ledger (衡远网络)"
+#   title: "Horizon Equilibrium Network (HEN): A Steady-State Peer-to-Peer Value Ledger"
 #   year: 2026

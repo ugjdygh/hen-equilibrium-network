@@ -1,35 +1,27 @@
-## 改了什么
+## What this changes
 
-<!-- 祈使句，一句话。 -->
+<!-- One concern per PR. Say what changed, not what you think. -->
 
-## 为什么必须改
+## Type
 
-<!-- 不改会怎样。若只是"更好读"，也可。 -->
+- [ ] Documentation fix
+- [ ] Terminology / translation
+- [ ] Specification
+- [ ] Simulation
+- [ ] Implementation
+- [ ] Security note
 
-## 影响范围
+## Self-check
 
-- [ ] docs（文档/术语/翻译/排版）
-- [ ] spec（协议规范）
-- [ ] sim（仿真）
-- [ ] impl（实现，本仓库目前没有）
-- [ ] security（安全说明）
+- [ ] I have read `CLA.md` and signed it (or signed in the sign-off issue)
+- [ ] If this includes generative-AI output, I declared it (CLA §6)
+- [ ] The change does not touch the compliance boundary (whitepaper §12)
+- [ ] Claims are checkable: citation, derivation, counterexample or simulation
+- [ ] A rollback or compatibility path exists
+- [ ] Mechanism changes are backed by an RFC issue (link: )
+- [ ] No unverifiable references were introduced
+- [ ] Links resolve; file paths are correct
 
-## 关联
+## For mechanism changes only
 
-- Issue / RFC：#
-- 对应开放问题（Q 编号）：
-
-## 自检清单（对应 docs/review/checklist.md B 部分）
-
-- [ ] 写明了代价，不只写收益
-- [ ] 未触碰合规边界（发行、募资、交易、兑换、定价）
-- [ ] 未引入"可购买/可转让/可继承"的权重或席位
-- [ ] 未引入"条件失败即降级为可花费"的路径
-- [ ] 未引入"未定义字段被忽略"的行为
-- [ ] 有回滚或兼容方案（机制类改动）
-- [ ] 已更新 `CHANGELOG.md`
-- [ ] 若推翻白皮书内容，白皮书已在同一 PR 内修改
-
-## 备注
-
-<!-- 已知未解决的问题、需要的复核人、不想被误读的地方。 -->
+Part B of `docs/review/checklist.md` completed: yes / not applicable.

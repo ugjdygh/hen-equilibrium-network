@@ -1,31 +1,31 @@
-# Code of Conduct / 讨论规范
+# Code of Conduct
 
-本仓库讨论的是协议设计，不是人。
+This repository discusses protocol design, not people.
 
-## 期望
+## Expected
 
-- **针对论证，不针对人。** "这个推导忽略了 X" 可以；"你不懂" 不可以。
-- **承认不确定性。** 说"我不确定"不是弱点，是准确。
-- **给出可检验的说法。** 能附条件、附反例、附来源的主张更有价值。
-- **允许被反驳。** 自己的提案被推翻时，记录理由而不是升级对抗。
-- **保护隐私。** 不公开他人的个人信息、私钥、地址、截图中的身份信息。
+- **Argue with the argument, not the person.** "This derivation ignores X" is fine; "you don't understand this" is not.
+- **Admit uncertainty.** Saying "I'm not sure" is accuracy, not weakness.
+- **Make checkable claims.** A claim with conditions, a counterexample or a source is worth more.
+- **Accept being refuted.** When a proposal is overturned, record the reason rather than escalate.
+- **Protect privacy.** Do not publish others' personal data, private keys, addresses, or identifying details visible in screenshots.
 
-## 不接受
+## Not accepted
 
-- 侮辱、贬低、人身攻击、威胁、歧视性言论（地域、族群、性别、宗教、疾病、残障、性取向）。
-- 骚扰、跟踪、未经同意公开他人信息。
-- 政治动员、宗教宣传、传销式拉人。
-- 冒充他人或冒充项目官方。
-- 发布恶意链接、假钱包、假空投、钓鱼材料。
+- Insults, belittlement, personal attacks, threats, discriminatory remarks (region, ethnicity, gender, religion, illness, disability, sexual orientation).
+- Harassment, stalking, publishing others' information without consent.
+- Political mobilisation, religious proselytising, multi-level recruitment.
+- Impersonating a person or the project's official voice.
+- Posting malicious links, fake wallets, fake airdrops, phishing material.
 
-## 处理
+## Handling
 
-维护者可编辑、隐藏或关闭违反上述规则的 issue/PR/评论，并在必要时限制参与。处理理由会记录，不搞暗箱。对处理有异议，可在 issue 中提出，由其他维护者复核。
+Maintainers may edit, hide or close issues, PRs and comments that break these rules, and restrict participation where necessary. Reasons are recorded; no shadow moderation. If you disagree with an action, raise it in an issue and another maintainer reviews it.
 
-## 适用范围
+## Scope
 
-适用于本仓库的 issue、PR、讨论区，以及以本项目名义在其他平台进行的公开讨论。
+This applies to issues, PRs and discussions in this repository, and to public discussion conducted in the project's name elsewhere.
 
-## 来源
+## Source
 
-本文参考 Contributor Covenant 的通行结构，并按本项目的具体情况（研究型、无运营主体）作了简化。
+Based on the common structure of the Contributor Covenant, simplified for a research repository with no operating entity.

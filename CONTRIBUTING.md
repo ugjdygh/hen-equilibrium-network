@@ -1,104 +1,105 @@
-# Contributing / 参与指南
+# Contributing
 
-感谢阅读。本仓库的目标是让**技术论证**变得可被检验，而不是聚集支持者。
+Thanks for reading. The goal here is to make **technical arguments checkable**, not to gather supporters.
 
-## 可以做什么
+## What you can do
 
-- 指出论证中的错误、遗漏或自相矛盾之处。
-- 提出反例：一个能让某项设计在特定条件下失效的具体场景。
-- 提供仿真、参考文献、既有研究的对照。
-- 修正术语、翻译、排版与引用格式。
-- 提出替代设计，并说明它如何满足 `docs/whitepaper/zh/whitepaper.md` §2 的原则优先级。
+- Point out an error, omission or contradiction in an argument.
+- Offer a counterexample: a concrete situation in which a design fails.
+- Supply simulations, references, or comparisons with existing work.
+- Fix terminology, translations, formatting and citation style.
+- Propose an alternative design and show how it satisfies the principle priority in `docs/whitepaper/en/whitepaper.md` §2.
 
-## 贡献许可（CLA）
+## Contributor licence (CLA)
 
-代码、文档、翻译、测试用例等任何形式的贡献，都需要先接受 [`CLA.md`](CLA.md)。它是**许可型**协议：你保留自己作品的著作权，同时授予维护者永久、全球、可再许可、可变更许可证的使用权。
+Any contribution — code, documentation, translation, test cases — requires accepting [`CLA.md`](CLA.md) first. It is a **permissive** CLA: you keep the copyright in your work, and grant the maintainers a perpetual, worldwide, sublicensable, relicensable licence.
 
-签署方式：在你第一个 PR 中回复一句
+Easiest route: sign once in the sign-off issue (label `cla-signoff`) with
 
 ```
 I have read CLA.md and I agree to its terms for my contributions to this repository.
 ```
 
-一次签署覆盖此后全部贡献。`.github/workflows/cla.yml` 会在 PR 打开或更新时自动检查：由 PR 作者本人发出的签署语句会被识别，PR 自动打上 `cla: signed`；未识别的打上 `cla: pending` 并提示一次。**这不是对贡献质量的判断**，只是许可证链条的必要环节。
+`.github/workflows/cla-sign.yml` records it in `CLA-SIGNATURES.md`, and from then on any PR you open is recognised as signed. Signing inside a PR thread also works; where a PR has several contributors, each must reply.
 
-签署记录与导出方式见 [`docs/legal/cla-ledger.md`](docs/legal/cla-ledger.md)。
+**This is not a judgement on the quality of your contribution** — it is a necessary link in the licence chain. Records and export: [`docs/legal/cla-ledger.md`](docs/legal/cla-ledger.md).
 
-若贡献包含生成式 AI 产出的内容，须在 PR 描述中声明（见 `CLA.md` §6）。
+If a contribution contains generative-AI output, declare it in the PR description (see `CLA.md` §6).
 
-## 不在范围内（会被直接关闭）
+## Out of scope (closed without discussion)
 
-- 价格、市值、上币、交易策略、"什么时候发币"类讨论。
-- 募资、拉人、建群导流、代币预售、空投计划。
-- 以本项目名义的任何商业合作、背书或推广请求。
-- 人身攻击、地域/族群攻击、政治动员、宗教宣传。
-- 要求作者承担开发、运营或法律责任的请求。
+- Price, market capitalisation, listing, trading strategy, "when token".
+- Fundraising, recruitment, group invites, presales, airdrop plans.
+- Any commercial partnership, endorsement or promotion under this name.
+- Personal attacks, regional or ethnic attacks, political mobilisation, religious proselytising.
+- Requests that the author assume development, operational or legal responsibility.
 
-## 如何提 issue
+## How to file an issue
 
-请让标题本身就是一个主张，正文包含四件事：
+Make the title itself a claim; include four things:
 
-1. **具体位置**：章节号或文件路径。
-2. **具体问题**：哪句话在什么条件下不成立。
-3. **具体理由**：引用、推导、反例或仿真结果。
-4. **建议处理**：删除、改写、标注为开放问题，或补充条件。
+1. **Location** — section number or file path.
+2. **Problem** — which sentence fails, under what conditions.
+3. **Reason** — citation, derivation, counterexample or simulation result.
+4. **Proposed handling** — delete, rewrite, mark as an open question, or add conditions.
 
-只写"我觉得不对"或"HEN 会失败"的 issue 无法被处理。
+"I think this is wrong" or "HEN will fail" cannot be processed.
 
-## 如何提 RFC（改变协议行为的提案）
+## How to file an RFC
 
-新建 issue，标题以 `RFC:` 开头，正文按下列结构填写：
+Open an issue titled `RFC:` and use this structure:
 
 ```
-## 问题
-（当前设计中存在的具体缺陷，附章节位置）
+## Problem
+(the specific defect, with section location)
 
-## 方案
-（改什么，怎么改）
+## Proposal
+(what changes, and how)
 
-## 替代方案
-（至少一个，并说明为何不选）
+## Alternatives
+(at least one, and why it was not chosen)
 
-## 影响分析
-- 安全：
-- 隐私：
-- 经济：
-- 兼容性：
-- 合规（是否触碰 §12 边界）：
+## Impact
+- security:
+- privacy:
+- economics:
+- compatibility:
+- compliance (does it touch the §12 boundary?):
 
-## 实施与回滚
-（分几步落地，出错如何退回）
+## Rollout and rollback
+(how many steps, and how to revert)
 ```
 
-评审以技术理由是否成立为准，不以人数、资产量或投票计。评审结论连同理由记入 `CHANGELOG.md`，形成决策的另记 `docs/review/decisions.md`。完整流程与状态定义见 `docs/review/process.md`。
+Review turns on whether the technical argument holds, not on headcount, holdings or votes. Outcomes and reasons go into `CHANGELOG.md`; decisions also go into `docs/review/decisions.md`. Full process and status vocabulary: `docs/en/review/process.md`.
 
-## 标签
+## Labels
 
-| 标签 | 用于 |
+| Label | Used for |
 |---|---|
-| `docs` | 文档修订 |
-| `translation` | 翻译 |
-| `spec` | 协议规范 |
-| `simulation` | 仿真调整 |
-| `security` | 安全说明 |
-| `implementation` | 社区实现 |
-| `archived` | 归档 / 暂停 |
-| `out-of-scope` | 价格、代币、募资、拉人 |
-| `needs-repro` | 缺少可复现依据 |
-| `needs-review` | 等待无关贡献者复核 |
+| `docs` | documentation revisions |
+| `translation` | translations |
+| `spec` | protocol specification |
+| `simulation` | simulation changes |
+| `security` | security notes |
+| `implementation` | community implementations |
+| `archived` | archived / paused |
+| `out-of-scope` | price, token, fundraising, recruitment |
+| `needs-repro` | no reproducible basis |
+| `needs-review` | awaiting an unaffiliated reviewer |
+| `cla: pending` / `cla: signed` | CLA status (automated) |
 
-## 提交规范
+## Commit conventions
 
-- 一个 PR 只做一件事；纯文字修改可直接提 PR，机制类提案须先有 RFC issue。
-- 提交信息用祈使句，说明"改了什么"而不是"我觉得"。
-- 文档与代码同一许可（MIT）。提交即表示你同意以该许可发布你的贡献。
-- 不要引入来源不明、无法核验的引用；参考文献须可被独立查到。
-- PR 请勾选 `.github/PULL_REQUEST_TEMPLATE.md` 的自检项；机制类改动还要过 `docs/review/checklist.md` B 部分。
+- One concern per PR; prose fixes can go straight to a PR, mechanism proposals need an RFC issue first.
+- Commit messages in the imperative, saying what changed rather than what you think.
+- Documentation and code share the licence (MIT). Submitting means you agree to release your contribution under it.
+- Do not introduce unverifiable or unattributed references; citations must be independently findable.
+- Tick the self-checks in `.github/PULL_REQUEST_TEMPLATE.md`; mechanism changes also pass part B of `docs/review/checklist.md`.
 
-## 讨论规范
+## Discussion rules
 
-见 `CODE_OF_CONDUCT.md`。核心一条：攻击论证，不攻击人。
+See `CODE_OF_CONDUCT.md`. The core rule: attack the argument, not the person.
 
-## 维护者做什么
+## What maintainers do
 
-见 `GOVERNANCE.md`。维护者负责流程与合并，不拥有协议，不担保结论正确。
+See `GOVERNANCE.md`. Maintainers run the process and merge; they do not own the protocol and do not guarantee the conclusions are right.

@@ -1,3 +1,9 @@
-# 不开放空白 issue：请使用 review / discussion / implementation 三种模板之一。
-# 目的：让每个 issue 自带「位置—问题—理由—建议」，避免"我觉得不行"式讨论。
+# Blank issues are disabled: use one of review / discussion / implementation.
 blank_issues_enabled: false
+contact_links:
+  - name: CLA sign-off
+    url: https://github.com/ugjdygh/hen-equilibrium-network/issues/4
+    about: Sign the CLA once here; valid for every pull request afterwards.
+  - name: Review entry (Discussions)
+    url: https://github.com/ugjdygh/hen-equilibrium-network/discussions/1
+    about: How to submit a review, what gets closed, how decisions are made.
