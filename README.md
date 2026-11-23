@@ -29,6 +29,8 @@ The repository ships working material, not promises: a runnable toy simulation o
 
 If you read only one file, read [`docs/whitepaper/en/whitepaper.md`](docs/whitepaper/en/whitepaper.md).
 
+**To check that the text is the one that was frozen:** [`VERIFY.md`](VERIFY.md) — hashes, RFC 3161 receipts, and the commands to verify both yourself.
+
 ## What this is
 
 An open research repository about the base layer of a ledger. It accumulates four kinds of material: problem statements, protocol drafts, open research questions, and a handover framework a successor can pick up.
