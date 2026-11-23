@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 101
+# files: 102
 # algorithm: sha256(file bytes)
 #
 e2143f85fee1b2a7d76d4618b5fedaa2511553d221bab433be7b07059bafd0d8  .github/ISSUE_TEMPLATE/config.yml
@@ -27,6 +27,7 @@ bfd5d3b112db39e2c77a8f9bd40e8e06798c5affa89ba95c4e1d8205c97baacd  NOTICE.md
 1965a00dc66a9c3197d925ac4fbd76aad06901238cdcd081b888f4284e39dd90  README.md
 b320f08f636bce24a9cd9f1842a5b33b89ccec95ab4880e6443f47c1b4522387  ROADMAP.md
 95f2d3490f00f6379a1ed3801787366d534da5a8b0b1f5330333a4ef58fbff08  SECURITY.md
+ecc05831434baa955e55c42e27adea60d8928bcc1dd09b8d3ef5bae8e9f4cce6  VERIFY.md
 ec733c6a92f543dfb05b00a49f6d3f885ea0b6f1362244cfe200ae1a234b15b9  assets/diagrams/README.md
 88a23de8fa9e9f167e62ef7068dac9a133a3a4c439ca1994d126561f384e256d  assets/diagrams/layered-network.svg
 0087d43780693ed4e59da4d7cfe15ba569608486a3e92fffa7087827f2efac64  assets/diagrams/problem-coupling.svg

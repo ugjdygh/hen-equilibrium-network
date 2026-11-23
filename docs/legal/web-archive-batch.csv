@@ -1,0 +1,24 @@
+priority,url,label
+P0,https://github.com/ugjdygh/hen-equilibrium-network,repo root
+P0,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/VERIFY.md,verification page
+P0,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/legal/finalization.md,evidence chain
+P0,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/legal/finalization-manifest.sha256,hash manifest
+P0,https://github.com/ugjdygh/hen-equilibrium-network/releases/tag/v1.0,release v1.0
+P0,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/whitepaper/en/whitepaper.md,whitepaper en
+P0,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/whitepaper/zh/whitepaper.md,whitepaper zh
+P0,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/legal/name-clearance.md,name clearance
+P1,https://github.com/ugjdygh/hen-equilibrium-network/tree/v1.0,tree at tag
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/README.md,readme
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/DISCLAIMER.md,boundaries
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/NOTICE.md,notice
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/CLA.md,cla
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/CLA-SIGNATURES.md,cla ledger
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/GOVERNANCE.md,governance
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/ROADMAP.md,roadmap
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/CHANGELOG.md,changelog
+P1,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/legal/stamps,
+P2,https://github.com/ugjdygh/hen-equilibrium-network/commits/main,commit history
+P2,https://github.com/ugjdygh/hen-equilibrium-network/issues/4,global CLA sign-off issue
+P2,https://github.com/ugjdygh/hen-equilibrium-network/discussions/1,review entry
+P2,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/legal/deposit-record.md,deposit record
+P2,https://github.com/ugjdygh/hen-equilibrium-network/blob/main/docs/legal/provenance.sha256,provenance manifest
