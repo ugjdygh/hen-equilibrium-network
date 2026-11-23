@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 69
+# files: 73
 # algorithm: sha256(file bytes)
 #
 3d6f628974a368d45e0b9d4caf44324ee181c4fd33c5b636339fb48e490efd08  .github/ISSUE_TEMPLATE/config.yml
@@ -12,6 +12,7 @@ fad9145ad00079faa4f75c78114a11e73737513dd1d0b8906a3af7ba81a7fd94  .github/ISSUE_
 4b02677678f2663ad1b9df6bc42c9f3affa6507f015eef9c6037f897329b6f1b  AUTHORS.md
 7505205621e54d674038f4173f4fd082f17588a2734f8dd986b07f465cb66667  CHANGELOG.md
 6aaf452b452ab975e359ccf3903ca857641d197a5baa689ddf56084cc2aa4642  CITATION.cff
+8d33b6c5edebd5497046411203e24260a3798e353b7b6516c05ccf585b5f89f4  CLA.md
 abfce1aa4c9847461dfae99c021d7b07cc0bbcba294b5293c804c6345a7fd5b3  CODE_OF_CONDUCT.md
 37462536c15793069fdc97c2ea7032094fdd0abd85d57f597cb567673b2e3606  CONTRIBUTING.md
 2f0674da4475a6f8b6ab45980f51416f9447606367364b239e8f86ba5923a29a  DISCLAIMER.md
@@ -51,6 +52,8 @@ f796ba47c34dd321b8a13e8832a8331d9bb5481629dcf3c936c509846efb3f14  docs/i18n/fr.m
 2d7c75cceb095add92c40f5a5e95ea90796c73a397dc01ac34171b24a0380c14  docs/i18n/zh-Hant.md
 e740a6e8646a1018703f434d91d6f0dab588a1fbda9c068eb630d8a5b45cc253  docs/i18n/zh.md
 e163f4087efc318aabd768c9bddc87662a1e5681bd26ab11357dce223c10eeb8  docs/legal/disclaimer.md
+6042e17bd007d6827c36a7e2e15738812bb3ae989ec793c0f6f6b03fe02234ce  docs/legal/lead-agreement-checklist.md
+385295f49c83e297fbaa00473e74efebe1221e86afc6229f49c2c1173a9dfb58  docs/legal/provenance.md
 c80e544655d0766eb20c40da669b9e8fc03ec281eee993b601785aa8b6ea314c  docs/maintenance/handover.md
 2cd0ce54184b7305e92010bd9e7d6135268f875de6d405a551db0d38042911b9  docs/maintenance/merge-rules.md
 632d9c79868f16097c53a63a6bcc91b5b85459f7691b4033d85c42ad0da984f6  docs/outreach/growth.md
@@ -72,3 +75,4 @@ fcf32867844c79fd48d12fa37fdcaa3c7599ff6da2a2885ee4a75ebd1798a11f  docs/whitepape
 6c9eec71a0b3e10bed9f22e8831af179d5fdc4d3f0f7a73911c853005d4bd1d9  examples/sim/README.md
 6cd4dc1387ab7894f0c8aa0ba57c1d038bc3d7f4f6e67e5ea87444c2f2b97c9b  examples/sim/incentive_sim.py
 2dce82fe26104966a546b658ca9bcd1f2dd73f814606a004a1bd3d1dcf810b99  spec/README.md
+65657584b8626c14ecbdad372722ab18ebf7950eef948a8bc33bf0c3d3f2c793  tools/provenance_manifest.py
