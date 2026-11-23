@@ -20,7 +20,9 @@
 I have read CLA.md and I agree to its terms for my contributions to this repository.
 ```
 
-一次签署覆盖此后全部贡献。未签署的 PR 会先标记 `cla: pending`，签署后继续评审——**这不是对贡献质量的判断**，只是许可证链条的必要环节。
+一次签署覆盖此后全部贡献。`.github/workflows/cla.yml` 会在 PR 打开或更新时自动检查：由 PR 作者本人发出的签署语句会被识别，PR 自动打上 `cla: signed`；未识别的打上 `cla: pending` 并提示一次。**这不是对贡献质量的判断**，只是许可证链条的必要环节。
+
+签署记录与导出方式见 [`docs/legal/cla-ledger.md`](docs/legal/cla-ledger.md)。
 
 若贡献包含生成式 AI 产出的内容，须在 PR 描述中声明（见 `CLA.md` §6）。
 

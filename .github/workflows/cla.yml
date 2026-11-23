@@ -1,0 +1,98 @@
+name: CLA check
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const SIGN_PHRASE = "I have read CLA.md and I agree";
+            const LABEL_SIGNED = "cla: signed";
+            const LABEL_PENDING = "cla: pending";
+
+            // 1. 定位 PR 与作者
+            let prNumber, prAuthor;
+            if (context.eventName === "pull_request_target") {
+              prNumber = context.payload.pull_request.number;
+              prAuthor = context.payload.pull_request.user.login;
+            } else {
+              if (!context.payload.issue.pull_request) {
+                core.info("Not a pull request comment; skipping.");
+                return;
+              }
+              const pr = await github.rest.pulls.get({
+                owner: context.repo.owner, repo: context.repo.repo,
+                pull_number: context.payload.issue.number,
+              });
+              prNumber = pr.data.number;
+              prAuthor = pr.data.user.login;
+            }
+
+            if (prAuthor.endsWith("[bot]")) {
+              core.info(`Author ${prAuthor} is a bot; skipping.`);
+              return;
+            }
+
+            // 2. 查找该作者本人是否在 PR 会话中签署过
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: prNumber, per_page: 100,
+            });
+            const signed = comments.some(
+              (c) => c.user && c.user.login === prAuthor && c.body && c.body.includes(SIGN_PHRASE)
+            );
+
+            // 3. 打标签
+            if (signed) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: prNumber, labels: [LABEL_SIGNED],
+              });
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: prNumber, name: LABEL_PENDING,
+              }).catch(() => {});
+              core.info(`CLA signed by ${prAuthor} on #${prNumber}.`);
+              return;
+            }
+
+            // 4. 未签署：打标签 + 只提示一次
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: prNumber, labels: [LABEL_PENDING],
+            });
+
+            const botHandles = new Set(["github-actions[bot]"]);
+            const alreadyPrompted = comments.some(
+              (c) => botHandles.has(c.user && c.user.login) && c.body && c.body.includes("CLA.md")
+            );
+            if (!alreadyPrompted) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: prNumber,
+                body: [
+                  `**CLA pending — @${prAuthor}**`,
+                  "",
+                  "评审开始前需要你在这条 PR 里回一句签署声明（一次即可，覆盖此后全部贡献）：",
+                  "",
+                  "```",
+                  "I have read CLA.md and I agree to its terms for my contributions to this repository.",
+                  "```",
+                  "",
+                  "这只涉及许可链条，与贡献质量无关。协议原文：[CLA.md](../blob/main/CLA.md)。若本 PR 含生成式 AI 产出内容，请在描述中声明（CLA 第 6 条）。",
+                ].join("\n"),
+              });
+            }
+            core.info(`CLA pending for ${prAuthor} on #${prNumber}.`);

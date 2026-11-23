@@ -62,22 +62,46 @@
 
 ## 8. 如何签署
 
-在 Pull Request 中回复以下语句即视为签署（一次即可，覆盖此后全部贡献）：
+在 Pull Request 会话中，由**提交者本人的 GitHub 账号**回复以下语句，即视为签署（一次即可，覆盖此后对本仓库的全部贡献）：
 
 ```
 I have read CLA.md and I agree to its terms for my contributions to this repository.
 ```
 
-或在提交信息中使用 `Signed-off-by:` 行（Developer Certificate of Origin 风格），并同时在该 PR 中回复上述语句。签署记录随 PR 保留在仓库历史中。
+可选补充（不强制）：在提交信息中加入 `Signed-off-by: Name <email>`（DCO 风格），或在 PR 描述中写明"已接受 CLA.md"。
 
-## 9. 与本仓库许可证的关系
+**自动检查**：`.github/workflows/cla.yml` 会在 PR 打开或更新时检查会话中是否存在由 PR 作者本人发出的上述语句，命中则打 `cla: signed`，未命中则打 `cla: pending` 并提示一次。该检查只核对"是否由作者本人发过这句话"，**不核验签署人的真实身份**（见 §9）。
+
+## 9. 签署的效力与边界（务必读完）
+
+1. **记录位置**：签署记录就是 PR 会话本身，随仓库公开历史留存；标签状态可用于批量导出（见 `docs/legal/cla-ledger.md`）。
+2. **电子形式**：以文字回复方式签署属可留存的电子记录。在部分辖区，数据电文可以构成书面形式（例如中国《民法典》第 469 条规定书面形式包括数据电文）；**本项目不保证这一形式在所有辖区都满足当地对许可合同的书面要求**。若你需要更强的形式，请另行签署书面文件并寄送维护者。
+3. **主体不可核验**：GitHub 账号不等于法律主体。若签署者是匿名账号，维护者无法核验其身份；这既意味着**你**在匿名状态下签署时并不暴露身份，也意味着将来任一方主张权利时，主体认定会更困难。这是匿名策略的既有代价，不因本协议改变。
+4. **不代表雇佣或合作**：签署本协议不产生劳动关系、合伙关系、代理关系或任何报酬请求权。
+5. **法人或代表他人签署**：若你以雇主或第三方名义贡献，须在 PR 中声明你已获得相应授权；未声明的，视为你以个人身份签署并承担 §5 的保证责任。
+
+## 10. 与本仓库许可证的关系
 
 本仓库对外以 **MIT** 许可发布文档（见 `LICENSE`）。CLA 授予维护者的是**额外权利**（尤其是再许可与变更许可证），不改变任何使用者依 MIT 已取得的权利。
 
-## 10. 变更
+## 11. 适用法律与争议解决
 
-CLA 版本变更时在 `CHANGELOG.md` 公告。**已签署版本对你此前的贡献持续有效**；新版本只适用于你变更生效后的新贡献。你可以在任何时候书面通知停止贡献，已授予的许可不因此撤回。
+本协议适用法律与管辖法院**未在本文件内指定**。签约方可在书面补充协议中约定；未约定时，依贡献发生时维护者主要所在地法律及有管辖权的法院处理。跨境贡献时，双方应自行评估可执行性。
+
+*（这一条是刻意的留白：在匿名署名下指定管辖会引出"主体是谁"的问题。正式启用前应由律师按实际主体补全。）*
+
+## 12. 一般条款
+
+1. **完整协议**：本协议与 `LICENSE`、`CONTRIBUTING.md` 共同构成贡献条件的完整约定；与贡献者另行签署的书面协议冲突时，就冲突部分以书面协议为准。
+2. **可分割性**：任一 条款被认定无效或不可执行，不影响其余条款的效力。
+3. **不得转让**：贡献者不得转让本协议下的义务；维护者可因仓库所有权变更（见 `GOVERNANCE.md` §3.1）将本协议下的权利一并转移给承继者。
+4. **通知方式**：与本协议有关的通知，以仓库 issue、PR 评论或 `NOTICE.md` 所列渠道为准。
+5. **不弃权**：维护者未行使某项权利，不构成对该权利的放弃。
+
+## 13. 版本与变更
+
+CLA 版本变更时在 `CHANGELOG.md` 公告。**已签署版本对你此前的贡献持续有效**；新版本只适用于变更生效后的新贡献。你可以随时停止贡献，已授予的许可不因此撤回。历史版本存档见 `docs/legal/cla-versions/`。
 
 ---
 
-*This is a license grant, not a copyright assignment. You keep your copyright; the maintainers receive a broad, irrevocable license to use, relicense and sublicense your contribution. Contributions containing generative-AI output must be declared. This document is not legal advice; have counsel review it before relying on it for a commercial project.*
+*This is a license grant, not a copyright assignment. You keep your copyright; the maintainers receive a broad, irrevocable license to use, relicense and sublicense your contribution. Signing is recorded in the pull-request thread; the automated check verifies only that the pull-request author posted the phrase, not who they are. Contributions containing generative-AI output must be declared. This document is not legal advice.*
