@@ -8,7 +8,7 @@ Source of truth: `docs/review/decisions.md` (Chinese).
 
 ## ADR-001 Naming and slug
 
-**Status:** Accepted (2026-11-22)
+**Status:** Accepted (2026-11-22), amended (2026-11-23)
 
 **Context.** The project needed a searchable, identifiable name that can't be mistaken for an asset offering; the Chinese name was undecided.
 
@@ -59,7 +59,7 @@ Source of truth: `docs/review/decisions.md` (Chinese).
 
 **Status:** Accepted (2026-11-22)
 
-**Context.** The author publishes anonymously and takes no part in development or operation; being read as "pre-ICO" would be both a risk and a misunderstanding.
+**Context.** The author publishes under a fixed byline and takes no part in development or operation; being read as "pre-ICO" would be both a risk and a misunderstanding.
 
 **Decision.** No asset issuance, no reserved allocation, no foundation or treasury, no donations, no exchange or intermediation. The five standard answers in `README.md` are the fixed external line.
 
@@ -109,11 +109,13 @@ Source of truth: `docs/review/decisions.md` (Chinese).
 
 ---
 
-## ADR-007 Anonymity and the pen name
+## ADR-007 The byline and the limits of disclosure
 
 **Status:** Accepted (2026-11-22)
 
-**Context.** The author wishes to publish research without disclosing their identity or nationality.
+**Context.** The author wishes to publish research without disclosing identity or nationality.
+
+**Amendment (2026-11-23).** The original decision called this "anonymous publication". That framing was both inaccurate and gave a false expectation of protection: a byline is not anonymity and does not isolate liability. Public wording is now "does not disclose identity information within this repository", and `DISCLAIMER.md` §5 and `AUTHORS.md` state that the byline confers no anonymity.
 
 **Decision.** Publish under the pen name `Lee Hyun seok（이 현석）`; remove all statements about nationality from README, DISCLAIMER, whitepaper §12, legal notes and ADRs; rewrite §12.3 from "Mainland China" to a jurisdiction-neutral patchwork of regimes (mainland China, EU MiCA, US securities framework as illustrative examples).
 

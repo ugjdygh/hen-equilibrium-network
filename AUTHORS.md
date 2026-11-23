@@ -8,9 +8,11 @@
 | GitHub | [@ugjdygh](https://github.com/ugjdygh) |
 | Role | 仓库搭建、研究文档撰写与维护（Repository setup, research documentation） |
 | Scope | 只负责研究、规范与仿真类设计资产；不参与核心开发、不运营、不运行节点、不背书任何实现或分叉 |
-| Nature | **研究化名（pen name）**，用于公开署名 |
+| Nature | **固定研究笔名（pen name）**，用于公开署名；不产生匿名保护 |
 
-**关于这个名字**：`Lee Hyun seok（이 현석）` 是作者用于公开发布研究的化名，不代表国籍、民族或身份声明，也不用于规避任何法律责任。作者**不公开真实身份**（匿名发表），合规立场见 `DISCLAIMER.md` 与白皮书 §12。
+**关于这个名字**：`Lee Hyun seok（이 현석）` 是作者用于公开发布研究的固定笔名。它**不构成国籍、民族、居所或身份声明**；也**不产生匿名保护**——署名不改变责任归属，本项目不以笔名主张任何责任限制或隔离。作者不在仓库内披露身份信息，但这不等于身份无法被核验；本项目的立场不依赖"匿名"成立。
+
+**范围**：本仓库的署名与声明**只覆盖本仓库**。同一 GitHub 账号下的其他仓库由各自维护，与本项目无隶属关系；本项目不做业务的承诺不构成对其他仓库的陈述。
 
 **About this name**: it is a pen name used for publishing research. It is not a claim of nationality, ethnicity or identity, and it does not shift any legal responsibility. The author does not disclose their identity; the compliance stance is in `DISCLAIMER.md` and whitepaper §12.
 
