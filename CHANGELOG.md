@@ -4,6 +4,19 @@
 
 ---
 
+## Unreleased — mechanism completion, deposit, trademark plan, X policy
+
+1. **Breaker rule replaced with simulation evidence.** `examples/sim/mechanism_sim.py` (new) computes the old rule's failure from `incentive_sim.py` rather than quoting a hard-coded number: on a 1.8x compute step the "3 consecutive moves" breaker settles at target 13.31 against 18.00 needed, interval 7.39 against 10.00 — not converged. The windowed cumulative rule with cooldown and damped resume converges (target 18.00, interval 10.00, band 5.56–10.61). Gain × delay sweep: 35 of 42 settings converge; worst pair (gain 0.2, delay 8) settles at 7.17, so stability is a region, not a point.
+2. **Whitepaper §10.1 amended in both editions** (§10.1.1 added), with the numbers stated as toy-model results that can be refuted.
+3. **Dormancy module.** Decay 6% / reactivate 4% / opt-in burn 5%: active share falls from 1.000 to 0.254 over 40 years; burn applies only to holdings the holder explicitly gives up. No confiscation path remains anywhere in the documents.
+4. **Sybil cost module.** 1,000 identities at cost 40 and reward 12 per period yields a gain/cost ratio of 0.006 — uneconomic under these assumptions, which are stated so the result can be overturned.
+5. **`docs/research/open-questions.md`** gains a simulation update for Q1, Q2, Q4, Q6, marking Q4 as a value judgement that simulation cannot settle.
+6. **Copyright deposit.** `tools/make_deposit.py` builds an out-of-tree bundle (whitepaper en/zh, boundary files, byline, licence, ledger, manifest), prints size and SHA-256. First bundle recorded in `docs/legal/deposit-record.md` (38,903 B, `5365ad17…d9aa434`, commit `4f7e8bf`).
+7. **Trademark search plan.** `docs/legal/trademark-search-plan.md`: what to protect (full word mark first, not `HEN` alone), classes 9 and 42 only — with an explicit note that filing in class 36 would contradict the no-financial-business stance — search sequence, meaning of a hit, indicative costs, and sequencing before stage 2.
+8. **X policy.** `docs/outreach/x-policy.md`: the four statements required in every post, what may and may not be said, account hygiene, three ready-to-post templates, and a correction procedure.
+9. **Stage 0 guardrails written into `ROADMAP.md`**: no developer recruitment, no launch or token commitments in public or private, no prototype, no testnet, no funds accepted.
+10. **Documentation set completed as requested**: `LICENSE` (MIT, holder "Horizon Equilibrium Network contributors"), `NOTICE.md`, `CLA.md`, `CLA-SIGNATURES.md`, `GOVERNANCE.md` — all present, English, and cross-linked.
+
 ## Unreleased — English-only repository surface
 
 - README, DISCLAIMER, NOTICE, AUTHORS, CLA, CLA-SIGNATURES, GOVERNANCE, CONTRIBUTING, CODE_OF_CONDUCT, SECURITY, ROADMAP and all `.github` templates rewritten in English only. No mixed-language entry surface remains.

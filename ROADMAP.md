@@ -6,6 +6,15 @@ The point of the groundwork is not to claim future success, but to leave a resea
 
 ## Stage 0 — convergence and drafting (current)
 
+**What stage 0 explicitly does not do:**
+
+- No recruitment of developers, validators, node operators or an "official team". There is no position to apply for.
+- No commitment to launch, no launch date, no token, no allocation, no airdrop, in public or in private.
+- No prototype, no testnet, no wallet, no explorer.
+- No acceptance of funds in any form, including sponsorships and paid consultation.
+
+Anyone claiming to speak for the project on these points is misrepresenting it.
+
 | # | Item | Status |
 |---|---|---|
 | 0.1 | English name, abbreviation and slug (Horizon Equilibrium Network / HEN / `hen-equilibrium-network`) | Done |

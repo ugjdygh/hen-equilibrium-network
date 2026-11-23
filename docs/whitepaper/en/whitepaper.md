@@ -169,7 +169,15 @@ Design constraints: scripts stay minimal and statically bounded in resource cost
 
 ## 10. Upgrades and governance
 
-**10.1 Bounded auto-tuning.** Static bounds; rate limits per step and per unit time; a circuit breaker that freezes adjustment after N consecutive same-direction moves or threshold deterioration; and full recomputable records permitting rollback to the last stable state.
+**10.1 Bounded auto-tuning.** Static bounds; rate limits per step and per unit time; a circuit breaker triggered by **cumulated amplitude within a time window** (not by "N consecutive same-direction moves"), followed by a cooldown and resumption at a damped gain; and full recomputable records permitting rollback to the last stable state.
+
+**10.1.1 Why the breaker rule changed.** The earlier draft froze adjustment after three consecutive same-direction moves. `examples/sim/incentive_sim.py` shows this fails on a compute step: a 1.8x jump needs roughly +80% cumulative target adjustment, so the breaker freezes before it is reached — final target 13.31 against 18.00 needed, interval 7.39 against a 10.00 target, i.e. **not converged**.
+
+`examples/sim/mechanism_sim.py` compares the replacement rule: trigger on cumulated amplitude over a window, then cooldown, then resume at `gain x 0.5`. On the same scenario: final target 18.00, interval 10.00, **converged**; oscillation band after the jump 5.56–10.61 (target 10.00).
+
+The same script sweeps gain against measurement delay: 35 of 42 settings converge, the worst pair (gain 0.2, delay 8) settling at 7.17. Stability is therefore **not universal but a property of the gain/delay combination**, so the whitepaper may claim that a stable region exists, not that a single operating point is stable.
+
+Both results come from toy models with illustrative parameters and can be refuted; they are nevertheless enough to show that "consecutive count" was the wrong trigger and that cumulated amplitude with cooldown is necessary.
 
 **10.2 Proposals.** Changes beyond the automatic range follow a public RFC: problem, proposal, alternatives, impact analysis across security/privacy/economics/compatibility, implementation and rollback plan, and a review conclusion. Review turns on whether the technical argument holds, not on headcount or holdings.
 

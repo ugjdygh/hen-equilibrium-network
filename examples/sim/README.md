@@ -10,14 +10,19 @@
 
 | 脚本 | 做什么 | 对应白皮书 | 依赖 |
 |---|---|---|---|
-| `incentive_sim.py` | 收敛式发行 vs 减半；手续费分流恒等式；延迟闭环下的难度调节 | §7.2 / §7.3 / §6.2 | 仅 Python 3 标准库 |
+| `incentive_sim.py` | 收敛式发行 vs 减半；手续费分流恒等式；延迟闭环下的难度调节（含旧熔断规则的缺陷） | §7.2 / §7.3 / §6.2 | 仅 Python 3 标准库 |
+| `mechanism_sim.py` | 熔断规则新旧对照；休眠与自愿注销；女巫成本；增益×延迟稳定域扫描 | §10.1.1 / Q1 / Q2 / Q6 | 仅 Python 3 标准库（imports `incentive_sim`） |
 
 ## 运行
 
 ```bash
 python3 incentive_sim.py
 python3 incentive_sim.py --years 60
+python3 mechanism_sim.py          # 四个机制小节
+python3 mechanism_sim.py --only 4 # 只看稳定域扫描
 ```
+
+English note: both scripts are illustrative only, implement no protocol, and produce no asset. Run them with plain Python 3; no dependencies. Where output contradicts the whitepaper, the whitepaper gets a PR.
 
 ## 当前输出里的两个结论（2026-11-22）
 
