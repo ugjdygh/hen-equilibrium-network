@@ -94,6 +94,17 @@ Reason, stated once: accepting a genesis allocation would make the author an iss
 
 Reply template and handling steps: `docs/outreach/decline-allocation.md`.
 
+## 7B. No succession, no official implementation, no endorsement by silence
+
+There is no "official" implementation of this design, and there will not be one under this repository's name.
+
+- **No succession.** Authority does not transfer — not to a fork, not to a maintainer, not to a company, not to a foundation. If this repository goes dormant, dormancy is the end of it; nobody inherits the right to speak for it.
+- **No endorsement.** No implementation, product or person is endorsed, approved or audited by this repository. A link, a mention or a favourable review is a technical opinion about a document, not an endorsement of a deployment.
+- **Silence is not consent.** Only a dated statement in this repository counts as approval; the absence of objection counts as nothing. See `docs/legal/name-use-policy.md` §5.
+- **The one durable lever.** What the owner controls is: the name as a source identifier, the canonical text and its errata, and the decision to disassociate publicly. That is all — and it is enough to keep a reader able to tell documents from products.
+
+**What is not controllable, stated plainly**: the MIT licence is irrevocable for everything already published, so any implementation may be built, modified and commercialised without permission, credit or payment. Control over code was traded for adoption at the first commit; it cannot be bought back by accepting an allocation, only by starting a different project under a different licence.
+
 ## 8. Termination
 
 If maintenance goes dormant, the repository is archived and stays readable and citable. Archiving does not authorise anyone to raise funds or issue assets under its name.
