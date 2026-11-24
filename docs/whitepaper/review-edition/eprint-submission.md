@@ -12,7 +12,7 @@ Target: **Cryptology ePrint Archive** (eprint.iacr.org). It accepts design docum
 | Keywords | `consensus`, `privacy`, `commitments`, `range proofs`, `parameter control`, `ledger design` |
 | Comments | `Design document. No implementation, no network, no asset. Whitepaper text frozen at v1.0; hashes and RFC 3161 timestamps recorded in the repository.` |
 | Licence | CC-BY if offered; otherwise the most permissive option available, to stay consistent with the repository's MIT |
-| PDF | `hen.pdf` (4 pages, two-column, numbered sections, abstract) — built with `tools/build_paper.sh`; the 7-page narrative version stays as `HEN-review-edition.pdf` |
+| PDF | `hen.pdf` (4 pages, A4, two-column, numbered sections, abstract, contact line) — built with `tools/build_paper.sh`; the 7-page narrative version stays as `HEN-review-edition.pdf` |
 
 ## 2. Abstract (paste as-is)
 
@@ -51,6 +51,14 @@ Fields on `eprint.iacr.org/submit`, in order:
 
 1. **Paper size** — was US letter by LaTeX default; now built with `papersize=a4`, verified 595.28 x 841.89 pt.
 2. **Email inside the PDF** — now printed under the author line as `Lee Hyun seok (contact: <address>)`. The address must be a mailbox you will keep; it becomes permanently public in the paper.
+
+## 3.2 Contact address
+
+The address printed in the submitted PDF is a dedicated project mailbox, not a personal one. It is deliberately **not stored in this repository** (to keep it out of crawler-readable git history): the build substitutes it at compile time from an environment variable, so the released PDF carries it and the source does not.
+
+```bash
+CONTACT_EMAIL=<address> bash tools/build_paper.sh out.pdf
+```
 
 ## 4.1 Click path (about 15 minutes, one-time)
 
