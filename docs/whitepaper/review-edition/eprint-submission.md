@@ -12,7 +12,7 @@ Target: **Cryptology ePrint Archive** (eprint.iacr.org). It accepts design docum
 | Keywords | `consensus`, `privacy`, `commitments`, `range proofs`, `parameter control`, `ledger design` |
 | Comments | `Design document. No implementation, no network, no asset. Whitepaper text frozen at v1.0; hashes and RFC 3161 timestamps recorded in the repository.` |
 | Licence | CC-BY if offered; otherwise the most permissive option available, to stay consistent with the repository's MIT |
-| PDF | `HEN-review-edition.pdf`, 7 pages |
+| PDF | `hen.pdf` (4 pages, two-column, numbered sections, abstract) — built with `tools/build_paper.sh`; the 7-page narrative version stays as `HEN-review-edition.pdf` |
 
 ## 2. Abstract (paste as-is)
 

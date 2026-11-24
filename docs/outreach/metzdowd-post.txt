@@ -1,0 +1,37 @@
+Subject: [Cryptography] Horizon Equilibrium Network: a coupled design for circulation, ordering and conditionable privacy
+
+Hi,
+
+I've been working on a design for a ledger that stays permissionless
+without making consensus power purchasable, and treats four things
+usually handled separately as one problem: circulation, ordering,
+privacy, and parameter change.
+
+The paper is available at:
+
+  https://eprint.iacr.org/<report-number>              (preferred once assigned)
+  https://github.com/ugjdygh/hen-equilibrium-network/releases/tag/review-edition-v1
+
+Abstract.  This note describes a ledger design that treats four properties as one
+coupled problem: permissionless ordering whose cost is not purchasable,
+privacy that is switchable per output rather than absolute, an issuance
+curve that converges instead of decaying toward fee-only security, and
+parameter adaptation that is bounded and delay-tolerant. Ordering uses
+proof of work as a cost anchor together with a verification weight
+derived from elapsed time and observable behaviour. Privacy is per-
+output and visible, in transparent, shielded and selective modes.
+Conditional transfers use a minimal script set with default-deny
+semantics. Difficulty control is bounded and uses a breaker triggered on
+cumulated amplitude within a time window. No cryptographic primitive is
+new, no formal proofs are offered, no implementation exists, and no
+asset is issued.
+
+It is a design document. There is no implementation, no network and no
+asset: nothing here is for sale, and no token or allocation exists.
+
+Comments are welcome, particularly on the threat model, on the weight
+mechanism (the weakest part, and one that may be replaced), and on the
+leak analysis of the shielded mode. Section 6 lists the open problems
+and what would settle each of them.
+
+Lee Hyun seok

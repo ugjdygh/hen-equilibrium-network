@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 112
+# files: 114
 # algorithm: sha256(file bytes)
 #
 e2143f85fee1b2a7d76d4618b5fedaa2511553d221bab433be7b07059bafd0d8  .github/ISSUE_TEMPLATE/config.yml
@@ -86,7 +86,7 @@ bb535c376fd53eb5721791330493b03dbf29ea8bb2adc4b2a832463a239a9a28  docs/legal/web
 ee9753c02b879902b1cd4c11a9e1d2613ba102c4f748c185e65c01df5e93a9bc  docs/legal/web-archive.md
 c80e544655d0766eb20c40da669b9e8fc03ec281eee993b601785aa8b6ea314c  docs/maintenance/handover.md
 2cd0ce54184b7305e92010bd9e7d6135268f875de6d405a551db0d38042911b9  docs/maintenance/merge-rules.md
-5143a0edd342a112621e8f2e25f270dcd81ae53416664644a2dbfef6c88028b9  docs/outreach/cryptography-list-post.md
+32a5ee5aa1cb0a42fda1e2f6e1befbf9bdbf55654c692dfd884bb7d0baf67a20  docs/outreach/cryptography-list-post.md
 fdb8f457ee87463e2d92d42b3d2a627f19fcff2f8572149b36f8d2b44eb40b6d  docs/outreach/decline-allocation.md
 d03818e265747468b31250941ed65a7c8a06a63a7f0f5d5ac2291db9a75f2fae  docs/outreach/growth.md
 4f43e881aaeefc04e87be205480037c72d00ae7f9570744e54e11dfe632e946a  docs/outreach/monetization.md
@@ -104,6 +104,8 @@ d5d49f9ce7df35036e08443e5d5713474f5f84ff45928bb9749cc296afdf804d  docs/review/ch
 c1cce340ab6539fc445626b15d2e921e41cefc74885a3a68e2d6d96708747650  docs/review/decisions.md
 597158b7c1961ae20fcd2f441690f916fb60164045cf65bd32a5326086895d30  docs/review/process.md
 188f32e5e57dc42e3927874de859f8901f9f400c157a5049a5d3e23989895397  docs/whitepaper/en/whitepaper.md
+1202e1961b9354cd54b0e615a7dbf967677e139602a5317e640b2a98268e86c0  docs/whitepaper/review-edition/eprint-submission.md
+190cd35334458a12f4d8398c84d0da9cc90d27e4ba3126aa61b522d4b1b43a5d  docs/whitepaper/review-edition/review-edition.md
 a5cf7e357f3aee5f82ceb49d5e3494f99a3fa2fb0de81a088096f9a0f327d79f  docs/whitepaper/zh-Hant/whitepaper.md
 602107892f2f53e9acffb8c7e27819abd0fbe48cc7aff947b4be05a69b138d18  docs/whitepaper/zh/whitepaper.md
 6c28a36a516261254bf33d3b7d116b086fed7c9293ee4207114b5fb9be5c8e88  examples/sim/README.md

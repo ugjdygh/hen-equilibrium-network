@@ -23,6 +23,10 @@ The mail below should link the **7-page review edition** (`docs/whitepaper/revie
 
 ## 1. The mail, ready to paste
 
+Plain-text, Satoshi-style version (short body, one link block, abstract inline, no tables): [`metzdowd-post.txt`](metzdowd-post.txt). The longer version below is the fallback if the list prefers more detail.
+
+Satoshi's 2008 post was three things: two sentences of plain speech, one link, the abstract. Nothing else. That shape is the safest for a moderated list, because it asks the reader to open the paper rather than to read a pitch in the mail client.
+
 To: `cryptography@metzdowd.com`
 Subject: `[Cryptography] Design whitepaper: Horizon Equilibrium Network — layered consensus with conditionable privacy`
 
