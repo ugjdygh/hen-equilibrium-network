@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 110
+# files: 111
 # algorithm: sha256(file bytes)
 #
 e2143f85fee1b2a7d76d4618b5fedaa2511553d221bab433be7b07059bafd0d8  .github/ISSUE_TEMPLATE/config.yml
@@ -88,6 +88,7 @@ c80e544655d0766eb20c40da669b9e8fc03ec281eee993b601785aa8b6ea314c  docs/maintenan
 2cd0ce54184b7305e92010bd9e7d6135268f875de6d405a551db0d38042911b9  docs/maintenance/merge-rules.md
 fdb8f457ee87463e2d92d42b3d2a627f19fcff2f8572149b36f8d2b44eb40b6d  docs/outreach/decline-allocation.md
 d03818e265747468b31250941ed65a7c8a06a63a7f0f5d5ac2291db9a75f2fae  docs/outreach/growth.md
+4f43e881aaeefc04e87be205480037c72d00ae7f9570744e54e11dfe632e946a  docs/outreach/monetization.md
 4b4431f31ca0ffb489eae2c95c012de0f6d7aae8817c9bbf68c752fc986c38cc  docs/outreach/x-policy.md
 a127f8bdd87e8f6c8ea88cc88b1a5a002594ed2975f01399e31c0e6313348ace  docs/protocol-draft/block-header.md
 026eb3bf8ee3d6be3641c7ba4c741fa82fa7359037787f0cd7c74c29cbb95c19  docs/protocol-draft/message-flow.md
