@@ -31,6 +31,27 @@ Target: **Cryptology ePrint Archive** (eprint.iacr.org). It accepts design docum
 3. Record the report number in `docs/legal/finalization.md` §5 alongside the Zenodo slot, and in `CITATION.cff`.
 4. Keep the submitted PDF: hash it and stamp it (`python3 tools/stamp.py <file> --label eprint-submission`). The archive keeps its own copy, but a local dated record settles "what exactly was submitted".
 
+## 3.1 What the live form actually requires (checked 2026-11-24)
+
+Fields on `eprint.iacr.org/submit`, in order:
+
+| Field | Requirement | What to enter |
+|---|---|---|
+| Title | required, no HTML | the title from §1 |
+| Authors | one block per author, ordered as in the paper; ORCID optional | `Lee Hyun seok`; leave ORCID empty (an ORCID identifies a natural person) |
+| Abstract | required, plain text, MathJax allowed; no HTML | paste §2, no markdown, no repo links |
+| Published elsewhere? | one of three radios | **"This is the only paper; not published elsewhere"** |
+| PDF | **required, A4 or US letter, and the author's email address must appear in the file** | `hen.pdf` (see below) |
+| Supplement | public | leave empty, or the repository URL with a one-line description |
+| Comments to editor | editor-only, never public | one line: `Design document; single-authored; pen name used consistently; no implementation exists.` |
+| Licence | **required dropdown**; must grant IACR a non-exclusive, irrevocable licence | choose the most permissive option offered (CC-BY if present); this does not conflict with MIT |
+| Confirmation | checkbox accepting standards, licence, republication and withdrawal rules | tick after reading |
+
+**The two things our first PDF failed on**, both fixed in `paper.md` and `tools/build_paper.sh`:
+
+1. **Paper size** — was US letter by LaTeX default; now built with `papersize=a4`, verified 595.28 x 841.89 pt.
+2. **Email inside the PDF** — now printed under the author line as `Lee Hyun seok (contact: <address>)`. The address must be a mailbox you will keep; it becomes permanently public in the paper.
+
 ## 4.1 Click path (about 15 minutes, one-time)
 
 1. **Account**: `https://eprint.iacr.org/` -> `Register`. Email + password. No endorsement, no institutional affiliation, no fee. Use a mailbox you will still control in two years; the account is the only way to submit revisions.
