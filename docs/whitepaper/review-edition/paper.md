@@ -81,7 +81,7 @@ The breaker rule matters, and it changed because the first version failed a test
 - **trigger on cumulated amplitude in a time window, then cooldown, then resume at `gain x 0.5`** — final target 18.00; interval 10.00; oscillation band after the step 5.56-10.61: converges
 
 
-A sweep over gain against measurement delay (7 gains x 6 delays, illustrative parameters) converges in 35 of 42 settings; the worst pair (gain 0.2, delay 8) settles at 7.17 against 10.00. The correct statement is therefore **"a stable region exists", not "the operating point is stable"**. Both scripts are in `examples/sim/` and run with plain Python 3; readers are invited to break them.
+A sweep over gain against measurement delay (7 gains x 6 delays, illustrative parameters) converges in 35 of 42 settings; the worst pair (gain 0.2, delay 8) settles at 7.17 against 10.00. The correct statement is therefore **"a stable region exists", not "the operating point is stable"**. Both scripts are in the public repository, at <https://github.com/ugjdygh/hen-equilibrium-network/tree/main/examples/sim>, run with plain Python 3 and no dependencies, and print every number quoted here; readers are invited to break them.
 
 ## Privacy: switchable, not absolute
 
@@ -160,7 +160,7 @@ Q1 (dormancy alternatives) and Q4 (floor level) are stated in the whitepaper as 
 
 # How to attack this design
 
-1. Re-run `examples/sim/mechanism_sim.py` and try to make the breaker unstable with defensible parameters.
+1. Re-run `mechanism_sim.py` (repository, examples/sim) and try to make the breaker unstable with defensible parameters.
 2. Attack C2: construct a farming strategy that accumulates weight cheaper than honest participation, and see whether the three prohibitions actually exclude it.
 3. Attack the leak analysis in §3.4: find a linkage that survives one-time addresses and batching in a pool with realistic size.
 4. Check whether default-deny semantics has a path where a locked output becomes spendable through a reorganisation.
