@@ -96,7 +96,7 @@ The breaker rule matters, and it changed because the first version failed a test
 | freeze after 3 consecutive same-direction moves | final target 13.31 against 18.00 required; interval 7.39 against 10.00 | **does not converge** |
 | trigger on cumulated amplitude in a time window, then cooldown, then resume at `gain x 0.5` | final target 18.00; interval 10.00; oscillation band after the step 5.56-10.61 | converges |
 
-A sweep over gain against measurement delay (7 gains x 6 delays, illustrative parameters) converges in 35 of 42 settings; the worst pair (gain 0.2, delay 8) settles at 7.17 against 10.00. The correct statement is therefore **"a stable region exists", not "the operating point is stable"**. Both scripts are in `examples/sim/` and run with plain Python 3; readers are invited to break them.
+A sweep over gain against measurement delay (7 gains x 6 delays, illustrative parameters) converges in 35 of 42 settings; the worst pair (gain 0.2, delay 8) settles at 7.17 against 10.00. The correct statement is therefore **"a stable region exists", not "the operating point is stable"**. Both scripts are in the public repository, at https://github.com/ugjdygh/hen-equilibrium-network/tree/main/examples/sim, run with plain Python 3 and no dependencies, and print every number quoted here; readers are invited to break them.
 
 ### 3.4 Privacy: switchable, not absolute
 
