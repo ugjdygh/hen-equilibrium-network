@@ -17,6 +17,10 @@ The design's novelty is **system-level coupling** (circulation, ordering, privac
 
 **Order of operations that costs nothing**: post to the list *and* deposit the same PDF at eprint.iacr.org. The list has no archive of its own worth citing; a preprint does.
 
+## 0.1 Use the review edition, not the repository
+
+The mail below should link the **7-page review edition** (`docs/whitepaper/review-edition/`), preferably via its eprint report number once assigned. Link the repository only as a secondary pointer. A list of economic sections reads as a ledger pitch; a threat-model-first paper reads as cryptography. Preparation notes: `docs/whitepaper/review-edition/eprint-submission.md`.
+
 ## 1. The mail, ready to paste
 
 To: `cryptography@metzdowd.com`
