@@ -31,7 +31,36 @@ Target: **Cryptology ePrint Archive** (eprint.iacr.org). It accepts design docum
 3. Record the report number in `docs/legal/finalization.md` §5 alongside the Zenodo slot, and in `CITATION.cff`.
 4. Keep the submitted PDF: hash it and stamp it (`python3 tools/stamp.py <file> --label eprint-submission`). The archive keeps its own copy, but a local dated record settles "what exactly was submitted".
 
-## 5. Parallel and fallback options
+## 4.1 Click path (about 15 minutes, one-time)
+
+1. **Account**: `https://eprint.iacr.org/` -> `Register`. Email + password. No endorsement, no institutional affiliation, no fee. Use a mailbox you will still control in two years; the account is the only way to submit revisions.
+2. **New submission**: `https://eprint.iacr.org/submit` -> fill the fields from §1.
+3. **Upload** `hen.pdf`. The archive does not require a house template; a clean two-column paper is fine. Do not upload a bundle or a source archive.
+4. **Checks before pressing submit**:
+   - abstract is plain text, no markdown, no citations to the repository;
+   - no mention of a token, sale, funding or launch (a single such sentence is enough to be read as promotion);
+   - author email is the same as the account, otherwise correspondence is lost.
+5. **Moderation**: typically days. The report number (`2026/NNN`) appears on the metadata page once accepted; until then the submission is not public.
+6. **If returned**: the usual reasons are scope ("not cryptography enough"), insufficient technical content, or self-promotion. Fix by expanding §2 and §3 and cutting economics, then resubmit — the account keeps the draft.
+
+### What eprint does not give you
+
+No DOI, no peer review, no permanence guarantee beyond the archive's own policy. Its value is a **stable, citable report number** and a metadata page that is independent of GitHub. The DOI question stays with Zenodo (§5 of `docs/legal/finalization.md`).
+
+## 5. Backfill after the number is assigned
+
+Four places, one commit:
+
+| File | What to change |
+|---|---|
+| `docs/outreach/metzdowd-post.txt` | replace `<report-number>` with `2026/NNN` and drop the "preferred once assigned" note |
+| `docs/whitepaper/review-edition/eprint-submission.md` | add a line at the top: `Report number: 2026/NNN, assigned <date>` |
+| `docs/legal/finalization.md` §5 | add an `ePrint` row next to the Zenodo slot, with the number and the date |
+| `CITATION.cff` | add the report number under `identifiers:` (or in `notes:` if the schema rejects it) |
+
+Then: `git commit -m "docs: eprint report number 2026/NNN"` and push. Hash and stamp the accepted PDF once (`python3 tools/stamp.py <pdf> --label eprint-2026-NNN`) so the submitted version is dated locally as well.
+
+## 6. Parallel and fallback options
 
 | Channel | Suits | Hurdle |
 |---|---|---|
@@ -40,6 +69,6 @@ Target: **Cryptology ePrint Archive** (eprint.iacr.org). It accepts design docum
 | metzdowd `cryptography` | announcement + discussion | moderated, silent rejections, economics reads as off-topic |
 | IACR conferences | full papers with proofs | a design note without proofs will not pass review |
 
-## 6. Rule that applies to all of them
+## 7. Rule that applies to all of them
 
 Nothing submitted anywhere may contain: an asset, a sale, a valuation, a launch date, a funding ask, or a claim of security. One sentence of that kind in an abstract is enough to have a cryptography submission read as promotion, and the rejection is silent.

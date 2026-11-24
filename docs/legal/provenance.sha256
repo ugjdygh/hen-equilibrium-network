@@ -1,6 +1,6 @@
 # Horizon Equilibrium Network — provenance manifest
 # regenerate together with each release tag; see docs/legal/provenance.md §3.1
-# files: 114
+# files: 117
 # algorithm: sha256(file bytes)
 #
 e2143f85fee1b2a7d76d4618b5fedaa2511553d221bab433be7b07059bafd0d8  .github/ISSUE_TEMPLATE/config.yml
@@ -89,6 +89,7 @@ c80e544655d0766eb20c40da669b9e8fc03ec281eee993b601785aa8b6ea314c  docs/maintenan
 32a5ee5aa1cb0a42fda1e2f6e1befbf9bdbf55654c692dfd884bb7d0baf67a20  docs/outreach/cryptography-list-post.md
 fdb8f457ee87463e2d92d42b3d2a627f19fcff2f8572149b36f8d2b44eb40b6d  docs/outreach/decline-allocation.md
 d03818e265747468b31250941ed65a7c8a06a63a7f0f5d5ac2291db9a75f2fae  docs/outreach/growth.md
+eb0949513209abfb7978061c56887c98b63532c40b8ea8b97886f20d9f841440  docs/outreach/metzdowd-post.txt
 4f43e881aaeefc04e87be205480037c72d00ae7f9570744e54e11dfe632e946a  docs/outreach/monetization.md
 4b4431f31ca0ffb489eae2c95c012de0f6d7aae8817c9bbf68c752fc986c38cc  docs/outreach/x-policy.md
 a127f8bdd87e8f6c8ea88cc88b1a5a002594ed2975f01399e31c0e6313348ace  docs/protocol-draft/block-header.md
@@ -104,7 +105,8 @@ d5d49f9ce7df35036e08443e5d5713474f5f84ff45928bb9749cc296afdf804d  docs/review/ch
 c1cce340ab6539fc445626b15d2e921e41cefc74885a3a68e2d6d96708747650  docs/review/decisions.md
 597158b7c1961ae20fcd2f441690f916fb60164045cf65bd32a5326086895d30  docs/review/process.md
 188f32e5e57dc42e3927874de859f8901f9f400c157a5049a5d3e23989895397  docs/whitepaper/en/whitepaper.md
-1202e1961b9354cd54b0e615a7dbf967677e139602a5317e640b2a98268e86c0  docs/whitepaper/review-edition/eprint-submission.md
+0381da86aa3bfd12274d73d34ab2b0c314840bd443bc707797f28e20ea399b9e  docs/whitepaper/review-edition/eprint-submission.md
+78a5db34d46f7e919e41dc6c0f5b48056d1709acdcfb4df3914e2248aa54a584  docs/whitepaper/review-edition/paper.md
 190cd35334458a12f4d8398c84d0da9cc90d27e4ba3126aa61b522d4b1b43a5d  docs/whitepaper/review-edition/review-edition.md
 a5cf7e357f3aee5f82ceb49d5e3494f99a3fa2fb0de81a088096f9a0f327d79f  docs/whitepaper/zh-Hant/whitepaper.md
 602107892f2f53e9acffb8c7e27819abd0fbe48cc7aff947b4be05a69b138d18  docs/whitepaper/zh/whitepaper.md
@@ -113,6 +115,7 @@ a5cf7e357f3aee5f82ceb49d5e3494f99a3fa2fb0de81a088096f9a0f327d79f  docs/whitepape
 d7a5573727a6a50538f18b1230139d76970bebd5bcbbb6042ba5556abed28c97  examples/sim/mechanism_sim.py
 2dce82fe26104966a546b658ca9bcd1f2dd73f814606a004a1bd3d1dcf810b99  spec/README.md
 51ffbe2843aa250d79015fe75f065b4b8990b45ee09c4768c0cc5674dec03fc2  tools/archive_batch.py
+31a1c67c84020b9442e35a8e21995b9f5c45ad654d0497c18310326b3482e417  tools/build_paper.sh
 5cf5291162df08242b0a25d1dd4e278490b4897ba0f36ce738cfd2641e84c3e6  tools/cla_sim.py
 d1bde8f99ec331c577e1381cd7fd51c129bcf5d49dc522d53a0e8af937d360a1  tools/make_deposit.py
 65657584b8626c14ecbdad372722ab18ebf7950eef948a8bc33bf0c3d3f2c793  tools/provenance_manifest.py
